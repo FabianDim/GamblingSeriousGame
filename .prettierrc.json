@@ -1,0 +1,12 @@
+{
+  "plugins": ["@prettier/plugin-xml"],
+  "overrides": [
+    {
+      "files": "*.uxml",
+      "options": {
+        "parser": "xml",
+        "xmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}

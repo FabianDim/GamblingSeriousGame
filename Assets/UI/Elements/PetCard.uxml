@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <Style src="../Themes/App.uss" />
+  <ui:Button name="pet-card" class="pet-card">
+    <ui:VisualElement class="pet-card__image-box" picking-mode="Ignore">
+      <ui:Image
+        name="pet-image"
+        class="pet-card__image"
+        picking-mode="Ignore"
+      />
+      <ui:Label
+        name="pet-image-placeholder"
+        text="No image"
+        class="pet-card__placeholder"
+        picking-mode="Ignore"
+      />
+    </ui:VisualElement>
+    <ui:VisualElement class="pet-card__details" picking-mode="Ignore">
+      <ui:Label
+        name="pet-name"
+        text="Pet name"
+        class="pet-card__name"
+        picking-mode="Ignore"
+      />
+      <ui:Label
+        name="pet-description"
+        text="Pet description"
+        class="pet-card__description"
+        picking-mode="Ignore"
+      />
+      <ui:Label
+        name="pet-selection-state"
+        text="Select"
+        class="pet-card__selection"
+        picking-mode="Ignore"
+      />
+    </ui:VisualElement>
+  </ui:Button>
+</ui:UXML>

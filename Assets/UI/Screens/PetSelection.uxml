@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Template name="PageHeader" src="project://database/Assets/UI/Elements/PageHeader.uxml?fileID=9197481963319205126&amp;guid=9605ded153128be479df39fc03a34ebf&amp;type=3#PageHeader"/>
+    <ui:Template name="PrimaryButton" src="project://database/Assets/UI/Elements/PrimaryButton.uxml?fileID=9197481963319205126&amp;guid=deb63008b1124cf4ca4da0d9fbff9190&amp;type=3#PrimaryButton"/>
+    <ui:Template name="SecondaryButton" src="project://database/Assets/UI/Elements/SecondaryButton.uxml?fileID=9197481963319205126&amp;guid=2857803f0adaf5849ab5a4c08a41f75c&amp;type=3#SecondaryButton"/>
+    <Style src="project://database/Assets/UI/Themes/App.uss?fileID=7433441132597879392&amp;guid=06d33402df03d364bbda2481a7d927b3&amp;type=3#App"/>
+    <ui:VisualElement name="app" class="app">
+        <ui:VisualElement name="safe-area" class="safe-area">
+            <ui:VisualElement name="pet-creation-panel" class="content-panel">
+                <ui:Instance template="PageHeader" name="header"/>
+                <ui:ScrollView name="page-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto" touch-scroll-type="Clamped" class="page-scroll">
+                    <ui:VisualElement name="companion-content"/>
+                    <ui:VisualElement name="actions" class="companion-actions"/>
+                    <ui:Button name="ConfirmPetSelection" text="Confirm" class="app-button button--primary button-template" style="position: relative; -unity-font-style: bold;"/>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,270 @@
+/* Shared visual language, migrated from the existing Canvas prefabs.
+   Edit these tokens to change the entire app in one place. */
+:root {
+    --app-background: #0B0E17;
+    --app-primary: #00E676;
+    --app-primary-hover: #20EE8B;
+    --app-primary-pressed: #00C866;
+    --app-text: #FFFFFF;
+    --app-text-muted: #A6AEBD;
+    --app-outline: #202C3D;
+    --app-focus: #B2FFD5;
+}
+
+.app {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-background);
+    color: var(--app-text);
+    -unity-font-definition: initial;
+    -unity-font: url("/Assets/TextMesh Pro/Resources/Fonts & Materials/Outfit-Regular.ttf");
+    font-size: 16px;
+}
+
+.safe-area {
+    flex-grow: 1;
+    min-height: 0;
+}
+
+/* The panel is deliberately transparent: the app supplies the background. */
+.content-panel {
+    flex-grow: 1;
+    min-height: 0;
+    width: 100%;
+    max-width: 480px;
+    align-self: center;
+    padding: 40px 20px 24px 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.page-header {
+    margin: 0;
+    padding: 0;
+    min-height: 32px;
+    flex-shrink: 0;
+    font-size: 24px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    color: var(--app-text);
+}
+
+.page-scroll {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-height: 0;
+    margin-top: 24px;
+}
+
+.page-scroll > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container {
+    padding: 4px;
+}
+
+.companion-actions {
+    margin-top: 16px;
+}
+
+/* One selectable card per animal. The whole card is a keyboard-focusable button. */
+.pet-card {
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: flex-start;
+    margin: 0 0 12px 0;
+    padding: 14px;
+    border-width: 2px;
+    border-radius: 12px;
+    border-color: var(--app-outline);
+    background-color: #131B28;
+    background-image: none;
+    color: var(--app-text);
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+.pet-card:hover { background-color: #1A2432; }
+.pet-card:active { background-color: #203D32; }
+.pet-card:focus { border-color: var(--app-focus); }
+.pet-card.pet-card--selected {
+    border-color: var(--app-primary);
+    background-color: #102B24;
+}
+.pet-card.pet-card--selected:hover,
+.pet-card.pet-card--selected:active { background-color: #173B30; }
+.pet-card__image-box {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 14px;
+    border-radius: 8px;
+    background-color: var(--app-background);
+    overflow: hidden;
+}
+.pet-card__image { width: 100%; height: 100%; }
+.pet-card__placeholder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    font-size: 12px;
+    color: var(--app-text-muted);
+    -unity-text-align: middle-center;
+}
+.pet-card__details { flex-grow: 1; flex-shrink: 1; min-width: 0; }
+.pet-card__name {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+.pet-card__description {
+    margin: 0;
+    font-size: 14px;
+    color: var(--app-text-muted);
+    white-space: normal;
+}
+.pet-card__selection {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    color: var(--app-text-muted);
+}
+.pet-card--selected .pet-card__selection { color: var(--app-primary); }
+
+/* Applied by the screen script when the available height is limited. */
+.app--compact .content-panel { padding-top: 16px; padding-bottom: 16px; }
+.app--compact .page-scroll { margin-top: 16px; }
+.app--compact .companion-actions { margin-top: 24px; }
+
+.page-scroll .unity-scroller--vertical {
+    width: 6px;
+    min-width: 6px;
+    margin-left: 8px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.page-scroll .unity-scroller__low-button,
+.page-scroll .unity-scroller__high-button { display: none; }
+.page-scroll .unity-base-slider__tracker {
+    background-color: var(--app-outline);
+    border-width: 0;
+    border-radius: 3px;
+}
+.page-scroll .unity-base-slider__dragger {
+    width: 6px;
+    min-width: 6px;
+    background-color: #59677C;
+    border-width: 0;
+    border-radius: 3px;
+}
+
+.button-template {
+    flex-shrink: 0;
+    margin-bottom: 24px;
+}
+
+.app-button {
+    flex-shrink: 0;
+    min-height: 72px;
+    margin: 0;
+    padding: 14px 20px;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 6px;
+    background-image: none;
+    -unity-font-definition: initial;
+    -unity-font: url("/Assets/TextMesh Pro/Resources/Fonts & Materials/Outfit-Regular.ttf");
+    -unity-font-style: normal;
+    font-size: 24px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.12s;
+}
+
+.button--primary {
+    background-color: var(--app-primary);
+    border-radius: 20px;
+    color: var(--app-background);
+    letter-spacing: 1px;
+}
+
+.button--primary:hover {
+    background-color: var(--app-primary-hover);
+    color: var(--app-background);
+}
+
+.button--primary:active {
+    background-color: var(--app-primary-pressed);
+}
+
+.button--secondary {
+    min-height: 64px;
+    background-color: var(--app-background);
+    border-color: var(--app-outline);
+    border-radius: 20px;
+    color: var(--app-text);
+    -unity-font: url("/Assets/TextMesh Pro/Resources/Fonts & Materials/Outfit-Bold.ttf");
+}
+
+.button--secondary:hover {
+    background-color: #131B28;
+    border-color: #3B4B62;
+    color: var(--app-text);
+}
+
+.button--secondary:active {
+    background-color: var(--app-outline);
+}
+
+.button--text {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--app-text);
+    -unity-font: url("/Assets/TextMesh Pro/Resources/Fonts & Materials/Outfit-Bold.ttf");
+}
+
+.button--text:hover {
+    background-color: #131B28;
+    color: var(--app-primary);
+}
+
+.button--text:active {
+    background-color: var(--app-outline);
+}
+
+.app-button:focus {
+    border-color: var(--app-focus);
+}
+
+.app-button:disabled {
+    background-color: #1A2432;
+    border-color: var(--app-outline);
+    color: #778396;
+    opacity: 0.65;
+}
+
+/* Used only by the editable style reference document. */
+.style-guide .content-panel { padding-top: 28px; }
+.section-label {
+    margin: 24px 0 12px 0;
+    font-size: 13px;
+    color: var(--app-text-muted);
+    letter-spacing: 2px;
+}
+.body-copy {
+    margin: 0 0 16px 0;
+    color: var(--app-text-muted);
+    white-space: normal;
+}
+.swatches { flex-direction: row; flex-wrap: wrap; }
+.swatch {
+    width: 96px;
+    height: 64px;
+    margin: 0 12px 12px 0;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: var(--app-outline);
+    -unity-text-align: middle-center;
+    font-size: 12px;
+}
+.swatch--background { background-color: var(--app-background); }
+.swatch--primary { background-color: var(--app-primary); color: var(--app-background); }
+.swatch--outline { background-color: var(--app-outline); }

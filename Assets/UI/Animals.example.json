@@ -1,0 +1,22 @@
+{
+  "animals": [
+    {
+      "id": "cat",
+      "name": "Cat",
+      "description": "A curious companion who enjoys quiet company and a cosy place to rest.",
+      "imageResourcePath": ""
+    },
+    {
+      "id": "dog",
+      "name": "Dog",
+      "description": "A friendly companion who loves walks, playtime, and spending time with you.",
+      "imageResourcePath": ""
+    },
+    {
+      "id": "rabbit",
+      "name": "Rabbit",
+      "description": "A gentle companion who likes exploring and finding a comfortable spot to relax.",
+      "imageResourcePath": ""
+    }
+  ]
+}
