@@ -6,6 +6,10 @@ are retained as references; they are not used by the migrated scene.
 
 ## Editing your UI
 
+For the name field, interactive 2D preview, and finger-painting screen, see
+[`Docs/UI/PetCustomization.md`](../../Docs/UI/PetCustomization.md).
+Its UXML is `Screens/PetCreation.uxml` and its prefab is `PetCreationUI.prefab`.
+
 - Double-click `Screens/PetSelection.uxml` to open the screen in **UI Builder**.
 - Choose **Unity Default Runtime Theme** in UI Builder and use a **390 x 844**
   preview to start. The screen imports its stylesheet, so the look is available
@@ -48,7 +52,7 @@ The component works with either screen UXML as long as it contains
 - Edit `Elements/PetCard.uxml` in UI Builder to change the reusable card layout.
   Each card is a Button containing an image box, name, description, and selection label.
   Its appearance is controlled by the `.pet-card` rules in `Themes/App.uss`.
-- The `PetCreationUI` prefab already has **Animal Json** set to
+- The `PetSelectionUI` prefab already has **Animal Json** set to
   `Assets/UI/Animals.example.json` and **Pet Card Template** set to `PetCard.uxml`.
   Replace the example JSON with your own TextAsset in the Inspector.
 - Cards are generated in Play mode, not in the UI Builder screen preview.
@@ -86,7 +90,7 @@ For a new button, add a Button in UI Builder and assign `app-button` plus
 UXML template into the hierarchy. For template text changes, use an attribute
 override on the template instance, or edit the template to update all instances.
 
-The reusable `Assets/Prefabs/UI/PetCreationUI.prefab` contains the UIDocument and
+The reusable `Assets/Prefabs/UI/PetSelectionUI.prefab` contains the UIDocument and
 the screen script. Its **On Primary Action** and **On Log In** UnityEvents are
 ready to connect to your game. Confirm also invokes **On Primary Action** after
 **On Pet Confirmed**. Account authentication and saving the selected pet are not included.

@@ -15,6 +15,9 @@ namespace GamblingSeriousGame.Editor
         [MenuItem("Game/UI/Edit Companion Screen")]
         public static void EditScreen() => OpenAsset("Assets/UI/Screens/PetSelection.uxml");
 
+        [MenuItem("Game/UI/Edit Pet Creation Screen")]
+        public static void EditPetCreation() => OpenAsset("Assets/UI/Screens/PetCreation.uxml");
+
         [MenuItem("Game/UI/Edit Shared Styles")]
         public static void EditStyles() => OpenAsset("Assets/UI/Themes/App.uss");
 

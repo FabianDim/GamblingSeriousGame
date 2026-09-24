@@ -4,19 +4,22 @@
       "id": "cat",
       "name": "Cat",
       "description": "A curious companion who enjoys quiet company and a cosy place to rest.",
-      "imageResourcePath": ""
+      "imageResourcePath": "Pets/Cat_Preview",
+      "previewImage": "Pets/PreviewImages/Cat_Idle"
     },
     {
       "id": "dog",
       "name": "Dog",
       "description": "A friendly companion who loves walks, playtime, and spending time with you.",
-      "imageResourcePath": ""
+      "imageResourcePath": "",
+      "previewImage": "Pets/PreviewImages/Cat_Idle"
     },
     {
       "id": "rabbit",
       "name": "Rabbit",
       "description": "A gentle companion who likes exploring and finding a comfortable spot to relax.",
-      "imageResourcePath": ""
+      "imageResourcePath": "",
+      "previewImage": "Pets/PreviewImages/Cat_Idle"
     }
   ]
 }

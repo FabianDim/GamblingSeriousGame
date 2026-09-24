@@ -13,6 +13,7 @@ namespace GamblingSeriousGame.UI
         public string name;
         public string description;
         public string imageResourcePath;
+        public string previewImage;
     }
 
     [Serializable]
@@ -156,18 +157,23 @@ namespace GamblingSeriousGame.UI
 
         private void SetPetImage(Button card, PetDefinition pet)
         {
-            var image = card.Q<Image>("pet-image");
-            image.scaleMode = ScaleMode.ScaleToFit;
-            if (!string.IsNullOrWhiteSpace(pet.imageResourcePath))
+            var anim = card.Q<Image>("pet-image");
+            anim.scaleMode = ScaleMode.ScaleToFit;
+            if (string.IsNullOrWhiteSpace(pet.previewImage))
             {
-                image.sprite = Resources.Load<Sprite>(pet.imageResourcePath);
-                if (image.sprite == null) image.image = Resources.Load<Texture2D>(pet.imageResourcePath);
-                if (image.sprite == null && image.image == null)
-                    Debug.LogWarning("Missing pet image in Resources: " + pet.imageResourcePath, this);
+                return;
             }
-
+            Sprite[] frames = Resources.LoadAll<Sprite>(pet.previewImage);
+            if (frames.Length == 0) return;
+            int frame = 0;
+            anim.sprite = frames[frame];
             card.Q<Label>("pet-image-placeholder").style.display =
-                image.sprite != null || image.image != null ? DisplayStyle.None : DisplayStyle.Flex;
+                anim.sprite != null || anim.image != null ? DisplayStyle.None : DisplayStyle.Flex;
+            anim.schedule.Execute(() =>
+            {
+                frame = (frame + 1) % frames.Length;
+                anim.sprite = frames[frame];
+            }).Every(100);
         }
 
         private void SelectPet(PetDefinition pet, Button card)
