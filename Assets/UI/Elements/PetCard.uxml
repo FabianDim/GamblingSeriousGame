@@ -9,7 +9,6 @@
       />
       <ui:Label
         name="pet-image-placeholder"
-        text="No image"
         class="pet-card__placeholder"
         picking-mode="Ignore"
       />

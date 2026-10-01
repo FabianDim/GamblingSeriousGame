@@ -1,113 +1,119 @@
-# Pet creation and finger drawing
+# Companion setup
 
-`Assets/UI/Screens/PetCreation.uxml` is the customization screen. Open it in UI Builder,
-or use **Game > UI > Edit Pet Creation Screen**. Layout and appearance are in
-`Assets/UI/Themes/PetCreation.uss`, with the existing app colours and fonts inherited
-from `App.uss`.
+The setup flow is animal selection, breed/type selection, naming, then saving a
+companion profile. Painting is archived in `Archive/PetPainting`, outside Unity's
+Assets folder. The existing scene and controller GUIDs remain intact.
 
-The screen contains a name field, a large interactive preview, Inspect / Draw / Erase
-modes, six colours, brush size, undo, clear, zoom controls, Done, and Back to pets.
-The form scrolls on smaller displays. Cards are still managed by the older
-`PetCreationScreen` component on the **selection** screen; the new editor uses
-`PetCustomizationScreen`.
+## Editing and wiring
 
-## Connect it in Unity
+- `Assets/UI/Screens/PetCreation.uxml`: setup form, editable in UI Builder via
+  **Game > UI > Edit Pet Creation Screen**.
+- `Assets/UI/Themes/PetCreation.uss`: preview, breed buttons, name form and summary.
+- `Assets/UI/Animals.example.json`: animals, breed/type options, descriptions,
+  suggested names and sprite paths. Both screens should use the same catalog.
+- `PetCreationScreen`: the animal selection controller (historical class name).
+- `PetCustomizationScreen`: the breed/name setup controller.
 
-1. Open your app scene, currently `PetCreationUIToolkit`.
-2. Drag `Assets/Prefabs/UI/PetCreationUI.prefab` into the scene. This prefab already
-   has a UIDocument referencing `PetCreation.uxml`, the shared PanelSettings, and
-   the `PetCustomizationScreen` component with the example animal JSON assigned.
-3. Make this new GameObject inactive initially, so selection is shown first.
-4. On the **App Navigation Manager**, assign the selection GameObject to **Pet
-   Selection Screen** and this new GameObject to **Pet Creation Screen**. Keep the
-   manager on a separate, active GameObject.
-5. On the selection screen's **Pet Creation Screen** component, connect **On Pet
-   Confirmed (String)** to the scene manager's **ConfirmPetSelection**, using the
-   **Dynamic string** entry. Add this only once if you already connected it.
-6. On the new **Pet Customization Screen** component, connect **On Back Requested**
-   to the same manager's **BackToPetSelection**.
-7. Press Play, select an animal, and confirm. The manager now calls
-   `SetPet(petId)` before opening customization.
+The existing `PetCreationUI` prefab uses the new form automatically. The selection
+screen's **On Pet Confirmed (String)** calls `AppNavigationManager.ConfirmPetSelection`
+using the dynamic string callback. This sets the pet before activating setup.
+**On Back Requested** calls `AppNavigationManager.BackButton`.
 
-Both screens should use the same animal catalog. Scene navigation references are
-assigned to scene instances in the Inspector, not to the prefab asset in the Project
-window. The task adds a prefab and updates the navigation script; it does not modify
-your scene or replace any in-progress scene setup.
+Each animal retains its draft name and breed while navigating back and forth in the
+current session. Reopening the screen does not multiply callbacks or animations.
+Unknown animal IDs and invalid catalogs disable saving. Invalid/duplicate breed IDs
+are skipped; catalogs without valid breeds receive a `default` breed using the animal's
+existing preview fields.
 
-## Add an image
+## Add an animal or breed
 
-The current example animals have empty image paths. Add your own transparent PNG,
-for example `Assets/Resources/Pets/Cat.png`, and set the cat's JSON field to:
+Use stable unique animal IDs and breed IDs (breed IDs are unique within each animal).
+Breed/type here means a preset appearance, not an offspring or genetics system.
+Descriptions are flavour text and do not change gameplay stats.
 
 ```json
-"imageResourcePath": "Pets/Cat"
+{
+  "animals": [
+    {
+      "id": "cat",
+      "name": "Cat",
+      "description": "A curious companion.",
+      "previewImage": "Pets/PreviewImages/Cat_Idle",
+      "previewFramesPerSecond": 10,
+      "suggestedNames": ["Mochi", "Cleo", "Miso"],
+      "breeds": [
+        {
+          "id": "shorthair",
+          "name": "Shorthair",
+          "description": "A little everyday explorer.",
+          "previewImage": "Pets/PreviewImages/Cat_Idle",
+          "previewFramesPerSecond": 10
+        }
+      ]
+    }
+  ]
+}
 ```
 
-Use a Texture2D or an unpacked Sprite. A sprite sheet rectangle is supported, but
-sprites packed into an atlas are not used for customization. Read/Write does **not**
-need to be enabled: the controller makes an editable copy through a temporary GPU
-render target. Assign **Preview Sprite** on the new component if you want a temporary
-image for animals that do not yet have their own art.
+The bundled shorthair uses the existing cat animation. The other example types have
+reserved paths and display **Preview coming soon** until their artwork is added.
+The selection screen uses the animal-level preview; setup uses the selected breed's
+preview. Missing breed art never falls back to another animal or breed's image.
 
-Transparency defines where drawing is allowed. With an opaque rectangular background,
-the rectangle is paintable too. A transparent background around the pet gives the
-expected silhouette. Missing art shows a placeholder and disables painting and zoom.
+Put an idle sheet under `Assets/Resources`, import it as **Sprite (2D and UI)**,
+set **Sprite Mode: Multiple**, and slice its frames in Sprite Editor. Set
+`previewImage` to its Resources-relative path, without extension. Use one animation
+per sheet: all slices play left-to-right, then top-to-bottom, ordered by their source
+rectangles (not lexical frame names). FPS defaults to 10 and is bounded to 1�30.
+For pixel art use Point filtering and an appropriate compression setting.
 
-## Gestures
+`PetSpritePreview` displays the imported sprites directly; no editable texture copy,
+PNG export or Read/Write texture setting is required. Sprite atlas packing is supported.
+A still Sprite/Texture2D can instead use `imageResourcePath`. Missing art leaves the
+form usable. Pause preview supports reduced motion; it remains paused when switching
+types or reopening the screen in the same session.
 
-- **Inspect:** one finger pans a zoomed image; two fingers pinch to zoom. On desktop,
-  drag with the mouse and use the wheel. Zoom is limited to 1–4x; Reset view recentres.
-- **Draw:** one finger or a mouse drag adds a stroke. Other fingers do not add marks.
-- **Erase:** removes only the paint layer, revealing the original pet image.
-- Switch back to Inspect to reposition the image while working. Drawing coordinates
-  account for zoom and pan. The original alpha is retained and the source asset is
-  never modified.
-- **Undo** retains the last 12 changed strokes or clears. **Clear drawing** is undoable.
-  Brush size is in paint-texture pixels, so the brush appears larger when zoomed in.
+## Names and completion
 
-Pointer capture keeps a gesture assigned to the preview. Releasing, cancelling,
-changing tool, resizing, or hiding the screen ends that gesture. Leaving and re-entering
-the preview while drawing does not connect a line across the out-of-bounds gap.
+Names are limited to 24 characters, reject blank/control-character input, and are
+trimmed on save. Suggest a name cycles through catalog suggestions, with generic
+fallbacks. The live summary shows the chosen name, animal and breed. All user/catalog
+text is displayed literally with rich text disabled.
 
-## Finish and save
+**Save companion** stores the latest confirmed profile on this device using
+PlayerPrefs key `Companion.Profile.v1`, then invokes both events:
 
-Done requires a non-whitespace name and a valid selected pet. Names have a 24-character
-input limit and are trimmed on completion. **On Pet Created (String, String)** emits
-the animal ID and chosen name. Connect it to your own game-state/save method or next
-screen. This event does not automatically save data or navigate.
-
-The customization component exposes:
+- **On Pet Created (String, String)**: existing animal ID/name callback, retained for
+  compatibility with scene listeners.
+- **On Profile Created (PetProfile)**: animal ID, breed ID and name for gameplay or
+  your eventual save system. A handler accepts `PetProfile profile`.
 
 ```csharp
-string id = customization.SelectedPetId;
-string name = customization.PetName;
-Texture2D appearance = customization.PetTexture;
-byte[] png = customization.ExportPetPng(); // null when no image is available
+PetProfile profile = customization.CurrentProfile;
+// profile.animalId, profile.breedId, profile.petName
 ```
 
-Read/export the image in your completion callback before destroying the screen or
-switching to a different animal. The texture belongs to the component; other consumers
-must copy it if they need a separate lifetime. Export includes the original image and
-paint together. Reopening the same pet retains edits in memory; choosing another pet
-resets them. Closing the application discards edits unless your save system persists
-the ID, name, and PNG. The separate editable paint/undo history is not exported.
+A fresh setup instance restores the latest saved profile when that animal is chosen,
+provided its breed still exists in the catalog. Saving another animal replaces that
+single latest profile; this is not a multi-pet inventory or cloud save. In-session
+drafts for other animals remain available. The button acknowledges a successful save
+and prevents repeat submissions until an edit is made. Save errors retain the draft
+and allow a retry. Completion stays on this screen unless an event listener navigates.
+The former `PetTexture` and `ExportPetPng` APIs exist only in the archive.
 
-## Implementation and verification
-
-`PetCustomizationScreen.cs` connects the UI, navigation data, gestures, and events.
-`PetPaintTexture.cs` handles alpha clipping, paint compositing, erasing, history, and
-PNG export. Images are resized to at most 512 pixels on their longest side to bound
-CPU painting and undo memory on mobile. Higher-resolution/GPU brush painting can be
-added if device testing shows a need; this version is a functional 2D prototype.
+## Validation
 
 `Tools/PetCustomizationValidation.cs` runs in an isolated Unity 6000.6.2f1 project.
-Copy the UI assets, UI scripts, both UI prefabs, and Outfit fonts with their metadata.
-Place the tool under that project's `Assets/Editor`, then run Unity with
-`-batchmode -projectPath <isolated-project> -executeMethod PetCustomizationValidation.Run`.
-It creates temporary test artwork and checks navigation, name validation, mouse/touch
-painting, pinch zoom, erasing, undo, transparency, export, screen lifecycle, and layouts
-at 390 × 844 and 320 × 568. The screenshot uses synthetic test artwork, not a bundled
-game pet. Physical-device touch responsiveness still needs testing on your target phones.
+Copy `Assets/UI`, `Assets/Scripts/UI`, `Assets/Resources`, both UI prefabs and Outfit
+fonts with metadata. Put the utility under `Assets/Editor`, then launch Unity with:
 
-References: [Unity pointer events](https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-Pointer-Events.html),
-[Unity RenderTexture](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/rendertexture).
+```
+-batchmode -projectPath <isolated-project> -executeMethod PetCustomizationValidation.Run
+```
+
+It exercises navigation, sprite previews/pause, breed selection, missing art, name
+validation/suggestions, trimmed save payloads, duplicate-submit prevention, event
+compatibility, saved-profile restore, independent drafts, enable/disable lifecycle,
+invalid catalog data, and 390 x 844 / 320 x 568 / 844 x 390 layouts. It captures PNGs
+under that project's `Validation` directory. Device-specific safe areas still benefit
+from checking in Device Simulator or on the target phone.

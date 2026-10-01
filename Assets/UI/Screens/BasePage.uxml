@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+  <ui:Template name="BottomDock" src="../Elements/BottomDock.uxml" />
+  <Style src="../Themes/App.uss" />
+  <ui:VisualElement name="base-page" class="app">
+    <ui:VisualElement name="base-safe-area" class="safe-area">
+      <ui:VisualElement name="page-shell" class="content-panel">
+        <ui:Label name="base-page-title" text="Home" class="page-header" />
+        <ui:ScrollView name="base-page-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" class="page-scroll">
+          <ui:VisualElement name="page-content" />
+        </ui:ScrollView>
+        <ui:Instance template="BottomDock" name="dock-container" class="dock-container" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

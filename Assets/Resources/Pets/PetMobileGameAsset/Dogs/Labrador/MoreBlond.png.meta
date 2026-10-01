@@ -1,0 +1,2797 @@
+fileFormatVersion: 2
+guid: 3e412addfc45485469a23a525d23c7b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -957453629861325567
+    second: MoreBlond_0
+  - first:
+      213: 8203283646979501223
+    second: MoreBlond_1
+  - first:
+      213: -3940075811565263030
+    second: MoreBlond_2
+  - first:
+      213: 3071913979316241110
+    second: MoreBlond_3
+  - first:
+      213: 271621556331612543
+    second: MoreBlond_4
+  - first:
+      213: 5611325344714184718
+    second: MoreBlond_5
+  - first:
+      213: -2977469147863888126
+    second: MoreBlond_6
+  - first:
+      213: 5788209435028948747
+    second: MoreBlond_7
+  - first:
+      213: 4646578042682269256
+    second: MoreBlond_8
+  - first:
+      213: 871755837426041733
+    second: MoreBlond_9
+  - first:
+      213: 3577288165476852202
+    second: MoreBlond_10
+  - first:
+      213: 3865583866972914401
+    second: MoreBlond_11
+  - first:
+      213: -958295059236278471
+    second: MoreBlond_12
+  - first:
+      213: -452211270468741176
+    second: MoreBlond_13
+  - first:
+      213: -4747496194863239543
+    second: MoreBlond_14
+  - first:
+      213: 49065080330667433
+    second: MoreBlond_15
+  - first:
+      213: 6786104064511480957
+    second: MoreBlond_16
+  - first:
+      213: -3116499272521834954
+    second: MoreBlond_17
+  - first:
+      213: -7914518625385337027
+    second: MoreBlond_18
+  - first:
+      213: -5388504872525969426
+    second: MoreBlond_19
+  - first:
+      213: 8296977052884293466
+    second: MoreBlond_20
+  - first:
+      213: 8139891913368716998
+    second: MoreBlond_21
+  - first:
+      213: 7769117351675883297
+    second: MoreBlond_22
+  - first:
+      213: -313523879019254882
+    second: MoreBlond_23
+  - first:
+      213: -1532278370834304402
+    second: MoreBlond_24
+  - first:
+      213: -609177516688513973
+    second: MoreBlond_25
+  - first:
+      213: -5478367280753634426
+    second: MoreBlond_26
+  - first:
+      213: 4770400539906790274
+    second: MoreBlond_27
+  - first:
+      213: -8750954158875051152
+    second: MoreBlond_28
+  - first:
+      213: 101076829720460069
+    second: MoreBlond_29
+  - first:
+      213: 5684353746167117001
+    second: MoreBlond_30
+  - first:
+      213: 5124337442714639520
+    second: MoreBlond_31
+  - first:
+      213: -4898768324211559279
+    second: MoreBlond_32
+  - first:
+      213: -603678650295209678
+    second: MoreBlond_33
+  - first:
+      213: 7879707630138767653
+    second: MoreBlond_34
+  - first:
+      213: -2058363254998059237
+    second: MoreBlond_35
+  - first:
+      213: -6112646952246944576
+    second: MoreBlond_36
+  - first:
+      213: 1119225812257376781
+    second: MoreBlond_37
+  - first:
+      213: 1412174499696649132
+    second: MoreBlond_38
+  - first:
+      213: 7418702413694391305
+    second: MoreBlond_39
+  - first:
+      213: 454266992851899456
+    second: MoreBlond_40
+  - first:
+      213: 107219632501881806
+    second: MoreBlond_41
+  - first:
+      213: 1443657829276635398
+    second: MoreBlond_42
+  - first:
+      213: -8465315346071636825
+    second: MoreBlond_43
+  - first:
+      213: -5148397951518470638
+    second: MoreBlond_44
+  - first:
+      213: -7650623311279930848
+    second: MoreBlond_45
+  - first:
+      213: -3660782954018445221
+    second: MoreBlond_46
+  - first:
+      213: 4515262796773038723
+    second: MoreBlond_47
+  - first:
+      213: -6680398908428912233
+    second: MoreBlond_48
+  - first:
+      213: -4863262169473289600
+    second: MoreBlond_49
+  - first:
+      213: 7579102992885797850
+    second: MoreBlond_50
+  - first:
+      213: 2027788483140426151
+    second: MoreBlond_51
+  - first:
+      213: -2832856968663721388
+    second: MoreBlond_52
+  - first:
+      213: -7333490258337776268
+    second: MoreBlond_53
+  - first:
+      213: -8104024827424794882
+    second: MoreBlond_54
+  - first:
+      213: -3138476367324799766
+    second: MoreBlond_55
+  - first:
+      213: 1666084160601050982
+    second: MoreBlond_56
+  - first:
+      213: 7043437539180330804
+    second: MoreBlond_57
+  - first:
+      213: -7641113144265339353
+    second: MoreBlond_58
+  - first:
+      213: 952762397499686276
+    second: MoreBlond_59
+  - first:
+      213: 8356790284425560595
+    second: MoreBlond_60
+  - first:
+      213: -6109359380025371563
+    second: MoreBlond_61
+  - first:
+      213: -3225910148287580559
+    second: MoreBlond_62
+  - first:
+      213: -4664160723906685431
+    second: MoreBlond_63
+  - first:
+      213: 4866212904904848945
+    second: MoreBlond_64
+  - first:
+      213: 8259733378365691821
+    second: MoreBlond_65
+  - first:
+      213: 6733426718171866754
+    second: MoreBlond_66
+  - first:
+      213: 3110310591281973485
+    second: MoreBlond_67
+  - first:
+      213: 6257970057345763026
+    second: MoreBlond_68
+  - first:
+      213: 982035303601736424
+    second: MoreBlond_69
+  - first:
+      213: 5356591316896692295
+    second: MoreBlond_70
+  - first:
+      213: 8744577355690677808
+    second: MoreBlond_71
+  - first:
+      213: 5511311882299514645
+    second: MoreBlond_72
+  - first:
+      213: 4196908402753587654
+    second: MoreBlond_73
+  - first:
+      213: 6308216353749943188
+    second: MoreBlond_74
+  - first:
+      213: 874789259695485065
+    second: MoreBlond_75
+  - first:
+      213: -8617276325684623436
+    second: MoreBlond_76
+  - first:
+      213: -5164290954369389321
+    second: MoreBlond_77
+  - first:
+      213: -4131474224748461847
+    second: MoreBlond_78
+  - first:
+      213: -1254984432083506029
+    second: MoreBlond_79
+  - first:
+      213: 3802026735090462889
+    second: MoreBlond_80
+  - first:
+      213: 170633929867364547
+    second: MoreBlond_81
+  - first:
+      213: -5351350622438222862
+    second: MoreBlond_82
+  - first:
+      213: 382980406932814472
+    second: MoreBlond_83
+  - first:
+      213: 2482347336363700635
+    second: MoreBlond_84
+  - first:
+      213: -607428599029231966
+    second: MoreBlond_85
+  - first:
+      213: 4360418748637549630
+    second: MoreBlond_86
+  - first:
+      213: -17524187581305002
+    second: MoreBlond_87
+  - first:
+      213: 5661017708120658577
+    second: MoreBlond_88
+  - first:
+      213: -5413964148893163090
+    second: MoreBlond_89
+  - first:
+      213: 2510320948331500018
+    second: MoreBlond_90
+  - first:
+      213: -4920651943642714326
+    second: MoreBlond_91
+  - first:
+      213: 2526649217584101693
+    second: MoreBlond_92
+  - first:
+      213: -1053358048588445831
+    second: MoreBlond_93
+  - first:
+      213: 7421243133284632283
+    second: MoreBlond_94
+  - first:
+      213: -4480392890897619682
+    second: MoreBlond_95
+  - first:
+      213: -6889844103252288858
+    second: MoreBlond_96
+  - first:
+      213: 1809110845255290279
+    second: MoreBlond_97
+  - first:
+      213: 2099400266010232809
+    second: MoreBlond_98
+  - first:
+      213: 2989790380782185833
+    second: MoreBlond_99
+  - first:
+      213: -3571289824512397416
+    second: MoreBlond_100
+  - first:
+      213: 4585824076084812191
+    second: MoreBlond_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MoreBlond_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 575
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10515371ff076b2f0800000000000000
+      internalID: -957453629861325567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 575
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acebf9930be7d170800000000000000
+      internalID: 8203283646979501223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 575
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a472b8fbce90259c0800000000000000
+      internalID: -3940075811565263030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 575
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d283bd0d71a1aa20800000000000000
+      internalID: 3071913979316241110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 575
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f790c7acd5ef4c300800000000000000
+      internalID: 271621556331612543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 575
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08d5d2cbae6fdd40800000000000000
+      internalID: 5611325344714184718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 511
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f43e7d597eda6d0800000000000000
+      internalID: -2977469147863888126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 511
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07077c50d9d35050800000000000000
+      internalID: 5788209435028948747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 511
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ed4377c16fb7040800000000000000
+      internalID: 4646578042682269256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 511
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58307acb059191c00800000000000000
+      internalID: 871755837426041733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 511
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1e47a12a415a130800000000000000
+      internalID: 3577288165476852202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_11
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 511
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2c668db0055a530800000000000000
+      internalID: 3865583866972914401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 511
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fa53c88b373b2f0800000000000000
+      internalID: -958295059236278471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_13
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 511
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c75844de3c69b9f0800000000000000
+      internalID: -452211270468741176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_14
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 511
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e68a43d518d1eb0800000000000000
+      internalID: -4747496194863239543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_15
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 511
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a54cfb3e605ea000800000000000000
+      internalID: 49065080330667433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_16
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 511
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d749a0e31b51d2e50800000000000000
+      internalID: 6786104064511480957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_17
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 511
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e929e6c68ffb4d0800000000000000
+      internalID: -3116499272521834954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 447
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fa1bd3e3bf92290800000000000000
+      internalID: -7914518625385337027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 447
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7c0a23e5f2835b0800000000000000
+      internalID: -5388504872525969426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 447
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a575cba9ba8c42370800000000000000
+      internalID: 8296977052884293466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_21
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 447
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6ca667194b6f070800000000000000
+      internalID: 8139891913368716998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 447
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fe6fc911371db60800000000000000
+      internalID: 7769117351675883297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_23
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 447
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b647271b326abf0800000000000000
+      internalID: -313523879019254882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_24
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 447
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e623869a0f04cbae0800000000000000
+      internalID: -1532278370834304402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_25
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 447
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4460a0b644cb87f0800000000000000
+      internalID: -609177516688513973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6839e89dbfde8f3b0800000000000000
+      internalID: -5478367280753634426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_27
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283d971340ed33240800000000000000
+      internalID: 4770400539906790274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b768a9e8d5e8680800000000000000
+      internalID: -8750954158875051152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bb28257d8176100800000000000000
+      internalID: 101076829720460069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_30
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4b3f97d91e2ee40800000000000000
+      internalID: 5684353746167117001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_31
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac5d3611cd4d1740800000000000000
+      internalID: 5124337442714639520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_32
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1943f66f924140cb0800000000000000
+      internalID: -4898768324211559279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_33
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 402
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231baaa477d4f97f0800000000000000
+      internalID: -603678650295209678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_34
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5293b5457585a5d60800000000000000
+      internalID: 7879707630138767653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_35
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 402
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17bf1776893f63e0800000000000000
+      internalID: -2058363254998059237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_36
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc52fdabf38b2ba0800000000000000
+      internalID: -6112646952246944576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_37
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a8c0342f9488f00800000000000000
+      internalID: 1119225812257376781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_38
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3a847b93d099310800000000000000
+      internalID: 1412174499696649132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_39
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904569e0a8684f660800000000000000
+      internalID: 7418702413694391305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 319
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0445f165c61ed4600800000000000000
+      internalID: 454266992851899456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_41
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 319
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbf83c00bbec7100800000000000000
+      internalID: 107219632501881806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_42
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 319
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601de3b9527e80410800000000000000
+      internalID: 1443657829276635398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_43
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 319
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4bcbd3b88258a80800000000000000
+      internalID: -8465315346071636825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_44
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 319
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e846927573d88b0800000000000000
+      internalID: -5148397951518470638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_45
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 319
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02246d412a683d590800000000000000
+      internalID: -7650623311279930848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_46
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58ece98c49423dc0800000000000000
+      internalID: -3660782954018445221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_47
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a913d379f69ae30800000000000000
+      internalID: 4515262796773038723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_48
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799ff2946947a43a0800000000000000
+      internalID: -6680398908428912233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_49
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 256
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082f2f2d2d8328cb0800000000000000
+      internalID: -4863262169473289600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 256
+        width: 52
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3de0724026e2960800000000000000
+      internalID: 7579102992885797850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_51
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 255
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a99639b1e6242c10800000000000000
+      internalID: 2027788483140426151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_52
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 255
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a1f4b989bafa8d0800000000000000
+      internalID: -2832856968663721388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_53
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 255
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d3dfbe6753a3a90800000000000000
+      internalID: -7333490258337776268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_54
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 255
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6166e3b58b88f80800000000000000
+      internalID: -8104024827424794882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_55
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 191
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec95ad4f54e174d0800000000000000
+      internalID: -3138476367324799766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_56
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 191
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66fc78e77be1f1710800000000000000
+      internalID: 1666084160601050982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_57
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 191
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43fbe78cf115fb160800000000000000
+      internalID: 7043437539180330804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_58
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 191
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e0f73641055f590800000000000000
+      internalID: -7641113144265339353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_59
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 191
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d71524a54e83d00800000000000000
+      internalID: 952762397499686276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_60
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 191
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3120f9dcc7849f370800000000000000
+      internalID: 8356790284425560595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_61
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 191
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554136c3302373ba0800000000000000
+      internalID: -6109359380025371563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_62
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 191
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176bdfdcfc34b33d0800000000000000
+      internalID: -3225910148287580559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_63
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 191
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906963c8882954fb0800000000000000
+      internalID: -4664160723906685431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_64
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 191
+        width: 53
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136764ecad2488340800000000000000
+      internalID: 4866212904904848945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_65
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 191
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da79ce4eeb770a270800000000000000
+      internalID: 8259733378365691821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_66
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28622c9ccefe17d50800000000000000
+      internalID: 6733426718171866754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_67
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 127
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de84f7ee00b0a2b20800000000000000
+      internalID: 3110310591281973485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_68
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6002b6c96c8d650800000000000000
+      internalID: 6257970057345763026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_69
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea0314d7e3e0ad00800000000000000
+      internalID: 982035303601736424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_70
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 127
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748b19a1c6f665a40800000000000000
+      internalID: 5356591316896692295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_71
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0361ed436cafa5970800000000000000
+      internalID: 8744577355690677808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_72
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f1adee4fc1c7c40800000000000000
+      internalID: 5511311882299514645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_73
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9caf4c4f96e3a30800000000000000
+      internalID: 4196908402753587654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_74
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4934393f9594b8750800000000000000
+      internalID: 6308216353749943188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_75
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980f9756230e32c00800000000000000
+      internalID: 874789259695485065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_76
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b74f2c86d8496880800000000000000
+      internalID: -8617276325684623436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_77
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fcac041db0c458b0800000000000000
+      internalID: -5164290954369389321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_78
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e08f23051e0aa6c0800000000000000
+      internalID: -4131474224748461847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_79
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c6407ee46659ee0800000000000000
+      internalID: -1254984432083506029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_80
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 127
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0fa9beb2383c430800000000000000
+      internalID: 3802026735090462889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_81
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 127
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c88f58b7a63e5200800000000000000
+      internalID: 170633929867364547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_82
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 63
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3110926fe2cb5b0800000000000000
+      internalID: -5351350622438222862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_83
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a3a27a6ae905500800000000000000
+      internalID: 382980406932814472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_84
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 63
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91781910c1137220800000000000000
+      internalID: 2482347336363700635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_85
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 63
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae037058eaf197f0800000000000000
+      internalID: -607428599029231966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_86
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 64
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e349e78dfb1538c30800000000000000
+      internalID: 4360418748637549630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_87
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 66
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f2d3028ddb1cff0800000000000000
+      internalID: -17524187581305002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_88
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 66
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1925ab7bc99ff8e40800000000000000
+      internalID: 5661017708120658577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_89
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 65
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1e58e7a4cbdd4b0800000000000000
+      internalID: -5413964148893163090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_90
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 64
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1558d2a9376d220800000000000000
+      internalID: 2510320948331500018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_91
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f27d3c02556bbb0800000000000000
+      internalID: -4920651943642714326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d397e1e9316701320800000000000000
+      internalID: 2526649217584101693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_93
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977469c8f68b161f0800000000000000
+      internalID: -1053358048588445831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_94
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6cc3f6f4d8df660800000000000000
+      internalID: 7421243133284632283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_95
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15acd3676272d1c0800000000000000
+      internalID: -4480392890897619682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_96
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aad3d3ca4b5260a0800000000000000
+      internalID: -6889844103252288858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_97
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad8fba8ab04b1910800000000000000
+      internalID: 1809110845255290279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_98
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e786e83b61922d10800000000000000
+      internalID: 2099400266010232809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_99
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96de66fb28edd7920800000000000000
+      internalID: 2989790380782185833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_100
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fa8fb73da307ec0800000000000000
+      internalID: -3571289824512397416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreBlond_101
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99187153be14af30800000000000000
+      internalID: 4585824076084812191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MoreBlond_0: -957453629861325567
+      MoreBlond_1: 8203283646979501223
+      MoreBlond_10: 3577288165476852202
+      MoreBlond_100: -3571289824512397416
+      MoreBlond_101: 4585824076084812191
+      MoreBlond_11: 3865583866972914401
+      MoreBlond_12: -958295059236278471
+      MoreBlond_13: -452211270468741176
+      MoreBlond_14: -4747496194863239543
+      MoreBlond_15: 49065080330667433
+      MoreBlond_16: 6786104064511480957
+      MoreBlond_17: -3116499272521834954
+      MoreBlond_18: -7914518625385337027
+      MoreBlond_19: -5388504872525969426
+      MoreBlond_2: -3940075811565263030
+      MoreBlond_20: 8296977052884293466
+      MoreBlond_21: 8139891913368716998
+      MoreBlond_22: 7769117351675883297
+      MoreBlond_23: -313523879019254882
+      MoreBlond_24: -1532278370834304402
+      MoreBlond_25: -609177516688513973
+      MoreBlond_26: -5478367280753634426
+      MoreBlond_27: 4770400539906790274
+      MoreBlond_28: -8750954158875051152
+      MoreBlond_29: 101076829720460069
+      MoreBlond_3: 3071913979316241110
+      MoreBlond_30: 5684353746167117001
+      MoreBlond_31: 5124337442714639520
+      MoreBlond_32: -4898768324211559279
+      MoreBlond_33: -603678650295209678
+      MoreBlond_34: 7879707630138767653
+      MoreBlond_35: -2058363254998059237
+      MoreBlond_36: -6112646952246944576
+      MoreBlond_37: 1119225812257376781
+      MoreBlond_38: 1412174499696649132
+      MoreBlond_39: 7418702413694391305
+      MoreBlond_4: 271621556331612543
+      MoreBlond_40: 454266992851899456
+      MoreBlond_41: 107219632501881806
+      MoreBlond_42: 1443657829276635398
+      MoreBlond_43: -8465315346071636825
+      MoreBlond_44: -5148397951518470638
+      MoreBlond_45: -7650623311279930848
+      MoreBlond_46: -3660782954018445221
+      MoreBlond_47: 4515262796773038723
+      MoreBlond_48: -6680398908428912233
+      MoreBlond_49: -4863262169473289600
+      MoreBlond_5: 5611325344714184718
+      MoreBlond_50: 7579102992885797850
+      MoreBlond_51: 2027788483140426151
+      MoreBlond_52: -2832856968663721388
+      MoreBlond_53: -7333490258337776268
+      MoreBlond_54: -8104024827424794882
+      MoreBlond_55: -3138476367324799766
+      MoreBlond_56: 1666084160601050982
+      MoreBlond_57: 7043437539180330804
+      MoreBlond_58: -7641113144265339353
+      MoreBlond_59: 952762397499686276
+      MoreBlond_6: -2977469147863888126
+      MoreBlond_60: 8356790284425560595
+      MoreBlond_61: -6109359380025371563
+      MoreBlond_62: -3225910148287580559
+      MoreBlond_63: -4664160723906685431
+      MoreBlond_64: 4866212904904848945
+      MoreBlond_65: 8259733378365691821
+      MoreBlond_66: 6733426718171866754
+      MoreBlond_67: 3110310591281973485
+      MoreBlond_68: 6257970057345763026
+      MoreBlond_69: 982035303601736424
+      MoreBlond_7: 5788209435028948747
+      MoreBlond_70: 5356591316896692295
+      MoreBlond_71: 8744577355690677808
+      MoreBlond_72: 5511311882299514645
+      MoreBlond_73: 4196908402753587654
+      MoreBlond_74: 6308216353749943188
+      MoreBlond_75: 874789259695485065
+      MoreBlond_76: -8617276325684623436
+      MoreBlond_77: -5164290954369389321
+      MoreBlond_78: -4131474224748461847
+      MoreBlond_79: -1254984432083506029
+      MoreBlond_8: 4646578042682269256
+      MoreBlond_80: 3802026735090462889
+      MoreBlond_81: 170633929867364547
+      MoreBlond_82: -5351350622438222862
+      MoreBlond_83: 382980406932814472
+      MoreBlond_84: 2482347336363700635
+      MoreBlond_85: -607428599029231966
+      MoreBlond_86: 4360418748637549630
+      MoreBlond_87: -17524187581305002
+      MoreBlond_88: 5661017708120658577
+      MoreBlond_89: -5413964148893163090
+      MoreBlond_9: 871755837426041733
+      MoreBlond_90: 2510320948331500018
+      MoreBlond_91: -4920651943642714326
+      MoreBlond_92: 2526649217584101693
+      MoreBlond_93: -1053358048588445831
+      MoreBlond_94: 7421243133284632283
+      MoreBlond_95: -4480392890897619682
+      MoreBlond_96: -6889844103252288858
+      MoreBlond_97: 1809110845255290279
+      MoreBlond_98: 2099400266010232809
+      MoreBlond_99: 2989790380782185833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

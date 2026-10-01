@@ -1,4 +1,4 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:game="GamblingSeriousGame.UI" editor-extension-mode="False">
   <Style src="../Themes/App.uss" />
   <Style src="../Themes/PetCreation.uss" />
   <ui:VisualElement name="app" class="app pet-customization">
@@ -9,25 +9,21 @@
           name="customization-scroll"
           mode="Vertical"
           horizontal-scroller-visibility="Hidden"
+          vertical-scroller-visibility="Hidden"
           class="page-scroll"
         >
+          <ui:Label text="YOUR COMPANION" class="profile-eyebrow" />
           <ui:Label
             name="pet-species"
             text="Your new companion"
             class="customization-subtitle"
           />
-          <ui:TextField
-            name="pet-name-input"
-            label="Pet name"
-            max-length="24"
-            class="pet-name-input"
+          <ui:Label
+            name="pet-description"
+            text="Choose an animal to get started."
+            class="customization-hint"
           />
-          <ui:VisualElement
-            name="pet-viewport"
-            class="pet-viewport"
-            focusable="true"
-            tooltip="Inspect: drag to pan and pinch to zoom. Draw: drag to paint your pet."
-          >
+          <ui:VisualElement name="pet-viewport" class="pet-viewport">
             <ui:Image
               name="pet-preview"
               class="pet-preview"
@@ -40,106 +36,52 @@
               picking-mode="Ignore"
             />
           </ui:VisualElement>
-          <ui:VisualElement class="customization-toolbar">
-            <ui:Button
-              name="inspect-mode"
-              text="Inspect"
-              class="customization-tool customization-tool--selected"
+          <ui:Button
+            name="toggle-animation"
+            tooltip="Pause preview"
+            class="text-button text-button--icon"
+          >
+            <game:DockIcon name="preview-playback-icon" kind="Pause" class="dock-icon" />
+            <ui:Label name="preview-playback-label" text="Pause preview" picking-mode="Ignore" />
+          </ui:Button>
+          <ui:VisualElement class="profile-section">
+            <ui:Label
+              text="01  Choose a breed or type"
+              class="profile-section-title"
             />
-            <ui:Button
-              name="draw-mode"
-              text="Draw"
-              class="customization-tool"
-            />
-            <ui:Button
-              name="erase-mode"
-              text="Erase"
-              class="customization-tool"
-            />
-          </ui:VisualElement>
-          <ui:Label
-            name="gesture-hint"
-            text="Drag to move. Pinch or use + / - to zoom."
-            class="customization-hint"
-          />
-          <ui:VisualElement class="customization-toolbar">
-            <ui:Button
-              name="zoom-out"
-              text="-"
-              tooltip="Zoom out"
-              class="customization-tool"
-            />
-            <ui:Button
-              name="reset-view"
-              text="Reset view"
-              class="customization-tool"
-            />
-            <ui:Button
-              name="zoom-in"
-              text="+"
-              tooltip="Zoom in"
-              class="customization-tool"
+            <ui:VisualElement name="breed-options" class="breed-options" />
+            <ui:Label
+              name="breed-description"
+              text="Find a companion that feels like you."
+              class="customization-hint"
             />
           </ui:VisualElement>
-          <ui:VisualElement name="paint-tools" class="paint-tools">
-            <ui:Label text="Brush colour" class="customization-field-label" />
-            <ui:VisualElement name="paint-palette" class="paint-palette">
+          <ui:VisualElement class="profile-section">
+            <ui:Label
+              text="02  Give them a name"
+              class="profile-section-title"
+            />
+            <ui:TextField
+              name="pet-name-input"
+              label="Pet name"
+              max-length="24"
+              class="pet-name-input"
+            />
+            <ui:VisualElement class="name-actions">
               <ui:Button
-                name="colour-green"
-                text="G"
-                tooltip="Green"
-                class="colour-swatch colour-swatch--green colour-swatch--selected"
+                name="suggest-name"
+                text="Suggest a name"
+                class="text-button"
               />
-              <ui:Button
-                name="colour-blue"
-                text="B"
-                tooltip="Blue"
-                class="colour-swatch colour-swatch--blue"
-              />
-              <ui:Button
-                name="colour-pink"
-                text="P"
-                tooltip="Pink"
-                class="colour-swatch colour-swatch--pink"
-              />
-              <ui:Button
-                name="colour-yellow"
-                text="Y"
-                tooltip="Yellow"
-                class="colour-swatch colour-swatch--yellow"
-              />
-              <ui:Button
-                name="colour-white"
-                text="W"
-                tooltip="White"
-                class="colour-swatch colour-swatch--white"
-              />
-              <ui:Button
-                name="colour-black"
-                text="K"
-                tooltip="Black"
-                class="colour-swatch colour-swatch--black"
-              />
+              <ui:Label name="name-count" text="0 / 24" class="name-count" />
             </ui:VisualElement>
-            <ui:Slider
-              name="brush-size"
-              label="Brush size"
-              low-value="2"
-              high-value="32"
-              value="12"
-              show-input-field="true"
-            />
           </ui:VisualElement>
-          <ui:VisualElement class="customization-toolbar">
-            <ui:Button
-              name="undo-paint"
-              text="Undo"
-              class="customization-tool"
-            />
-            <ui:Button
-              name="clear-paint"
-              text="Clear drawing"
-              class="customization-tool"
+          <ui:VisualElement class="profile-summary-box">
+            <ui:Label text="READY TO MEET" class="profile-eyebrow" />
+            <ui:Label
+              name="profile-summary"
+              text="Your companion details will appear here."
+              class="profile-summary"
             />
           </ui:VisualElement>
           <ui:Label
@@ -149,13 +91,13 @@
           />
           <ui:Button
             name="finish-pet"
-            text="Done"
+            text="Save companion"
             class="app-button button--primary customization-done"
           />
           <ui:Button
             name="back-to-selection"
-            text="Back to pets"
-            class="app-button button--text customization-back"
+            text="Back to animals"
+            class="text-button customization-back"
           />
         </ui:ScrollView>
       </ui:VisualElement>

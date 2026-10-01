@@ -6,7 +6,7 @@ are retained as references; they are not used by the migrated scene.
 
 ## Editing your UI
 
-For the name field, interactive 2D preview, and finger-painting screen, see
+For breed/type choices, animated sprite previews, naming and local profile saving, see
 [`Docs/UI/PetCustomization.md`](../../Docs/UI/PetCustomization.md).
 Its UXML is `Screens/PetCreation.uxml` and its prefab is `PetCreationUI.prefab`.
 
@@ -82,11 +82,12 @@ IDs must be unique and nonempty; names must be nonempty. Put the image at
 `Assets/Resources/Pets/Cat.png` for the example path above. The path is relative to
 a `Resources` folder, without the extension. Both Sprite and Texture2D imports
 are supported. An empty or missing image displays a placeholder box.
-The bundled example intentionally has empty image paths so you can add your own art.
+The bundled cat has a sliced idle animation; other types show placeholders until their art is added. See the companion setup guide for breed and sprite-sheet fields.
 Call `ReloadPets()` after replacing the source data to rebuild the list and reset selection.
 
 For a new button, add a Button in UI Builder and assign `app-button` plus
-`button--primary`, `button--secondary` or `button--text`. Or drag the corresponding
+`button--primary` or `button--secondary`. For a background-free green text button,
+use `class="text-button"` on its own. Or drag the corresponding
 UXML template into the hierarchy. For template text changes, use an attribute
 override on the template instance, or edit the template to update all instances.
 
@@ -117,7 +118,7 @@ layout, scrolling and input in Unity 6000.6.2f1.
 re-enabling the component, invalid/empty data, image fallback, and scrolling with
 12 animals at a 320 x 568 render size. It also renders the example at 390 x 844.
 Run it in an isolated Unity 6000.6.2f1 project with copies of `Assets/UI`,
-`PetCreationScreen.cs`, `PetCreationUI.prefab`, their metadata, and the Outfit fonts.
+the UI scripts, `PetSelectionUI.prefab`, their metadata, and the Outfit fonts.
 Place the validation script under `Assets/Editor` in that project and launch Unity
 with `-batchmode -projectPath <isolated-project> -executeMethod PetSelectionValidation.Run`.
 The current example preview is `Docs/UI/PetSelection.png`.

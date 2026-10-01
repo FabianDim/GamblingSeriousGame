@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -13,7 +14,11 @@ namespace GamblingSeriousGame.UI
         public string name;
         public string description;
         public string imageResourcePath;
-        public string previewImage;
+        public string previewImageFolder;
+        public float previewFramesPerSecond = 10;
+        public const string SavedAccessibilityKey = "Accessibility.Profile.v1";
+        public string[] suggestedNames;
+        public PetBreedDefinition[] breeds;
     }
 
     [Serializable]
@@ -33,6 +38,8 @@ namespace GamblingSeriousGame.UI
         [SerializeField] private TextAsset animalJson;
         [SerializeField] private VisualTreeAsset petCardTemplate;
         [SerializeField] private UnityEvent<string> onPetConfirmed = new UnityEvent<string>();
+        [SerializeField]
+        private UnityEvent onStopAnimation = new UnityEvent();
         [SerializeField] private UnityEvent onPrimaryAction = new UnityEvent();
         [SerializeField] private UnityEvent onLogIn = new UnityEvent();
 
@@ -43,7 +50,10 @@ namespace GamblingSeriousGame.UI
         private Button confirmButton;
         private VisualElement petContainer;
         private Button selectedCard;
+
+        private Button stopAnimation;
         private readonly List<Button> cards = new List<Button>();
+        private readonly List<PetSpritePreview> previews = new List<PetSpritePreview>();
         private IVisualElementScheduledItem safeAreaUpdate;
 
         public PetDefinition SelectedPet { get; private set; }
@@ -56,9 +66,13 @@ namespace GamblingSeriousGame.UI
             loginButton = root.Q<Button>("secondary-button");
             confirmButton = root.Q<Button>("ConfirmPetSelection");
             petContainer = root.Q<VisualElement>("companion-content");
+            stopAnimation = root.Q<Button>("StopAnimation");
             if (primaryButton != null) primaryButton.clicked += PrimaryAction;
             if (loginButton != null) loginButton.clicked += LogIn;
             if (confirmButton != null) confirmButton.clicked += ConfirmSelection;
+            if (stopAnimation != null)
+                stopAnimation.clicked += ToggleAnimations;
+
             ReloadPets();
             root.RegisterCallback<GeometryChangedEvent>(OnGeometryChanged);
             safeAreaUpdate = root.schedule.Execute(ApplySafeArea).Every(250);
@@ -70,6 +84,8 @@ namespace GamblingSeriousGame.UI
             if (primaryButton != null) primaryButton.clicked -= PrimaryAction;
             if (loginButton != null) loginButton.clicked -= LogIn;
             if (confirmButton != null) confirmButton.clicked -= ConfirmSelection;
+            if (stopAnimation != null)
+                stopAnimation.clicked -= ToggleAnimations;
             ClearPets();
             root?.UnregisterCallback<GeometryChangedEvent>(OnGeometryChanged);
             safeAreaUpdate?.Pause();
@@ -144,6 +160,8 @@ namespace GamblingSeriousGame.UI
             SelectedPet = null;
             selectedCard = null;
             cards.Clear();
+            foreach (var preview in previews) preview.Dispose();
+            previews.Clear();
             petContainer?.Clear();
             confirmButton?.SetEnabled(false);
         }
@@ -157,23 +175,11 @@ namespace GamblingSeriousGame.UI
 
         private void SetPetImage(Button card, PetDefinition pet)
         {
-            var anim = card.Q<Image>("pet-image");
-            anim.scaleMode = ScaleMode.ScaleToFit;
-            if (string.IsNullOrWhiteSpace(pet.previewImage))
-            {
-                return;
-            }
-            Sprite[] frames = Resources.LoadAll<Sprite>(pet.previewImage);
-            if (frames.Length == 0) return;
-            int frame = 0;
-            anim.sprite = frames[frame];
+            var preview = new PetSpritePreview(card.Q<Image>("pet-image"));
+            previews.Add(preview);
+            preview.Bind(pet.previewImageFolder, pet.imageResourcePath, pet.previewFramesPerSecond);
             card.Q<Label>("pet-image-placeholder").style.display =
-                anim.sprite != null || anim.image != null ? DisplayStyle.None : DisplayStyle.Flex;
-            anim.schedule.Execute(() =>
-            {
-                frame = (frame + 1) % frames.Length;
-                anim.sprite = frames[frame];
-            }).Every(100);
+                preview.HasImage ? DisplayStyle.None : DisplayStyle.Flex;
         }
 
         private void SelectPet(PetDefinition pet, Button card)
@@ -195,6 +201,34 @@ namespace GamblingSeriousGame.UI
             if (SelectedPet == null) return;
             onPetConfirmed.Invoke(SelectedPet.id);
             onPrimaryAction.Invoke();
+        }
+
+        private void ToggleAnimations()
+        {
+            if (previews.Any(preview => preview.animationPlaying))
+                StopAnimations();
+            else
+                PlayAnimations();
+        }
+
+        private void StopAnimations()
+        {
+            foreach (var preview in previews)
+            {
+                if (preview.animationPlaying)
+                    preview.SetPlaying(false);
+            }
+            stopAnimation.text = "Play The Animations";
+
+        }
+        private void PlayAnimations()
+        {
+            foreach (var preview in previews)
+            {
+                if (!preview.animationPlaying)
+                    preview.SetPlaying(true);
+            }
+            stopAnimation.text = "Stop The Animations";
         }
 
         private void ApplySafeArea()

@@ -27,7 +27,13 @@
           class="page-scroll"
         >
           <ui:VisualElement name="companion-content" />
+          <ui:Button
+            name="StopAnimation"
+            text="Stop The Animations"
+            class="text-button button--accessibility button-template"
+          />
           <ui:VisualElement name="actions" class="companion-actions" />
+
           <ui:Button
             name="ConfirmPetSelection"
             text="Confirm"

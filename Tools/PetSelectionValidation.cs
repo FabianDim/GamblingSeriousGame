@@ -44,7 +44,7 @@ public static class PetSelectionValidation
             UnityEngine.Object.DestroyImmediate(texture);
             AssetDatabase.Refresh();
             EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
-            PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/UI/PetCreationUI.prefab"));
+            PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/UI/PetSelectionUI.prefab"));
             EditorSceneManager.SaveScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene(), "Assets/Validation.unity");
             SessionState.SetBool(Running, true);
             EditorApplication.EnterPlaymode();

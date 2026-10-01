@@ -161,7 +161,8 @@
     margin-bottom: 24px;
 }
 
-.app-button {
+.app-button,
+.text-button {
     flex-shrink: 0;
     min-height: 72px;
     margin: 0;
@@ -215,19 +216,35 @@
     background-color: var(--app-outline);
 }
 
-.button--text {
+.unity-button.text-button,
+.unity-button.text-button:hover,
+.unity-button.text-button:active,
+.unity-button.text-button:focus,
+.unity-button.text-button:disabled {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--app-text);
+    background-image: none;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.text-button--icon { flex-direction: row; align-items: center; justify-content: center; }
+.text-button--icon > .dock-icon { margin-right: 6px; }
+.text-button--icon > Label { margin: 0; padding: 0; }
+
+.unity-button.text-button {
+    min-height: 48px;
+    padding: 4px 8px;
+    color: var(--app-primary);
+    font-size: 14px;
     -unity-font: url("/Assets/TextMesh Pro/Resources/Fonts & Materials/Outfit-Bold.ttf");
 }
 
-.button--text:hover {
-    background-color: #131B28;
-    color: var(--app-primary);
+.unity-button.text-button:focus {
+    color: var(--app-focus);
 }
 
-.button--text:active {
-    background-color: var(--app-outline);
+.unity-button.text-button:disabled {
+    color: var(--app-text-muted);
+    opacity: 0.65;
 }
 
 .app-button:focus {
@@ -239,6 +256,12 @@
     border-color: var(--app-outline);
     color: #778396;
     opacity: 0.65;
+}
+
+/* Layout only; text-button appearance is shared above. */
+.button--accessibility {
+    align-self: flex-start;
+    flex-grow: 0;
 }
 
 /* Used only by the editable style reference document. */
@@ -268,3 +291,30 @@
 .swatch--background { background-color: var(--app-background); }
 .swatch--primary { background-color: var(--app-primary); color: var(--app-background); }
 .swatch--outline { background-color: var(--app-outline); }
+
+/* Bottom navigation: existing page and button styles supply colours and states. */
+.dock-container { flex-shrink: 0; }
+.bottom-dock {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    min-height: 80px;
+    padding: 12px 4px;
+    border-radius: 28px;
+    background-color: var(--app-outline);
+}
+.app-button.dock-button {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 16px;
+}
+.dock-icon { width: 22px; height: 22px; flex-shrink: 0; }
+.dock-button.text-button { color: var(--app-text); }
+.dock-button--selected.text-button { color: var(--app-primary); }
+.dock-button--selected.button--primary { border-color: var(--app-focus); }

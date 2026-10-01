@@ -5,6 +5,16 @@ namespace GamblingSeriousGame.Editor
 {
     public static class UIToolkitMenu
     {
+        [MenuItem("Game/UI/Open Base Page Scene")]
+        public static void OpenBasePage()
+        {
+            if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+                EditorSceneManager.OpenScene("Assets/Scenes/BasePageUIToolkit.unity");
+        }
+
+        [MenuItem("Game/UI/Edit Base Page")]
+        public static void EditBasePage() => OpenAsset("Assets/UI/Screens/BasePage.uxml");
+
         [MenuItem("Game/UI/Open UI Toolkit Scene")]
         public static void OpenScene()
         {
