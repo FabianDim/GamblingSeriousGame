@@ -9,7 +9,7 @@ Assets folder. The existing scene and controller GUIDs remain intact.
 - `Assets/UI/Screens/PetCreation.uxml`: setup form, editable in UI Builder via
   **Game > UI > Edit Pet Creation Screen**.
 - `Assets/UI/Themes/PetCreation.uss`: preview, breed buttons, name form and summary.
-- `Assets/UI/Animals.example.json`: animals, breed/type options, descriptions,
+- `Assets/Resources/Pets/Animals.json`: animals, breed/type options, descriptions,
   suggested names and sprite paths. Both screens should use the same catalog.
 - `PetCreationScreen`: the animal selection controller (historical class name).
 - `PetCustomizationScreen`: the breed/name setup controller.
@@ -64,7 +64,7 @@ Put an idle sheet under `Assets/Resources`, import it as **Sprite (2D and UI)**,
 set **Sprite Mode: Multiple**, and slice its frames in Sprite Editor. Set
 `previewImage` to its Resources-relative path, without extension. Use one animation
 per sheet: all slices play left-to-right, then top-to-bottom, ordered by their source
-rectangles (not lexical frame names). FPS defaults to 10 and is bounded to 1–30.
+rectangles (not lexical frame names). FPS defaults to 10 and is bounded to 1ï¿½30.
 For pixel art use Point filtering and an appropriate compression setting.
 
 `PetSpritePreview` displays the imported sprites directly; no editable texture copy,

@@ -18,6 +18,12 @@ saves without the field). The catalog at
 set `backgroundId` before saving; to change it during gameplay, set
 `manager.PetInfo.backgroundId` before calling `SavePet`.
 
+`GameStateManager` also loads the background catalog and selected texture automatically,
+exposing `Background` (the resolved definition) and `BackgroundImage` (a `Texture2D`).
+It uses background 1 when there is no saved pet or the selected background cannot be loaded.
+`Background.id` identifies the image actually loaded when a fallback is used; `BackgroundId`
+remains the saved selection. Call `LoadBackground()` after changing the selection during gameplay.
+
 PlayerPrefs still records the latest selected companion under `Companion.Profile.v1`.
 `GameStateManager.LoadSavedPet()` loads that companion's stats into `PetInfo` and exposes
 its UUID as `PetUID`. Previous PlayerPrefs-only saves are added to the file on load.

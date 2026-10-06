@@ -13,7 +13,7 @@ public static class PetPreviewValidation
         try
         {
             var catalog = JsonUtility.FromJson<PetCatalog>(
-                AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/UI/Animals.example.json").text);
+                AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/Resources/Pets/Animals.json").text);
             var image = new Image();
             using (var preview = new PetSpritePreview(image))
             {

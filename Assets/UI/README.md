@@ -53,7 +53,7 @@ The component works with either screen UXML as long as it contains
   Each card is a Button containing an image box, name, description, and selection label.
   Its appearance is controlled by the `.pet-card` rules in `Themes/App.uss`.
 - The `PetSelectionUI` prefab already has **Animal Json** set to
-  `Assets/UI/Animals.example.json` and **Pet Card Template** set to `PetCard.uxml`.
+  `Assets/Resources/Pets/Animals.json` and **Pet Card Template** set to `PetCard.uxml`.
   Replace the example JSON with your own TextAsset in the Inspector.
 - Cards are generated in Play mode, not in the UI Builder screen preview.
 - Click or tap a card, or focus it with Tab and submit it with the keyboard.
