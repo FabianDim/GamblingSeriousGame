@@ -18,9 +18,12 @@ namespace GamblingSeriousGame.UI
     [Serializable]
     public sealed class PetProfile
     {
+        // Unity does not serialize System.Guid fields; store the identifier as text instead.
+        public string uniquePlayerPetID;
         public string animalId;
         public string breedId;
         public string petName;
+        public int backgroundId = 1;
     }
 
     public static class PetProfileRules

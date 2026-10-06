@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using GamblingSeriousGame.Data;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -17,12 +18,20 @@ namespace GamblingSeriousGame.UI
         [SerializeField] private UnityEvent<PetProfile> onProfileCreated = new UnityEvent<PetProfile>();
         [SerializeField] private UnityEvent onBackRequested = new UnityEvent();
 
-        private sealed class Draft { public string name = ""; public string breedId; public bool saved; }
+        private sealed class Draft
+        {
+            public Guid playerPetUID = Guid.NewGuid();
+            public string name = "";
+            public string breedId;
+            public int backgroundId = 1;
+            public bool saved;
+        }
         private readonly Dictionary<string, Draft> drafts = new Dictionary<string, Draft>(StringComparer.Ordinal);
         private readonly List<Button> breedButtons = new List<Button>();
         private List<PetBreedDefinition> breeds = new List<PetBreedDefinition>();
         private PetDefinition pet;
         private PetBreedDefinition breed;
+
         private Draft draft;
         private VisualElement root, breedList;
         private TextField nameInput;
@@ -38,9 +47,11 @@ namespace GamblingSeriousGame.UI
         public string PetName => draft?.name ?? string.Empty;
         public PetProfile CurrentProfile => pet == null || breed == null ? null : new PetProfile
         {
+            uniquePlayerPetID = draft.playerPetUID.ToString(),
             animalId = pet.id,
             breedId = breed.id,
-            petName = PetName.Trim()
+            petName = PetName.Trim(),
+            backgroundId = draft.backgroundId
         };
 
         /// <summary>Call before opening. Each animal keeps its own draft for this session.</summary>
@@ -82,6 +93,9 @@ namespace GamblingSeriousGame.UI
                     !breeds.Exists(entry => entry.id == saved.breedId)) return;
                 draft.name = saved.petName;
                 draft.breedId = saved.breedId;
+                draft.backgroundId = saved.backgroundId > 0 ? saved.backgroundId : 1;
+                if (Guid.TryParse(saved.uniquePlayerPetID, out var savedUID) && savedUID != Guid.Empty)
+                    draft.playerPetUID = savedUID;
                 // Restored profiles can be confirmed again in a new session.
             }
             catch (ArgumentException) { /* A damaged local save must not block creation. */ }
@@ -224,6 +238,7 @@ namespace GamblingSeriousGame.UI
             var profile = CurrentProfile;
             try
             {
+                PetSaveStore.SaveProfile(profile);
                 PlayerPrefs.SetString(SavedProfileKey, JsonUtility.ToJson(profile));
                 PlayerPrefs.Save();
             }
@@ -233,7 +248,7 @@ namespace GamblingSeriousGame.UI
                 Debug.LogWarning("Companion save failed: " + exception.Message, this);
                 return;
             }
-            // This store holds one latest companion, so other drafts can be saved again.
+            // PlayerPrefs selects the latest companion; pets.json retains all saved pets.
             foreach (var otherDraft in drafts.Values) otherDraft.saved = false;
             draft.saved = true;
             UpdateControls();

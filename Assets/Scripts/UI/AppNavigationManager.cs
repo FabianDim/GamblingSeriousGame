@@ -6,6 +6,7 @@ public class AppNavigationManager : MonoBehaviour
 {
     [SerializeField] private GameObject petSelectionScreen;
     [SerializeField] private GameObject petCreationScreen;
+    [SerializeField] private GameObject GamePlayScreen;
 
     List<GameObject> mostRecentPages = new List<GameObject>();
 
@@ -26,6 +27,18 @@ public class AppNavigationManager : MonoBehaviour
         petCreationScreen.GetComponent<PetCustomizationScreen>()?.SetPet(petId);
         petSelectionScreen.SetActive(false);
         petCreationScreen.SetActive(true);
+    }
+
+    public void ConfirmPetCustomisation()
+    {
+        if (GamePlayScreen == null || petCreationScreen == null)
+        {
+            Debug.LogError("Assign the gameplay screen.", this);
+            return;
+        }
+
+        GamePlayScreen.SetActive(true);
+        petCreationScreen.SetActive(false);
     }
 
     public void BackButton()

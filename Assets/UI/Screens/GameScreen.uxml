@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+  <ui:Template name="BasePage" src="BasePage.uxml" />
+  <Style src="../Themes/GameScreen.uss" />
+  <ui:Instance template="BasePage" name="game-screen" class="game-screen" />
+</ui:UXML>
