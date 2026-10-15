@@ -1,0 +1,2797 @@
+fileFormatVersion: 2
+guid: 61d0757a899ba2c419d30f4ef69d0151
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5568536430718112822
+    second: RubyOnePage_0
+  - first:
+      213: -438896902216101166
+    second: RubyOnePage_1
+  - first:
+      213: -8848397933102417998
+    second: RubyOnePage_2
+  - first:
+      213: -3317896413318552555
+    second: RubyOnePage_3
+  - first:
+      213: -5710829745525447776
+    second: RubyOnePage_4
+  - first:
+      213: 6887002474518752590
+    second: RubyOnePage_5
+  - first:
+      213: 5491083148046339052
+    second: RubyOnePage_6
+  - first:
+      213: -6985319202690365236
+    second: RubyOnePage_7
+  - first:
+      213: 2345404216248840187
+    second: RubyOnePage_8
+  - first:
+      213: 3793511061953227274
+    second: RubyOnePage_9
+  - first:
+      213: -351015154157067713
+    second: RubyOnePage_10
+  - first:
+      213: -8699026996312194398
+    second: RubyOnePage_11
+  - first:
+      213: 3777269452353703661
+    second: RubyOnePage_12
+  - first:
+      213: -1451518324648454
+    second: RubyOnePage_13
+  - first:
+      213: 2780646487504612797
+    second: RubyOnePage_14
+  - first:
+      213: -82419907232508799
+    second: RubyOnePage_15
+  - first:
+      213: 2526229172871659538
+    second: RubyOnePage_16
+  - first:
+      213: -7918185825581271591
+    second: RubyOnePage_17
+  - first:
+      213: -1472105326742229545
+    second: RubyOnePage_18
+  - first:
+      213: -4505173065393885491
+    second: RubyOnePage_19
+  - first:
+      213: 9168633832900831494
+    second: RubyOnePage_20
+  - first:
+      213: -5997422685757229792
+    second: RubyOnePage_21
+  - first:
+      213: -3334841045483126362
+    second: RubyOnePage_22
+  - first:
+      213: 3335620121551197735
+    second: RubyOnePage_23
+  - first:
+      213: 3533012272173668256
+    second: RubyOnePage_24
+  - first:
+      213: 6687788382613883971
+    second: RubyOnePage_25
+  - first:
+      213: 3233935233751109929
+    second: RubyOnePage_26
+  - first:
+      213: 3787199400504918991
+    second: RubyOnePage_27
+  - first:
+      213: -3116308283900092637
+    second: RubyOnePage_28
+  - first:
+      213: -9212502342260205467
+    second: RubyOnePage_29
+  - first:
+      213: -7513864579295156733
+    second: RubyOnePage_30
+  - first:
+      213: -3904807703358707259
+    second: RubyOnePage_31
+  - first:
+      213: 7177834964045358612
+    second: RubyOnePage_32
+  - first:
+      213: 1327821163918309621
+    second: RubyOnePage_33
+  - first:
+      213: -5143655555197715638
+    second: RubyOnePage_34
+  - first:
+      213: 3440693998637382464
+    second: RubyOnePage_35
+  - first:
+      213: -7309098310493089677
+    second: RubyOnePage_36
+  - first:
+      213: -8176235366865464912
+    second: RubyOnePage_37
+  - first:
+      213: 8786463226540146462
+    second: RubyOnePage_38
+  - first:
+      213: 8938111696942058620
+    second: RubyOnePage_39
+  - first:
+      213: 4542131598480202613
+    second: RubyOnePage_40
+  - first:
+      213: -5272999163897041691
+    second: RubyOnePage_41
+  - first:
+      213: -417869885813946305
+    second: RubyOnePage_42
+  - first:
+      213: 8086874806785314828
+    second: RubyOnePage_43
+  - first:
+      213: 7331159058420472312
+    second: RubyOnePage_44
+  - first:
+      213: -3816663728041498042
+    second: RubyOnePage_45
+  - first:
+      213: 7268305523316483878
+    second: RubyOnePage_46
+  - first:
+      213: -2330499087053824675
+    second: RubyOnePage_47
+  - first:
+      213: 7879965588283370458
+    second: RubyOnePage_48
+  - first:
+      213: 7381514576859134855
+    second: RubyOnePage_49
+  - first:
+      213: -5916700868614485606
+    second: RubyOnePage_50
+  - first:
+      213: -3481980915017363533
+    second: RubyOnePage_51
+  - first:
+      213: -8021049005914499123
+    second: RubyOnePage_52
+  - first:
+      213: -2985470330542864238
+    second: RubyOnePage_53
+  - first:
+      213: -1439831885949115084
+    second: RubyOnePage_54
+  - first:
+      213: -4622801284517810224
+    second: RubyOnePage_55
+  - first:
+      213: -567768067789432770
+    second: RubyOnePage_56
+  - first:
+      213: -5412202319936711178
+    second: RubyOnePage_57
+  - first:
+      213: -3558560389431532054
+    second: RubyOnePage_58
+  - first:
+      213: 384176045864983785
+    second: RubyOnePage_59
+  - first:
+      213: 9106250375843661233
+    second: RubyOnePage_60
+  - first:
+      213: -80739203860717796
+    second: RubyOnePage_61
+  - first:
+      213: 8532657328969408247
+    second: RubyOnePage_62
+  - first:
+      213: 6866119773730751904
+    second: RubyOnePage_63
+  - first:
+      213: 4434115276905684786
+    second: RubyOnePage_64
+  - first:
+      213: 774084473000533503
+    second: RubyOnePage_65
+  - first:
+      213: 5500049009933734326
+    second: RubyOnePage_66
+  - first:
+      213: 437357767617298845
+    second: RubyOnePage_67
+  - first:
+      213: 691356217644100582
+    second: RubyOnePage_68
+  - first:
+      213: 4132845350157189158
+    second: RubyOnePage_69
+  - first:
+      213: 3853511059903990170
+    second: RubyOnePage_70
+  - first:
+      213: -3085451605173238431
+    second: RubyOnePage_71
+  - first:
+      213: 6880066392426771631
+    second: RubyOnePage_72
+  - first:
+      213: 748792130862050323
+    second: RubyOnePage_73
+  - first:
+      213: -3739590742391753502
+    second: RubyOnePage_74
+  - first:
+      213: 2418037545099616268
+    second: RubyOnePage_75
+  - first:
+      213: -1812338827994621151
+    second: RubyOnePage_76
+  - first:
+      213: -1675838614705958831
+    second: RubyOnePage_77
+  - first:
+      213: -1322238264830877897
+    second: RubyOnePage_78
+  - first:
+      213: 965879404167603001
+    second: RubyOnePage_79
+  - first:
+      213: 6698334910567030363
+    second: RubyOnePage_80
+  - first:
+      213: 3351115464889484097
+    second: RubyOnePage_81
+  - first:
+      213: 6019747340889272844
+    second: RubyOnePage_82
+  - first:
+      213: -7293328997148827612
+    second: RubyOnePage_83
+  - first:
+      213: 6424054259157134068
+    second: RubyOnePage_84
+  - first:
+      213: -1295273108045747656
+    second: RubyOnePage_85
+  - first:
+      213: -6044113261282693050
+    second: RubyOnePage_86
+  - first:
+      213: 5270083007198597866
+    second: RubyOnePage_87
+  - first:
+      213: 4657378458880694910
+    second: RubyOnePage_88
+  - first:
+      213: 1871593595759000883
+    second: RubyOnePage_89
+  - first:
+      213: -8425149502384890042
+    second: RubyOnePage_90
+  - first:
+      213: 4923843023908141028
+    second: RubyOnePage_91
+  - first:
+      213: 5738145644548657990
+    second: RubyOnePage_92
+  - first:
+      213: -6925571076419405211
+    second: RubyOnePage_93
+  - first:
+      213: 4935714541813434272
+    second: RubyOnePage_94
+  - first:
+      213: 6797257761383663144
+    second: RubyOnePage_95
+  - first:
+      213: 5786012766095568658
+    second: RubyOnePage_96
+  - first:
+      213: -5804659241916357324
+    second: RubyOnePage_97
+  - first:
+      213: 6165649016996368690
+    second: RubyOnePage_98
+  - first:
+      213: 6147589370397186307
+    second: RubyOnePage_99
+  - first:
+      213: -7414024366966282182
+    second: RubyOnePage_100
+  - first:
+      213: 6582405064171200720
+    second: RubyOnePage_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RubyOnePage_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 575
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63456cf516a674d40800000000000000
+      internalID: 5568536430718112822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 575
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2d362c799b8e9f0800000000000000
+      internalID: -438896902216101166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 575
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7312ee5fc243580800000000000000
+      internalID: -8848397933102417998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 575
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514ea928ac674f1d0800000000000000
+      internalID: -3317896413318552555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 575
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3a83d8a9e0fb0b0800000000000000
+      internalID: -5710829745525447776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 575
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d2decf24c839f50800000000000000
+      internalID: 6887002474518752590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 511
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb8f67b70f343c40800000000000000
+      internalID: 5491083148046339052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 511
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc80de8e1392f0f90800000000000000
+      internalID: -6985319202690365236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 511
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff273c45bc8c8020800000000000000
+      internalID: 2345404216248840187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 511
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0aac33463245a430800000000000000
+      internalID: 3793511061953227274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 511
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3260b9b391f02bf0800000000000000
+      internalID: -351015154157067713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_11
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 511
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a247494909d64780800000000000000
+      internalID: -8699026996312194398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 511
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee0a78dd8e8b6430800000000000000
+      internalID: 3777269452353703661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_13
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 511
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5dfdd0ad7dafff0800000000000000
+      internalID: -1451518324648454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_14
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 511
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd66a57f37d69620800000000000000
+      internalID: 2780646487504612797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_15
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 511
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1845cf2f78f2bdef0800000000000000
+      internalID: -82419907232508799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_16
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 511
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2108e365c08fe0320800000000000000
+      internalID: 2526229172871659538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_17
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 511
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5f1b8a1f3fc1290800000000000000
+      internalID: -7918185825581271591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 447
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dda19f3108029be0800000000000000
+      internalID: -1472105326742229545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 447
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce2a8967f86a71c0800000000000000
+      internalID: -4505173065393885491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 447
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609aeadb4e78d3f70800000000000000
+      internalID: 9168633832900831494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_21
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 447
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025329fc7dfd4cca0800000000000000
+      internalID: -5997422685757229792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 447
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a10695ecb348b1d0800000000000000
+      internalID: -3334841045483126362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_23
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 447
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72654b2e3d08a4e20800000000000000
+      internalID: 3335620121551197735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_24
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 447
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7d10e51f7c70130800000000000000
+      internalID: 3533012272173668256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_25
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 447
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c4faeb91ccfcc50800000000000000
+      internalID: 6687788382613883971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921da5206fe31ec20800000000000000
+      internalID: 3233935233751109929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_27
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc30ba01ac5de8430800000000000000
+      internalID: 3787199400504918991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f178f6026a0c4d0800000000000000
+      internalID: -3116308283900092637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568502dfded962080800000000000000
+      internalID: -9212502342260205467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_30
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306e8bca9f369b790800000000000000
+      internalID: -7513864579295156733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_31
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9681515165fc9c0800000000000000
+      internalID: -3904807703358707259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_32
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4166d48bedacc9360800000000000000
+      internalID: 7177834964045358612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_33
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 402
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8b890405e5d6210800000000000000
+      internalID: 1327821163918309621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_34
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bb97956801e98b0800000000000000
+      internalID: -5143655555197715638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_35
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 402
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b799156fccfbf20800000000000000
+      internalID: 3440693998637382464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_36
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370d6a6dfcdd09a90800000000000000
+      internalID: -7309098310493089677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_37
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b19ffdd04d288e80800000000000000
+      internalID: -8176235366865464912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_38
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f35f970c9cfe970800000000000000
+      internalID: 8786463226540146462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_39
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ccef27b3d8a0c70800000000000000
+      internalID: 8938111696942058620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 319
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b5d72af94e80f30800000000000000
+      internalID: 4542131598480202613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_41
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 319
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec2cfea23b82d6b0800000000000000
+      internalID: -5272999163897041691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_42
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 319
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f380ab58d8d633af0800000000000000
+      internalID: -417869885813946305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_43
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 319
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009e796ac95a3070800000000000000
+      internalID: 8086874806785314828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_44
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 319
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f91a0d42528db560800000000000000
+      internalID: 7331159058420472312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_45
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 319
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ae7f69f8c780bc0800000000000000
+      internalID: -3816663728041498042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_46
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627e9444d553ed460800000000000000
+      internalID: 7268305523316483878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_47
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dd8c68d6768afd0800000000000000
+      internalID: -2330499087053824675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_48
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbaee3e3f24b5d60800000000000000
+      internalID: 7879965588283370458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_49
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 256
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b7e021668607660800000000000000
+      internalID: 7381514576859134855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 256
+        width: 52
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a990df378e7a3eda0800000000000000
+      internalID: -5916700868614485606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_51
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 255
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf43bd5ec48dafc0800000000000000
+      internalID: -3481980915017363533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_52
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 255
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7577c2d628fa090800000000000000
+      internalID: -8021049005914499123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_53
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 255
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29846845d8a7196d0800000000000000
+      internalID: -2985470330542864238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_54
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 255
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435e8bd3780b40ce0800000000000000
+      internalID: -1439831885949115084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_55
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 191
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfa81179b288dfb0800000000000000
+      internalID: -4622801284517810224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_56
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 191
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38d99453f1ee18f0800000000000000
+      internalID: -567768067789432770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_57
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 191
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f590a34aaef3e4b0800000000000000
+      internalID: -5412202319936711178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_58
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 191
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5682c0e247d9ec0800000000000000
+      internalID: -3558560389431532054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_59
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 191
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec1ff8041ed45500800000000000000
+      internalID: 384176045864983785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_60
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 191
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5cde74876ef5e70800000000000000
+      internalID: 9106250375843661233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_61
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 191
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f1f623f1821eef0800000000000000
+      internalID: -80739203860717796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_62
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 191
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7feda5bf1a61a6670800000000000000
+      internalID: 8532657328969408247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_63
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 191
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5c1825e8b594f50800000000000000
+      internalID: 6866119773730751904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_64
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 191
+        width: 53
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f9815f954298d30800000000000000
+      internalID: 4434115276905684786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_65
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 191
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd97571ab91eba00800000000000000
+      internalID: 774084473000533503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_66
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1d65c1f69145c40800000000000000
+      internalID: 5500049009933734326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_67
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 127
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91469a829ec11600800000000000000
+      internalID: 437357767617298845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_68
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb2fe521d0389900800000000000000
+      internalID: 691356217644100582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_69
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6208ebff2f0da5930800000000000000
+      internalID: 4132845350157189158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_70
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 127
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99cd9764eb6a7530800000000000000
+      internalID: 3853511059903990170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_71
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1658dfdcc164e25d0800000000000000
+      internalID: -3085451605173238431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_72
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa473b78ee7ea7f50800000000000000
+      internalID: 6880066392426771631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_73
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ce3aac97e346a00800000000000000
+      internalID: 748792130862050323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_74
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e47662780e4a1cc0800000000000000
+      internalID: -3739590742391753502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_75
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00683106589e8120800000000000000
+      internalID: 2418037545099616268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_76
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b9bb8207749d6e0800000000000000
+      internalID: -1812338827994621151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_77
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150919da8a93eb8e0800000000000000
+      internalID: -1675838614705958831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_78
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f935cbd4776ade0800000000000000
+      internalID: -1322238264830877897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_79
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933a64d533e776d00800000000000000
+      internalID: 965879404167603001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_80
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 127
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e12f2ac1445fc50800000000000000
+      internalID: 6698334910567030363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_81
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 127
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1434e06a2cd818e20800000000000000
+      internalID: 3351115464889484097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_82
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 63
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02be4300507a8350800000000000000
+      internalID: 6019747340889272844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_83
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42063e63be3e8ca90800000000000000
+      internalID: -7293328997148827612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_84
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 63
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa65e60053d62950800000000000000
+      internalID: 6424054259157134068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_85
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 63
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a21db88f3460ee0800000000000000
+      internalID: -1295273108045747656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_86
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 64
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640740f030ffe1ca0800000000000000
+      internalID: -6044113261282693050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_87
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 66
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae215eca298132940800000000000000
+      internalID: 5270083007198597866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_88
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 66
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ad322580552a040800000000000000
+      internalID: 4657378458880694910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_89
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 65
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d7c1f857c39f910800000000000000
+      internalID: 1871593595759000883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_90
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 64
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f1aca7a2bd31b80800000000000000
+      internalID: -8425149502384890042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_91
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e774d18421055440800000000000000
+      internalID: 4923843023908141028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64317cccf0df1af40800000000000000
+      internalID: 5738145644548657990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_93
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a3d4b9ccd63ef90800000000000000
+      internalID: -6925571076419405211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_94
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a70589a93e2f7440800000000000000
+      internalID: 4935714541813434272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_95
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8264a0aabe5b45e50800000000000000
+      internalID: 6797257761383663144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_96
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f600584fb0c4050800000000000000
+      internalID: 5786012766095568658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_97
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43523638c25b17fa0800000000000000
+      internalID: -5804659241916357324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_98
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2311ecb2d19c09550800000000000000
+      internalID: 6165649016996368690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_99
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309dd7706ff905550800000000000000
+      internalID: 6147589370397186307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_100
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3862e29e181c1990800000000000000
+      internalID: -7414024366966282182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubyOnePage_101
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d028a1e786695b50800000000000000
+      internalID: 6582405064171200720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RubyOnePage_0: 5568536430718112822
+      RubyOnePage_1: -438896902216101166
+      RubyOnePage_10: -351015154157067713
+      RubyOnePage_100: -7414024366966282182
+      RubyOnePage_101: 6582405064171200720
+      RubyOnePage_11: -8699026996312194398
+      RubyOnePage_12: 3777269452353703661
+      RubyOnePage_13: -1451518324648454
+      RubyOnePage_14: 2780646487504612797
+      RubyOnePage_15: -82419907232508799
+      RubyOnePage_16: 2526229172871659538
+      RubyOnePage_17: -7918185825581271591
+      RubyOnePage_18: -1472105326742229545
+      RubyOnePage_19: -4505173065393885491
+      RubyOnePage_2: -8848397933102417998
+      RubyOnePage_20: 9168633832900831494
+      RubyOnePage_21: -5997422685757229792
+      RubyOnePage_22: -3334841045483126362
+      RubyOnePage_23: 3335620121551197735
+      RubyOnePage_24: 3533012272173668256
+      RubyOnePage_25: 6687788382613883971
+      RubyOnePage_26: 3233935233751109929
+      RubyOnePage_27: 3787199400504918991
+      RubyOnePage_28: -3116308283900092637
+      RubyOnePage_29: -9212502342260205467
+      RubyOnePage_3: -3317896413318552555
+      RubyOnePage_30: -7513864579295156733
+      RubyOnePage_31: -3904807703358707259
+      RubyOnePage_32: 7177834964045358612
+      RubyOnePage_33: 1327821163918309621
+      RubyOnePage_34: -5143655555197715638
+      RubyOnePage_35: 3440693998637382464
+      RubyOnePage_36: -7309098310493089677
+      RubyOnePage_37: -8176235366865464912
+      RubyOnePage_38: 8786463226540146462
+      RubyOnePage_39: 8938111696942058620
+      RubyOnePage_4: -5710829745525447776
+      RubyOnePage_40: 4542131598480202613
+      RubyOnePage_41: -5272999163897041691
+      RubyOnePage_42: -417869885813946305
+      RubyOnePage_43: 8086874806785314828
+      RubyOnePage_44: 7331159058420472312
+      RubyOnePage_45: -3816663728041498042
+      RubyOnePage_46: 7268305523316483878
+      RubyOnePage_47: -2330499087053824675
+      RubyOnePage_48: 7879965588283370458
+      RubyOnePage_49: 7381514576859134855
+      RubyOnePage_5: 6887002474518752590
+      RubyOnePage_50: -5916700868614485606
+      RubyOnePage_51: -3481980915017363533
+      RubyOnePage_52: -8021049005914499123
+      RubyOnePage_53: -2985470330542864238
+      RubyOnePage_54: -1439831885949115084
+      RubyOnePage_55: -4622801284517810224
+      RubyOnePage_56: -567768067789432770
+      RubyOnePage_57: -5412202319936711178
+      RubyOnePage_58: -3558560389431532054
+      RubyOnePage_59: 384176045864983785
+      RubyOnePage_6: 5491083148046339052
+      RubyOnePage_60: 9106250375843661233
+      RubyOnePage_61: -80739203860717796
+      RubyOnePage_62: 8532657328969408247
+      RubyOnePage_63: 6866119773730751904
+      RubyOnePage_64: 4434115276905684786
+      RubyOnePage_65: 774084473000533503
+      RubyOnePage_66: 5500049009933734326
+      RubyOnePage_67: 437357767617298845
+      RubyOnePage_68: 691356217644100582
+      RubyOnePage_69: 4132845350157189158
+      RubyOnePage_7: -6985319202690365236
+      RubyOnePage_70: 3853511059903990170
+      RubyOnePage_71: -3085451605173238431
+      RubyOnePage_72: 6880066392426771631
+      RubyOnePage_73: 748792130862050323
+      RubyOnePage_74: -3739590742391753502
+      RubyOnePage_75: 2418037545099616268
+      RubyOnePage_76: -1812338827994621151
+      RubyOnePage_77: -1675838614705958831
+      RubyOnePage_78: -1322238264830877897
+      RubyOnePage_79: 965879404167603001
+      RubyOnePage_8: 2345404216248840187
+      RubyOnePage_80: 6698334910567030363
+      RubyOnePage_81: 3351115464889484097
+      RubyOnePage_82: 6019747340889272844
+      RubyOnePage_83: -7293328997148827612
+      RubyOnePage_84: 6424054259157134068
+      RubyOnePage_85: -1295273108045747656
+      RubyOnePage_86: -6044113261282693050
+      RubyOnePage_87: 5270083007198597866
+      RubyOnePage_88: 4657378458880694910
+      RubyOnePage_89: 1871593595759000883
+      RubyOnePage_9: 3793511061953227274
+      RubyOnePage_90: -8425149502384890042
+      RubyOnePage_91: 4923843023908141028
+      RubyOnePage_92: 5738145644548657990
+      RubyOnePage_93: -6925571076419405211
+      RubyOnePage_94: 4935714541813434272
+      RubyOnePage_95: 6797257761383663144
+      RubyOnePage_96: 5786012766095568658
+      RubyOnePage_97: -5804659241916357324
+      RubyOnePage_98: 6165649016996368690
+      RubyOnePage_99: 6147589370397186307
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

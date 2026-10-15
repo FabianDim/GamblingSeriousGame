@@ -1,0 +1,106 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:game="GamblingSeriousGame.UI" editor-extension-mode="False">
+  <Style src="../Themes/App.uss" />
+  <Style src="../Themes/PetCreation.uss" />
+  <ui:VisualElement name="app" class="app pet-customization">
+    <ui:VisualElement name="safe-area" class="safe-area">
+      <ui:VisualElement class="content-panel">
+        <ui:Label text="Make them yours" class="page-header" />
+        <ui:ScrollView
+          name="customization-scroll"
+          mode="Vertical"
+          horizontal-scroller-visibility="Hidden"
+          vertical-scroller-visibility="Hidden"
+          class="page-scroll"
+        >
+          <ui:Label text="YOUR COMPANION" class="profile-eyebrow" />
+          <ui:Label
+            name="pet-species"
+            text="Your new companion"
+            class="customization-subtitle"
+          />
+          <ui:Label
+            name="pet-description"
+            text="Choose an animal to get started."
+            class="customization-hint"
+          />
+          <ui:VisualElement name="pet-viewport" class="pet-viewport">
+            <ui:Image
+              name="pet-preview"
+              class="pet-preview"
+              picking-mode="Ignore"
+            />
+            <ui:Label
+              name="preview-placeholder"
+              text="Your pet will appear here"
+              class="preview-placeholder"
+              picking-mode="Ignore"
+            />
+          </ui:VisualElement>
+          <ui:Button
+            name="toggle-animation"
+            tooltip="Pause preview"
+            class="text-button text-button--icon"
+          >
+            <game:DockIcon name="preview-playback-icon" kind="Pause" class="dock-icon" />
+            <ui:Label name="preview-playback-label" text="Pause preview" picking-mode="Ignore" />
+          </ui:Button>
+          <ui:VisualElement class="profile-section">
+            <ui:Label
+              text="01  Choose a breed or type"
+              class="profile-section-title"
+            />
+            <ui:VisualElement name="breed-options" class="breed-options" />
+            <ui:Label
+              name="breed-description"
+              text="Find a companion that feels like you."
+              class="customization-hint"
+            />
+          </ui:VisualElement>
+          <ui:VisualElement class="profile-section">
+            <ui:Label
+              text="02  Give them a name"
+              class="profile-section-title"
+            />
+            <ui:TextField
+              name="pet-name-input"
+              label="Pet name"
+              max-length="24"
+              class="pet-name-input"
+            />
+            <ui:VisualElement class="name-actions">
+              <ui:Button
+                name="suggest-name"
+                text="Suggest a name"
+                class="text-button"
+              />
+              <ui:Label name="name-count" text="0 / 24" class="name-count" />
+            </ui:VisualElement>
+          </ui:VisualElement>
+          <ui:VisualElement class="profile-summary-box">
+            <ui:Label text="READY TO MEET" class="profile-eyebrow" />
+            <ui:Label
+              name="profile-summary"
+              text="Your companion details will appear here."
+              class="profile-summary"
+            />
+          </ui:VisualElement>
+          <ui:Label
+            name="customization-status"
+            text="Give your companion a name to continue."
+            class="customization-hint"
+          />
+          <ui:Button
+            name="finish-pet"
+            text="Save companion"
+            class="app-button button--primary customization-done"
+          />
+          <ui:Button
+            name="back-to-selection"
+            text="Back to animals"
+            class="text-button customization-back"
+          />
+        </ui:ScrollView>
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

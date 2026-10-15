@@ -1,0 +1,12 @@
+{
+  "ca86b038-5d43-4765-a23c-14d99d613aef": {
+    "animalId": "cat",
+    "breedId": "shorthair",
+    "petName": "Mochi",
+    "backgroundId": 1,
+    "level": 1,
+    "health": 100,
+    "maxHealth": 100,
+    "experience": 0
+  }
+}

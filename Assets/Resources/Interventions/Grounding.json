@@ -1,0 +1,56 @@
+{
+  "exercises": [
+    {
+      "id": "five-senses",
+      "title": "5, 4, 3, 2, 1 senses",
+      "duration": "About 2 minutes",
+      "steps": [
+        "Look around and name five things you can see.",
+        "Notice four things you can feel, like your clothes or chair.",
+        "Listen for three sounds, near or far.",
+        "Notice two smells. If none are around, skip this step.",
+        "Notice one taste, or imagine a familiar flavour."
+      ]
+    },
+    {
+      "id": "feet-and-support",
+      "title": "Feel the support beneath you",
+      "duration": "About 30 seconds",
+      "steps": [
+        "Sit comfortably. Rest your feet on the floor, if that suits you.",
+        "Gently press down and notice the contact. You can use your hands on a chair instead.",
+        "Release the pressure. Notice where the chair or floor supports you. Repeat twice."
+      ]
+    },
+    {
+      "id": "one-object",
+      "title": "Explore one object",
+      "duration": "About 1 minute",
+      "steps": [
+        "Pick up a safe everyday object, like a key or a sleeve.",
+        "Notice its weight, temperature and texture. Looking closely is fine too.",
+        "Describe three small details to yourself, slowly."
+      ]
+    },
+    {
+      "id": "colour-search",
+      "title": "Find a colour around you",
+      "duration": "About 1 minute",
+      "steps": [
+        "Choose a colour and look around where you are.",
+        "Find three things in that colour. Name each one slowly.",
+        "Choose another colour and repeat. Notice a small detail in each object."
+      ]
+    },
+    {
+      "id": "listen-around-you",
+      "title": "Tune in to nearby sounds",
+      "duration": "About 1 minute",
+      "steps": [
+        "Pause and listen for one sound close to you.",
+        "Notice a sound further away. Is it steady, soft or changing?",
+        "Move your attention between the sounds a few times. If it's quiet, gently rub your hands and listen."
+      ]
+    }
+  ]
+}

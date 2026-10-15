@@ -1,0 +1,50 @@
+.pet-customization .content-panel { padding-top: 24px; }
+.pet-customization .page-scroll { margin-top: 16px; }
+.profile-eyebrow { margin: 0 0 6px 0; color: var(--app-primary); font-size: 11px; letter-spacing: 2px; }
+.customization-subtitle { margin: 0; font-size: 26px; -unity-font-style: bold; white-space: normal; }
+.customization-hint { margin: 8px 0 0 0; white-space: normal; color: var(--app-text-muted); font-size: 14px; }
+.pet-viewport {
+    height: 210px;
+    flex-shrink: 0;
+    margin-top: 16px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: var(--app-outline);
+    border-radius: 16px;
+    background-color: #172131;
+}
+.pet-preview { width: 100%; height: 100%; padding: 20px; }
+.preview-placeholder {
+    position: absolute; left: 24px; right: 24px; top: 0; bottom: 0;
+    color: var(--app-text-muted); white-space: normal; -unity-text-align: middle-center;
+}
+.profile-section { margin-top: 22px; flex-shrink: 0; }
+.profile-section-title { margin: 0 0 12px 0; font-size: 17px; -unity-font-style: bold; white-space: normal; }
+.breed-options { flex-direction: row; flex-wrap: wrap; }
+.breed-option, .profile-action {
+    min-height: 48px; margin: 0 6px 6px 0; padding: 10px 12px;
+    border-width: 1px; border-radius: 8px; border-color: var(--app-outline);
+    background-color: #131B28; background-image: none;
+    color: var(--app-text); white-space: normal; font-size: 14px;
+}
+.breed-option { max-width: 100%; flex-shrink: 1; }
+.breed-option:hover, .profile-action:hover { background-color: #203044; }
+.breed-option:active, .profile-action:active { background-color: #2B405A; }
+.breed-option:focus, .profile-action:focus { border-color: var(--app-focus); }
+.breed-option--selected { border-color: var(--app-primary); background-color: #102B24; color: var(--app-primary); }
+.profile-action:disabled { opacity: 0.4; }
+.preview-action { align-self: flex-end; margin-top: 8px; margin-right: 0; }
+.pet-name-input { flex-direction: column; margin: 0; }
+.pet-name-input > .unity-text-field__label { margin: 0 0 8px 0; min-width: 0; color: var(--app-text-muted); font-size: 14px; }
+.pet-name-input > .unity-text-field__input {
+    min-height: 48px; padding: 10px 12px; border-width: 1px; border-radius: 8px;
+    border-color: var(--app-outline); background-color: #131B28; color: var(--app-text); font-size: 20px;
+}
+.pet-name-input > .unity-text-field__input:focus { border-color: var(--app-primary); }
+.name-actions { flex-direction: row; align-items: center; justify-content: space-between; margin-top: 8px; }
+.name-count { flex-shrink: 0; color: var(--app-text-muted); font-size: 12px; }
+.profile-summary-box { margin-top: 20px; padding: 16px; border-radius: 12px; background-color: #102B24; flex-shrink: 0; }
+.profile-summary { margin: 0; white-space: normal; font-size: 17px; }
+.customization-done { margin-top: 16px; min-height: 60px; font-size: 20px; }
+.customization-back { min-height: 48px; margin-top: 8px; font-size: 16px; }
+.pet-customization.app--compact .pet-viewport { height: 160px; }

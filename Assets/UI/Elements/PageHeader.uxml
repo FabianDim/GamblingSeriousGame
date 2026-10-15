@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="../Themes/App.uss" />
+    <ui:Label name="page-title" text="Choose Companion" class="page-header" />
+</ui:UXML>

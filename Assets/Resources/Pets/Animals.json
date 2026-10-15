@@ -1,0 +1,93 @@
+{
+  "animals": [
+    {
+      "id": "cat",
+      "name": "Cat",
+      "description": "A curious companion for quiet company and cosy afternoons.",
+      "previewImageFolder": "Pets/PreviewImages/Cats/CatSelectionAnimation",
+      "previewFramesPerSecond": 10,
+      "suggestedNames": ["Mochi", "Cleo", "Miso", "Olive", "Pippin"],
+      "breeds": [
+        {
+          "id": "black",
+          "name": "Black",
+          "description": "A little everyday explorer with a soft spot for sunny windows.",
+          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Black",
+          "previewFramesPerSecond": 10
+        },
+        {
+          "id": "tuxedo",
+          "name": "Tuxedo",
+          "description": "The most formal of the cats, but very playful.",
+          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Tuxedo"
+        },
+        {
+          "id": "grey",
+          "name": "Grey",
+          "description": "A fluffy companion for slow mornings and cosy corners.",
+          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Grey"
+        },
+        {
+          "id": "brown",
+          "name": "Brown",
+          "description": "A fluffy companion for slow mornings and cosy corners.",
+          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Brown"
+        }
+      ]
+    },
+    {
+      "id": "dog",
+      "name": "Dog",
+      "description": "A friendly companion for walks, playtime, and everyday adventures.",
+      "previewImageFolder": "Pets/PreviewImages/Dogs",
+      "suggestedNames": ["Biscuit", "Scout", "Maple", "Teddy", "Sunny"],
+      "breeds": [
+        {
+          "id": "retriever",
+          "name": "Retriever",
+          "description": "An easygoing walking buddy, always ready for another outing.",
+          "previewImage": "Pets/Dog/Retriever_Idle"
+        },
+        {
+          "id": "corgi",
+          "name": "Corgi",
+          "description": "Little legs and a big sense of adventure.",
+          "previewImage": "Pets/Dog/Corgi_Idle"
+        },
+        {
+          "id": "terrier",
+          "name": "Terrier",
+          "description": "A lively little explorer who loves to play.",
+          "previewImage": "Pets/Dog/Terrier_Idle"
+        }
+      ]
+    },
+    {
+      "id": "rabbit",
+      "name": "Rabbit",
+      "description": "A gentle companion who enjoys exploring and finding a comfortable spot to relax.",
+      "previewImageFolder": "Pets/PreviewImages/Rabbits",
+      "suggestedNames": ["Clover", "Pip", "Willow", "Pebble", "Hazel"],
+      "breeds": [
+        {
+          "id": "lop",
+          "name": "Lop",
+          "description": "A floppy-eared friend for gentle company.",
+          "previewImage": "Pets/Rabbit/Lop_Idle"
+        },
+        {
+          "id": "dwarf",
+          "name": "Dwarf",
+          "description": "A tiny companion with a curious nature.",
+          "previewImage": "Pets/Rabbit/Dwarf_Idle"
+        },
+        {
+          "id": "lionhead",
+          "name": "Lionhead",
+          "description": "A fluffy-maned friend who likes a quiet place to settle.",
+          "previewImage": "Pets/Rabbit/Lionhead_Idle"
+        }
+      ]
+    }
+  ]
+}

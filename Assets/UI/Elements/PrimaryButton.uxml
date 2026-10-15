@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="../Themes/App.uss" />
+    <ui:Button name="primary-button" text="Button" class="app-button button--primary" />
+</ui:UXML>
