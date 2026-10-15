@@ -32,3 +32,11 @@ To persist gameplay changes, update `PetInfo` and call
 `PetSaveStore.SavePet(manager.PetUID, manager.PetInfo)`. `LoadAll()` returns all saved pets.
 File writes use a temporary file before replacement. Unreadable JSON raises an error and
 is preserved instead of being replaced with an empty save.
+
+Timed interventions add XP through `InterventionSession.TryClaim`. Each pet stores
+`claimedInterventionSessions`, a list of unique practice-session receipts; old
+saves default to an empty list. XP and the receipt are written together so retrying
+the same claim cannot add XP twice. The award reads the latest saved XP rather
+than overwriting it with a stale displayed total. Profile edits and shop claims
+preserve the receipts. Timers and unfinished practice sessions remain in memory;
+only claimed rewards persist across game restarts.

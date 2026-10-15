@@ -4,11 +4,11 @@
     <ui:Button name="dock-home" tooltip="Home" class="app-button text-button dock-button dock-button--selected">
       <game:DockIcon kind="Home" class="dock-icon" />
     </ui:Button>
-    <ui:Button name="dock-interventions" tooltip="Interventions" class="app-button text-button dock-button">
-      <game:DockIcon kind="Interventions" class="dock-icon" />
-    </ui:Button>
-    <ui:Button name="dock-my-pet" tooltip="My Pet" class="app-button button--primary dock-button">
+    <ui:Button name="dock-my-pet" tooltip="My Pet" class="app-button text-button dock-button">
       <game:DockIcon kind="MyPet" class="dock-icon" />
+    </ui:Button>
+    <ui:Button name="dock-interventions" tooltip="Interventions" class="app-button button--primary dock-button">
+      <game:DockIcon kind="Interventions" class="dock-icon" />
     </ui:Button>
     <ui:Button name="dock-settings" tooltip="Settings" class="app-button text-button dock-button">
       <game:DockIcon kind="Settings" class="dock-icon" />

@@ -35,6 +35,8 @@ public class GameStateManager : MonoBehaviour
     public BackgroundDefinition Background { get; private set; }
     public Texture2D BackgroundImage { get; private set; }
     public bool HasPet => pet != null && breed != null;
+    [SerializeField] AppNavigationManager navigationManager;
+
 
     private void Awake() => LoadSavedPet();
 
@@ -94,6 +96,7 @@ public class GameStateManager : MonoBehaviour
         finally
         {
             LoadBackground();
+            navigationManager.StartOnGameScreen();
         }
     }
 

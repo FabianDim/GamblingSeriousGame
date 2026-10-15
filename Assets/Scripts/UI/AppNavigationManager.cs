@@ -7,10 +7,54 @@ public class AppNavigationManager : MonoBehaviour
     [SerializeField] private GameObject petSelectionScreen;
     [SerializeField] private GameObject petCreationScreen;
     [SerializeField] private GameObject GamePlayScreen;
+    [SerializeField] private GameObject interventionsScreen;
+    private BasePageScreen gameplayDock;
+    private BasePageScreen interventionsDock;
 
     List<GameObject> mostRecentPages = new List<GameObject>();
 
     public string SelectedPetId { get; private set; }
+
+    private void OnEnable()
+    {
+        gameplayDock = GamePlayScreen != null ? GamePlayScreen.GetComponent<BasePageScreen>() : null;
+        interventionsDock = interventionsScreen != null ? interventionsScreen.GetComponent<BasePageScreen>() : null;
+        gameplayDock?.OnNavigate.AddListener(NavigateDock);
+        interventionsDock?.OnNavigate.AddListener(NavigateDock);
+    }
+
+    private void OnDisable()
+    {
+        gameplayDock?.OnNavigate.RemoveListener(NavigateDock);
+        interventionsDock?.OnNavigate.RemoveListener(NavigateDock);
+    }
+
+    public void StartOnGameScreen()
+    {
+        if (GamePlayScreen == null || petCreationScreen == null)
+        {
+            Debug.LogError("Assign the gameplay screen.", this);
+            return;
+        }
+
+        NavigateDock("my-pet");
+        petCreationScreen.SetActive(false);
+    }
+
+    public void NavigateDock(string destination)
+    {
+        if (destination != "interventions" && destination != "my-pet") return;
+        var target = destination == "interventions" ? interventionsScreen : GamePlayScreen;
+        if (target == null)
+        {
+            Debug.LogWarning("Assign the " + destination + " screen on AppNavigationManager.", this);
+            return;
+        }
+        if (GamePlayScreen != target) GamePlayScreen?.SetActive(false);
+        if (interventionsScreen != target) interventionsScreen?.SetActive(false);
+        target.SetActive(true);
+        target.GetComponent<BasePageScreen>()?.SelectDestination(destination);
+    }
 
     public void ConfirmPetSelection(string petId)
     {
@@ -37,7 +81,7 @@ public class AppNavigationManager : MonoBehaviour
             return;
         }
 
-        GamePlayScreen.SetActive(true);
+        NavigateDock("my-pet");
         petCreationScreen.SetActive(false);
     }
 

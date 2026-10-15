@@ -1,0 +1,77 @@
+{
+  "activities": [
+    {
+      "id": "notice-a-thought",
+      "title": "Pause and check a thought",
+      "category": "Thoughts",
+      "minutes": 5,
+      "description": "Practise questioning a thought that makes gambling feel appealing.",
+      "rewardXp": 25,
+      "steps": [
+        "Name one gambling thought you have noticed. Think it through or write it on paper.",
+        "Ask: what supports this thought, and what facts challenge it?",
+        "Imagine a friend had this thought. What balanced advice would you give them?",
+        "Put that advice into one sentence you can use yourself. Read it slowly.",
+        "Choose one helpful action for the next few minutes, such as making a drink or contacting someone you trust."
+      ]
+    },
+    {
+      "id": "challenge-due-win",
+      "title": "Challenge the 'due a win' thought",
+      "category": "Thinking patterns",
+      "minutes": 3,
+      "description": "Recognise a common thinking trap in games with independent random outcomes.",
+      "rewardXp": 15,
+      "steps": [
+        "Notice whether you are expecting a win because of earlier losses.",
+        "For independent random events, earlier results do not make the next result more favourable.",
+        "Try a replacement thought: a losing run creates no promise of a win.",
+        "Say your replacement thought slowly. Choose something away from gambling to do next."
+      ]
+    },
+    {
+      "id": "pause-an-urge",
+      "title": "Make space before acting",
+      "category": "Urges",
+      "minutes": 5,
+      "description": "Try a short pause and an alternative to gambling when an urge appears.",
+      "rewardXp": 25,
+      "steps": [
+        "Name the urge without judging it: I am noticing an urge to gamble.",
+        "For these few minutes, put off the decision to gamble. Close betting content or move away from it if you can.",
+        "Do one simple thing instead: stretch gently, sip water, or notice nearby sounds.",
+        "Notice whether the urge changes. It does not have to disappear to finish this practice.",
+        "Choose your next step: another pause, a different activity, or contact with someone supportive."
+      ]
+    },
+    {
+      "id": "map-a-trigger",
+      "title": "Notice your triggers",
+      "category": "Patterns",
+      "minutes": 5,
+      "description": "Identify a situation that tends to bring on a gambling urge.",
+      "rewardXp": 25,
+      "steps": [
+        "Think of a recent gambling urge that feels manageable to reflect on.",
+        "Notice what was happening just before it: a place, a message, a feeling, or a time of day.",
+        "Name the thought or feeling that followed. You can use a few words on paper.",
+        "Choose one change you could try, such as muting a promotion or planning something for a quiet evening.",
+        "Make a small plan: when I notice this cue, I will try this action."
+      ]
+    },
+    {
+      "id": "coping-reminder",
+      "title": "Create a coping reminder",
+      "category": "Planning",
+      "minutes": 4,
+      "description": "Prepare a simple reminder to use when thinking clearly feels harder.",
+      "rewardXp": 20,
+      "steps": [
+        "On paper, write one personal reason for taking a break from gambling.",
+        "Add one action you can take when an urge arrives, such as leaving the situation or doing something else.",
+        "Add the name of a supportive person or service you could contact.",
+        "Read your reminder slowly. Keep it somewhere easy to reach and imagine using it next time."
+      ]
+    }
+  ]
+}

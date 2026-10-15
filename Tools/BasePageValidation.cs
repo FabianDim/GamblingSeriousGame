@@ -75,10 +75,10 @@ public static class BasePageValidation
             Require(dock.layout.height >= 70, "Dock stays visible");
             var background = root.Q("base-page").resolvedStyle.backgroundColor;
             Require(Vector4.Distance(background, (Color)new Color32(11, 14, 23, 255)) < 0.01f, "Existing app background");
-            var primary = root.Q<Button>("dock-my-pet");
+            var primary = root.Q<Button>("dock-interventions");
             Require(primary.ClassListContains("button--primary") &&
                 Vector4.Distance(primary.resolvedStyle.backgroundColor, (Color)new Color32(0, 230, 118, 255)) < 0.01f,
-                "My Pet uses the shared green primary button");
+                "Interventions uses the shared green primary button");
             Require(content.worldBound.yMax <= dock.worldBound.yMin + 1, "Content does not overlap dock");
             foreach (var button in dock.Query<Button>().ToList())
             {
@@ -92,7 +92,7 @@ public static class BasePageValidation
             string selected = null;
             UnityEngine.Events.UnityAction<string> listener = value => { calls++; selected = value; };
             page.OnNavigate.AddListener(listener);
-            var destinations = new[] { "home", "interventions", "my-pet", "settings", "resources" };
+            var destinations = new[] { "home", "my-pet", "interventions", "settings", "resources" };
             for (int i = 0; i < destinations.Length; i++)
             {
                 var button = root.Q<Button>("dock-" + destinations[i]);

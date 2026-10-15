@@ -5,8 +5,8 @@ Open **Game > UI > Open Base Page Scene** and press Play. Drag
 **Game > UI > Edit Base Page** opens the layout in UI Builder.
 
 The page uses the existing dark navy, green and white app theme from `App.uss`.
-The rounded dock has five icons, with **My Pet** as the green centre button.
-Left to right: **Home, Interventions, My Pet, Settings, Resources**. The dock stays
+The rounded dock has five icons, with **Interventions** as the green centre button.
+Left to right: **Home, My Pet, Interventions, Settings, Resources**. The dock stays
 visible while the page content scrolls. Buttons have 48-unit touch targets,
 hover/pressed/focus states and tooltips. The controller applies device safe areas.
 

@@ -37,3 +37,240 @@
     left: 30%;
     bottom: 12%;
 }
+
+.gameplay-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+}
+
+.gameplay-stats {
+    position: absolute;
+    top: 4%;
+    left: 6%;
+    right: 6%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gameplay-health {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    height: 28px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.gameplay-xp {
+    flex-shrink: 0;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 28px;
+    background-color: rgb(11, 14, 23);
+    color: rgb(255, 219, 119);
+    border-radius: 14px;
+    font-size: 13px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.gameplay-navigation {
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    margin-top: 36px;
+    width: 110px;
+}
+
+.gameplay-menu-button, .gameplay-menu-option, .shop-back {
+    min-height: 32px;
+    margin: 0;
+    padding: 4px 10px;
+    background-color: rgb(20, 28, 39);
+    color: white;
+    border-width: 1px;
+    border-color: rgb(83, 102, 121);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.gameplay-menu-options {
+    margin-top: 4px;
+    padding: 4px;
+    background-color: rgb(11, 14, 23);
+    border-radius: 8px;
+}
+
+.gameplay-menu-option {
+    color: rgb(0, 230, 118);
+}
+
+.pet-shop {
+    position: absolute;
+    top: 4%;
+    margin-top: 76px;
+    bottom: 3%;
+    left: 4%;
+    right: 4%;
+    padding: 12px;
+    background-color: rgba(11, 14, 23, 0.97);
+    border-width: 1px;
+    border-color: rgb(83, 102, 121);
+    border-radius: 12px;
+    color: white;
+    overflow: hidden;
+}
+
+.shop-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.shop-heading {
+    font-size: 21px;
+    -unity-font-style: bold;
+}
+
+.shop-copy {
+    white-space: normal;
+    font-size: 12px;
+    color: rgb(205, 215, 224);
+    margin-top: 4px;
+    margin-bottom: 4px;
+    flex-shrink: 0;
+}
+
+#shop-category {
+    margin-top: 6px;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+}
+
+#shop-category .unity-base-popup-field__input {
+    min-height: 32px;
+    background-color: rgb(27, 37, 49);
+    border-color: rgb(83, 102, 121);
+    border-radius: 6px;
+    color: white;
+    font-size: 13px;
+}
+
+#shop-category .unity-base-popup-field__arrow {
+    -unity-background-image-tint-color: white;
+}
+
+.shop-items {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 0;
+}
+
+.shop-item {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: rgb(27, 37, 49);
+    border-radius: 8px;
+}
+
+.shop-item-image {
+    width: 64px;
+    height: 72px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    background-color: rgb(222, 231, 230);
+    border-radius: 6px;
+}
+
+.shop-item-details {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.shop-item-name {
+    white-space: normal;
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+
+.shop-item-requirement {
+    white-space: normal;
+    font-size: 11px;
+    color: rgb(205, 215, 224);
+}
+
+.shop-claim {
+    margin: 5px 0 0 0;
+    min-height: 32px;
+    white-space: normal;
+    background-color: rgb(0, 230, 118);
+    color: rgb(11, 14, 23);
+    border-width: 0;
+    border-radius: 6px;
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.shop-claim:disabled {
+    background-color: rgb(49, 61, 75);
+    color: rgb(191, 201, 211);
+    opacity: 1;
+}
+
+.shop-claim--owned:disabled {
+    color: rgb(0, 230, 118);
+}
+
+.gameplay-menu-button:hover, .gameplay-menu-option:hover, .shop-back:hover {
+    background-color: rgb(49, 61, 75);
+}
+
+.shop-claim:hover {
+    background-color: rgb(83, 245, 163);
+}
+
+.gameplay-health .unity-progress-bar__container {
+    flex-grow: 1;
+}
+
+.gameplay-health .unity-progress-bar__background {
+    flex-grow: 1;
+    background-color: rgba(11, 14, 23, 0.9);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-color: rgb(11, 14, 23);
+    border-right-color: rgb(11, 14, 23);
+    border-top-color: rgb(11, 14, 23);
+    border-bottom-color: rgb(11, 14, 23);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    overflow: hidden;
+}
+
+.gameplay-health .unity-progress-bar__progress {
+    background-color: rgb(0, 230, 118);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.gameplay-health .unity-progress-bar__title {
+    color: white;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    text-shadow: 0 1px 2px rgb(11, 14, 23);
+}

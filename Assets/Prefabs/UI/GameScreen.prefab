@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8362512145507103981}
   - component: {fileID: 1642968191090141024}
+  - component: {fileID: 1642968191090141025}
   m_Layer: 0
   m_Name: GameScreen
   m_TagString: Untagged
@@ -55,3 +56,19 @@ MonoBehaviour:
   m_PivotReferenceSize: 0
   m_Pivot: 0
   m_WorldSpaceCollider: {fileID: 0}
+--- !u!114 &1642968191090141025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360513993470973739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008efd985801436c80dce71119afec30, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::GamblingSeriousGame.UI.BasePageScreen
+  initialDestination: my-pet
+  onNavigate:
+    m_PersistentCalls:
+      m_Calls: []

@@ -9,7 +9,12 @@ public class GameplayScreen : MonoBehaviour
     [SerializeField] private GameStateManager gameStateManager;
     private VisualElement sceneArea;
     private Image background;
+    private VisualElement overlay;
     private PetSpritePreview petPreview;
+    private ProgressBar healthBar;
+    private Label xpCounter;
+    private PetShopView shop;
+    private IVisualElementScheduledItem healthUpdate;
 
     private void OnEnable()
     {
@@ -45,6 +50,26 @@ public class GameplayScreen : MonoBehaviour
         var petImage = new Image { name = "gameplay-pet", pickingMode = PickingMode.Ignore };
         petImage.AddToClassList("gameplay-pet");
         background.Add(petImage);
+        healthBar = new ProgressBar
+        {
+            name = "gameplay-health",
+            lowValue = 0,
+            pickingMode = PickingMode.Ignore
+        };
+        healthBar.AddToClassList("gameplay-health");
+        var stats = new VisualElement { name = "gameplay-stats", pickingMode = PickingMode.Ignore };
+        stats.AddToClassList("gameplay-stats");
+        stats.Add(healthBar);
+        xpCounter = new Label { name = "gameplay-xp", pickingMode = PickingMode.Ignore };
+        xpCounter.AddToClassList("gameplay-xp");
+        stats.Add(xpCounter);
+        overlay = new VisualElement { name = "gameplay-overlay", pickingMode = PickingMode.Ignore };
+        overlay.AddToClassList("gameplay-overlay");
+        overlay.Add(stats);
+        background.Add(overlay);
+        shop = new PetShopView(overlay, gameStateManager);
+        RefreshHealth();
+        healthUpdate = healthBar.schedule.Execute(RefreshHealth).Every(250);
         sceneArea.Add(background);
         dock.parent.Insert(dock.parent.IndexOf(dock), sceneArea);
 
@@ -68,6 +93,18 @@ public class GameplayScreen : MonoBehaviour
 
     private void OnSceneGeometryChanged(GeometryChangedEvent evt) => FitBackground();
 
+    private void RefreshHealth()
+    {
+        var info = gameStateManager.PetInfo;
+        int maximum = Mathf.Max(1, info?.maxHealth ?? 100);
+        int current = Mathf.Clamp(info?.health ?? maximum, 0, maximum);
+        healthBar.highValue = maximum;
+        healthBar.value = current;
+        healthBar.title = $"Health {current} / {maximum}";
+        xpCounter.text = $"{Mathf.Max(0, info?.experience ?? 0):N0} XP";
+        shop?.Refresh();
+    }
+
     private void FitBackground()
     {
         var texture = gameStateManager.BackgroundImage;
@@ -82,15 +119,26 @@ public class GameplayScreen : MonoBehaviour
         float scale = Mathf.Min(available.width / texture.width, available.height / texture.height);
         background.style.width = texture.width * scale;
         background.style.height = texture.height * scale;
+        // Preserve the HUD's proportions when a portrait background is fitted into landscape.
+        float overlayScale = Mathf.Min(1, texture.width * scale / 280f);
+        overlay.style.width = texture.width * scale / overlayScale;
+        overlay.style.height = texture.height * scale / overlayScale;
+        overlay.style.scale = new Scale(new Vector3(overlayScale, overlayScale, 1));
     }
 
     private void OnDisable()
     {
+        healthUpdate?.Pause();
+        healthUpdate = null;
+        healthBar = null;
+        xpCounter = null;
+        shop = null;
         petPreview?.Dispose();
         petPreview = null;
         sceneArea?.UnregisterCallback<GeometryChangedEvent>(OnSceneGeometryChanged);
         sceneArea?.RemoveFromHierarchy();
         sceneArea = null;
         background = null;
+        overlay = null;
     }
 }

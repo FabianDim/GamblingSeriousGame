@@ -18,12 +18,16 @@ namespace GamblingSeriousGame.Data
         [DataMember] public int health = 100;
         [DataMember] public int maxHealth = 100;
         [DataMember] public int experience;
+        [DataMember] public List<string> ownedItems = new List<string>();
+        [DataMember] public List<string> claimedInterventionSessions = new List<string>();
 
         [OnDeserializing]
         private void SetDefaults(StreamingContext context)
         {
             // Data contract deserialization does not run field initializers.
             backgroundId = 1;
+            ownedItems = new List<string>();
+            claimedInterventionSessions = new List<string>();
         }
     }
 
@@ -74,6 +78,97 @@ namespace GamblingSeriousGame.Data
             var pets = LoadAll();
             pets[id] = pet;
             Write(pets);
+        }
+
+        // XP is an unlock threshold, never a currency. Save before changing live state.
+        public static bool TryClaimItem(string uuid, PetSaveData pet, string itemId, out string message)
+        {
+            var item = ShopCatalog.Find(itemId);
+            if (pet == null || !Guid.TryParse(uuid, out var id) || id == Guid.Empty)
+            {
+                message = "Choose a pet before collecting items.";
+                return false;
+            }
+            if (item == null)
+            {
+                message = "This item is unavailable.";
+                return false;
+            }
+            if (pet.ownedItems?.Contains(item.Id) == true)
+            {
+                message = "You already own this item.";
+                return false;
+            }
+            if (pet.experience < item.RequiredXp)
+            {
+                message = $"Reach {item.RequiredXp} XP to unlock this item.";
+                return false;
+            }
+
+            var owned = new List<string>(pet.ownedItems ?? new List<string>()) { item.Id };
+            var updated = new PetSaveData
+            {
+                animalId = pet.animalId, breedId = pet.breedId, petName = pet.petName,
+                backgroundId = pet.backgroundId, level = pet.level, health = pet.health,
+                maxHealth = pet.maxHealth, experience = pet.experience, ownedItems = owned,
+                claimedInterventionSessions = new List<string>(pet.claimedInterventionSessions ?? new List<string>())
+            };
+            try { SavePet(uuid, updated); }
+            catch (Exception exception) when (exception is IOException || exception is UnauthorizedAccessException ||
+                exception is SerializationException || exception is System.Xml.XmlException)
+            {
+                Debug.LogWarning("Could not save shop item: " + exception.Message);
+                message = "Couldn't save this item. Please try again.";
+                return false;
+            }
+            pet.ownedItems = owned;
+            message = item.Name + " added to your collection!";
+            return true;
+        }
+
+        // The receipt and XP are written together. Retrying a claim cannot grant it twice.
+        internal static bool TryAwardInterventionXp(string uuid, PetSaveData livePet,
+            string sessionId, int rewardXp, out string message)
+        {
+            if (livePet == null || rewardXp <= 0 || !Guid.TryParse(uuid, out var id) || id == Guid.Empty ||
+                !Guid.TryParse(sessionId, out var receipt) || receipt == Guid.Empty)
+            {
+                message = "Choose a saved pet before collecting XP.";
+                return false;
+            }
+            try
+            {
+                var pets = LoadAll();
+                if (!pets.TryGetValue(id.ToString(), out var saved) || saved == null)
+                {
+                    message = "Your pet could not be found. Return to My Pet and try again.";
+                    return false;
+                }
+                var receipts = saved.claimedInterventionSessions ?? new List<string>();
+                if (!receipts.Contains(receipt.ToString()))
+                {
+                    if (saved.experience > int.MaxValue - rewardXp)
+                    {
+                        message = "Your pet has reached the XP limit.";
+                        return false;
+                    }
+                    saved.experience = Math.Max(0, saved.experience) + rewardXp;
+                    receipts.Add(receipt.ToString());
+                    saved.claimedInterventionSessions = receipts;
+                    Write(pets);
+                }
+                livePet.experience = saved.experience;
+                livePet.claimedInterventionSessions = new List<string>(receipts);
+                message = $"+{rewardXp} XP saved for your pet.";
+                return true;
+            }
+            catch (Exception exception) when (exception is IOException || exception is UnauthorizedAccessException ||
+                exception is SerializationException || exception is System.Xml.XmlException)
+            {
+                Debug.LogWarning("Could not save intervention XP: " + exception.Message);
+                message = "Couldn't save your XP. Please try collecting it again.";
+                return false;
+            }
         }
 
         private static string NormalizeId(string uuid)

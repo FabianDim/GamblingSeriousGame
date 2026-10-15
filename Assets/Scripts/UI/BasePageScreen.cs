@@ -8,8 +8,8 @@ namespace GamblingSeriousGame.UI
     [RequireComponent(typeof(UIDocument))]
     public sealed class BasePageScreen : MonoBehaviour
     {
-        private static readonly string[] Destinations = { "home", "interventions", "my-pet", "settings", "resources" };
-        private static readonly string[] DestinationLabels = { "Home", "Interventions", "My Pet", "Settings", "Resources" };
+        private static readonly string[] Destinations = { "home", "my-pet", "interventions", "settings", "resources" };
+        private static readonly string[] DestinationLabels = { "Home", "My Pet", "Interventions", "Settings", "Resources" };
         [SerializeField] private string initialDestination = "home";
         [SerializeField] private UnityEvent<string> onNavigate = new UnityEvent<string>();
         private readonly Button[] buttons = new Button[5];
