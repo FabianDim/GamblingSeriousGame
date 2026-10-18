@@ -75,11 +75,11 @@ public static class PetSelectionValidation
             {
                 VerifyLayout();
                 Capture("Validation/PetSelection-390.png");
-                var animals = Enumerable.Range(0, 12).Select(i => new PetDefinition {
+                var animals = Enumerable.Range(0, 12).Select(i => new AnimalDefinition {
                     id = "pet-" + i, name = "Companion " + (i + 1),
                     description = "A friendly companion with a description that wraps onto multiple lines."
                 }).ToArray();
-                CheckJson(document.GetComponent<PetCreationScreen>(), JsonUtility.ToJson(new PetCatalog { animals = animals }), 12);
+                CheckJson(document.GetComponent<PetCreationScreen>(), JsonUtility.ToJson(new AnimalCatalog { animals = animals }), 12);
                 Submit(document.rootVisualElement.Query<Button>(className: "pet-card").First());
                 Resize(320, 568);
             }
@@ -113,11 +113,11 @@ public static class PetSelectionValidation
         Require(cards.Count == 3, "One card per example animal");
         Require(cards[0].Q<Label>("pet-name").text == "Cat", "Name bound from JSON");
         Require(cards[0].Q<Label>("pet-description").text.Length > 20, "Description bound from JSON");
-        Require(!confirm.enabledSelf && screen.SelectedPet == null, "Confirm starts disabled");
+        Require(!confirm.enabledSelf && screen.SelectedAnimal == null, "Confirm starts disabled");
         Submit(cards[0]);
-        Require(screen.SelectedPet.id == "cat" && confirm.enabledSelf, "Selecting enables confirmation");
+        Require(screen.SelectedAnimal.id == "cat" && confirm.enabledSelf, "Selecting enables confirmation");
         Submit(cards[1]);
-        Require(screen.SelectedPet.id == "dog", "Can change selection");
+        Require(screen.SelectedAnimal.id == "dog", "Can change selection");
         Require(!cards[0].ClassListContains("pet-card--selected") && cards[1].ClassListContains("pet-card--selected"), "Only one selected card");
         string confirmed = null;
         int count = 0;

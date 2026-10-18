@@ -13,7 +13,7 @@ public class AppNavigationManager : MonoBehaviour
 
     List<GameObject> mostRecentPages = new List<GameObject>();
 
-    public string SelectedPetId { get; private set; }
+    public string SelectedAnimalId { get; private set; }
 
     private void OnEnable()
     {
@@ -56,7 +56,7 @@ public class AppNavigationManager : MonoBehaviour
         target.GetComponent<BasePageScreen>()?.SelectDestination(destination);
     }
 
-    public void ConfirmPetSelection(string petId)
+    public void ConfirmPetSelection(string animalId)
     {
         if (petSelectionScreen == null || petCreationScreen == null)
         {
@@ -66,9 +66,9 @@ public class AppNavigationManager : MonoBehaviour
 
         mostRecentPages.Add(petSelectionScreen);
 
-        SelectedPetId = petId;
-        Debug.Log($"Pet ID is set as: {petId}");
-        petCreationScreen.GetComponent<PetCustomizationScreen>()?.SetPet(petId);
+        SelectedAnimalId = animalId;
+        Debug.Log($"Selected animal ID: {animalId}");
+        petCreationScreen.GetComponent<PetCustomizationScreen>()?.SetAnimal(animalId);
         petSelectionScreen.SetActive(false);
         petCreationScreen.SetActive(true);
     }

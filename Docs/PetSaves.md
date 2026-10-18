@@ -1,5 +1,14 @@
 # Pet saves
 
+`AnimalCatalog` contains `AnimalDefinition` entries such as Cat and Dog. Each
+animal definition lists its available `BreedDefinition` options. These shared
+catalog entries describe animal types and appearances.
+
+`PetProfile` identifies one player's pet and their choices. `PetSaveData` stores
+that pet's saved details and progression. `GameStateManager.SelectedAnimal` and
+`SelectedBreed` resolve its catalog choices; `SavedPet` exposes its save data.
+For example, its animation path is `manager.SelectedBreed.animationFolder`.
+
 Confirmed companions are stored in `pets.json` under `Application.persistentDataPath`.
 `PetSaveStore.SavePath` exposes the full runtime path. The game state manager creates an empty
 JSON object (`{}`) at startup if the file is missing, even before a pet has been saved.
@@ -16,7 +25,7 @@ saves without the field). The catalog at
 1–20 to the corresponding PNGs using extension-free Unity Resources paths.
 `GameStateManager.BackgroundId` exposes the loaded selection. To change it in a profile,
 set `backgroundId` before saving; to change it during gameplay, set
-`manager.PetInfo.backgroundId` before calling `SavePet`.
+`manager.SavedPet.backgroundId` before calling `SavePet`.
 
 `GameStateManager` also loads the background catalog and selected texture automatically,
 exposing `Background` (the resolved definition) and `BackgroundImage` (a `Texture2D`).
@@ -25,11 +34,11 @@ It uses background 1 when there is no saved pet or the selected background canno
 remains the saved selection. Call `LoadBackground()` after changing the selection during gameplay.
 
 PlayerPrefs still records the latest selected companion under `Companion.Profile.v1`.
-`GameStateManager.LoadSavedPet()` loads that companion's stats into `PetInfo` and exposes
+`GameStateManager.LoadSavedPet()` loads that companion's stats into `SavedPet` and exposes
 its UUID as `PetUID`. Previous PlayerPrefs-only saves are added to the file on load.
 
-To persist gameplay changes, update `PetInfo` and call
-`PetSaveStore.SavePet(manager.PetUID, manager.PetInfo)`. `LoadAll()` returns all saved pets.
+To persist gameplay changes, update `SavedPet` and call
+`PetSaveStore.SavePet(manager.PetUID, manager.SavedPet)`. `LoadAll()` returns all saved pets.
 File writes use a temporary file before replacement. Unreadable JSON raises an error and
 is preserved instead of being replaced with an empty save.
 

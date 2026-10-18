@@ -74,16 +74,16 @@ public class GameplayScreen : MonoBehaviour
         dock.parent.Insert(dock.parent.IndexOf(dock), sceneArea);
 
         petPreview = new PetSpritePreview(petImage);
-        var breed = gameStateManager.Breed;
-        var pet = gameStateManager.Pet;
-        if (pet != null)
+        var breed = gameStateManager.SelectedBreed;
+        var animal = gameStateManager.SelectedAnimal;
+        if (animal != null)
         {
             petPreview.Bind(breed?.previewImageFolder, breed?.imageResourcePath,
                 breed?.previewFramesPerSecond ?? 10);
             if (!petPreview.HasImage)
-                petPreview.Bind(pet.previewImageFolder, pet.imageResourcePath, pet.previewFramesPerSecond);
+                petPreview.Bind(animal.previewImageFolder, animal.imageResourcePath, animal.previewFramesPerSecond);
             if (!petPreview.HasImage)
-                Debug.LogWarning("No sprite found for pet " + pet.id + " and breed " + breed?.id + ".", this);
+                Debug.LogWarning("No sprite found for pet " + animal.id + " and breed " + breed?.id + ".", this);
         }
         else Debug.LogWarning("No saved pet was loaded for the gameplay screen.", this);
 
@@ -95,7 +95,7 @@ public class GameplayScreen : MonoBehaviour
 
     private void RefreshHealth()
     {
-        var info = gameStateManager.PetInfo;
+        var info = gameStateManager.SavedPet;
         int maximum = Mathf.Max(1, info?.maxHealth ?? 100);
         int current = Mathf.Clamp(info?.health ?? maximum, 0, maximum);
         healthBar.highValue = maximum;

@@ -140,7 +140,7 @@ namespace GamblingSeriousGame.UI
 
         private void Claim(ShopItem item)
         {
-            PetSaveStore.TryClaimItem(state.PetUID, state.PetInfo, item.Id, out string message);
+            PetSaveStore.TryClaimItem(state.PetUID, state.SavedPet, item.Id, out string message);
             status.text = message;
             Refresh(true);
         }
@@ -148,7 +148,7 @@ namespace GamblingSeriousGame.UI
         public void Refresh(bool force = false)
         {
             if (panel.style.display == DisplayStyle.None) return;
-            var pet = state.PetInfo;
+            var pet = state.SavedPet;
             int xp = Mathf.Max(0, pet?.experience ?? 0);
             int owned = pet?.ownedItems?.Count ?? 0;
             if (!force && lastXp == xp && lastOwned == owned) return;

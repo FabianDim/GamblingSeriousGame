@@ -37,7 +37,7 @@ namespace GamblingSeriousGame.UI
             state = FindAnyObjectByType<GameStateManager>();
             grounding = new GroundingView(safeArea, CloseGrounding);
             detail = new InterventionDetailView(safeArea, CloseActivity, RestartActivity,
-                () => state != null ? state.PetUID : null, () => state != null ? state.PetInfo : null);
+                () => state != null ? state.PetUID : null, () => state != null ? state.SavedPet : null);
             view = new InterventionsView(content, OpenGrounding, OpenActivity);
             GetComponent<BasePageScreen>().SelectDestination("interventions");
         }

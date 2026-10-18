@@ -74,7 +74,7 @@ public static class PetCustomizationValidation
                     Submit(cards[0]);
                     Submit(selection.GetComponent<UIDocument>().rootVisualElement.Q<Button>("ConfirmPetSelection"));
                     screen = UnityEngine.Object.FindAnyObjectByType<PetCustomizationScreen>();
-                    Require(screen != null && screen.SelectedPetId == "cat", "Navigation passes animal ID");
+                    Require(screen != null && screen.SelectedAnimalId == "cat", "Navigation passes animal ID");
                     document = screen.GetComponent<UIDocument>();
                     Resize(390, 844);
                     break;
@@ -169,19 +169,19 @@ public static class PetCustomizationValidation
         Require(!screen.gameObject.activeSelf, "Back returns to animals");
         UnityEngine.Object.FindAnyObjectByType<AppNavigationManager>().ConfirmPetSelection("cat");
         Require(screen.PetName == "Mochi" && screen.SelectedBreedId == "shorthair", "Back preserves draft");
-        screen.SetPet("dog");
+        screen.SetAnimal("dog");
         document.rootVisualElement.Q<TextField>("pet-name-input").value = "Scout";
-        screen.SetPet("cat");
+        screen.SetAnimal("cat");
         Require(screen.PetName == "Mochi", "Per-animal drafts");
-        screen.SetPet("missing");
+        screen.SetAnimal("missing");
         Require(!document.rootVisualElement.Q<Button>("finish-pet").enabledSelf && screen.CurrentProfile == null, "Unknown ID fails safely");
         var original = Field(typeof(PetCustomizationScreen), "animalJson").GetValue(screen);
         Field(typeof(PetCustomizationScreen), "animalJson").SetValue(screen, new TextAsset("not json"));
-        screen.SetPet("cat");
-        Require(screen.SelectedPetId == null, "Malformed catalog fails safely");
-        var test = new PetDefinition { id = "legacy", name = "Legacy", breeds = new[] {
-            null, new PetBreedDefinition { id = "" }, new PetBreedDefinition { id = "one", name = "One" },
-            new PetBreedDefinition { id = "one", name = "Duplicate" }
+        screen.SetAnimal("cat");
+        Require(screen.SelectedAnimalId == null, "Malformed catalog fails safely");
+        var test = new AnimalDefinition { id = "legacy", name = "Legacy", breeds = new[] {
+            null, new BreedDefinition { id = "" }, new BreedDefinition { id = "one", name = "One" },
+            new BreedDefinition { id = "one", name = "Duplicate" }
         } };
         Require(PetProfileRules.GetBreeds(test).Count == 1, "Invalid and duplicate breeds filtered");
         test.breeds = null;
@@ -190,11 +190,11 @@ public static class PetCustomizationValidation
         // A fresh screen restores the saved profile rather than relying on the draft dictionary.
         var restoredObject = UnityEngine.Object.Instantiate(screen.gameObject);
         var restored = restoredObject.GetComponent<PetCustomizationScreen>();
-        restored.SetPet("cat");
+        restored.SetAnimal("cat");
         Require(restored.PetName == "Mochi" && restored.SelectedBreedId == "tabby", "Saved profile restores on fresh instance");
         restoredObject.SetActive(false);
         UnityEngine.Object.Destroy(restoredObject);
-        screen.SetPet("cat");
+        screen.SetAnimal("cat");
     }
 
     private static void VerifyLayout()

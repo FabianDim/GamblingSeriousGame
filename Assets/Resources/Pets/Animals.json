@@ -13,25 +13,29 @@
           "name": "Black",
           "description": "A little everyday explorer with a soft spot for sunny windows.",
           "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Black",
-          "previewFramesPerSecond": 10
+          "previewFramesPerSecond": 10,
+          "animationFolder": "Pets/Animations/cat/black"
         },
         {
           "id": "tuxedo",
           "name": "Tuxedo",
           "description": "The most formal of the cats, but very playful.",
-          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Tuxedo"
+          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Tuxedo",
+          "animationFolder": "Pets/Animations/cat/tuxedo"
         },
         {
           "id": "grey",
           "name": "Grey",
           "description": "A fluffy companion for slow mornings and cosy corners.",
-          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Grey"
+          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Grey",
+          "animationFolder": "Pets/Animations/cat/grey"
         },
         {
           "id": "brown",
           "name": "Brown",
           "description": "A fluffy companion for slow mornings and cosy corners.",
-          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Brown"
+          "previewImageFolder": "Pets/PreviewImages/Cats/ColourChoices/Brown",
+          "animationFolder": "Pets/Animations/cat/brown"
         }
       ]
     },
@@ -46,19 +50,22 @@
           "id": "retriever",
           "name": "Retriever",
           "description": "An easygoing walking buddy, always ready for another outing.",
-          "previewImage": "Pets/Dog/Retriever_Idle"
+          "previewImage": "Pets/Dog/Retriever_Idle",
+          "animationFolder": "Pets/Animations/dog/retriever"
         },
         {
           "id": "corgi",
           "name": "Corgi",
           "description": "Little legs and a big sense of adventure.",
-          "previewImage": "Pets/Dog/Corgi_Idle"
+          "previewImage": "Pets/Dog/Corgi_Idle",
+          "animationFolder": "Pets/Animations/dog/corgi"
         },
         {
           "id": "terrier",
           "name": "Terrier",
           "description": "A lively little explorer who loves to play.",
-          "previewImage": "Pets/Dog/Terrier_Idle"
+          "previewImage": "Pets/Dog/Terrier_Idle",
+          "animationFolder": "Pets/Animations/dog/terrier"
         }
       ]
     },
@@ -73,19 +80,22 @@
           "id": "lop",
           "name": "Lop",
           "description": "A floppy-eared friend for gentle company.",
-          "previewImage": "Pets/Rabbit/Lop_Idle"
+          "previewImage": "Pets/Rabbit/Lop_Idle",
+          "animationFolder": "Pets/Animations/rabbit/lop"
         },
         {
           "id": "dwarf",
           "name": "Dwarf",
           "description": "A tiny companion with a curious nature.",
-          "previewImage": "Pets/Rabbit/Dwarf_Idle"
+          "previewImage": "Pets/Rabbit/Dwarf_Idle",
+          "animationFolder": "Pets/Animations/rabbit/dwarf"
         },
         {
           "id": "lionhead",
           "name": "Lionhead",
           "description": "A fluffy-maned friend who likes a quiet place to settle.",
-          "previewImage": "Pets/Rabbit/Lionhead_Idle"
+          "previewImage": "Pets/Rabbit/Lionhead_Idle",
+          "animationFolder": "Pets/Animations/rabbit/lionhead"
         }
       ]
     }

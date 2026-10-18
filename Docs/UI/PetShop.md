@@ -16,7 +16,7 @@ The first four pet bowls and rabbit foods are available at 0 XP. These initial
 thresholds can be tuned in the catalog. Item IDs combine resource path and sprite
 name, so existing IDs should be preserved when updating art.
 
-The HUD reads `GameStateManager.PetInfo.experience` every 250 ms. The shop uses that
+The HUD reads `GameStateManager.SavedPet.experience` every 250 ms. The shop uses that
 same value to update unlocks while open. XP earning mechanics are separate from
 this UI. `PetSaveStore.TryClaimItem` validates the item and threshold, prevents
 duplicates, and saves before updating the live collection.

@@ -28,9 +28,9 @@ namespace GamblingSeriousGame.UI
         }
         private readonly Dictionary<string, Draft> drafts = new Dictionary<string, Draft>(StringComparer.Ordinal);
         private readonly List<Button> breedButtons = new List<Button>();
-        private List<PetBreedDefinition> breeds = new List<PetBreedDefinition>();
-        private PetDefinition pet;
-        private PetBreedDefinition breed;
+        private List<BreedDefinition> breeds = new List<BreedDefinition>();
+        private AnimalDefinition animal;
+        private BreedDefinition breed;
 
         private Draft draft;
         private VisualElement root, breedList;
@@ -42,45 +42,45 @@ namespace GamblingSeriousGame.UI
         private bool playing = true;
         private int suggestionIndex;
 
-        public string SelectedPetId => pet?.id;
+        public string SelectedAnimalId => animal?.id;
         public string SelectedBreedId => breed?.id;
         public string PetName => draft?.name ?? string.Empty;
-        public PetProfile CurrentProfile => pet == null || breed == null ? null : new PetProfile
+        public PetProfile CurrentProfile => animal == null || breed == null ? null : new PetProfile
         {
             uniquePlayerPetID = draft.playerPetUID.ToString(),
-            animalId = pet.id,
+            animalId = animal.id,
             breedId = breed.id,
             petName = PetName.Trim(),
             backgroundId = draft.backgroundId
         };
 
         /// <summary>Call before opening. Each animal keeps its own draft for this session.</summary>
-        public void SetPet(string petId)
+        public void SetAnimal(string animalId)
         {
-            pet = null;
+            animal = null;
             try
             {
-                var catalog = animalJson == null ? null : JsonUtility.FromJson<PetCatalog>(animalJson.text);
-                pet = Array.Find(catalog?.animals ?? Array.Empty<PetDefinition>(), entry =>
+                var catalog = animalJson == null ? null : JsonUtility.FromJson<AnimalCatalog>(animalJson.text);
+                animal = Array.Find(catalog?.animals ?? Array.Empty<AnimalDefinition>(), entry =>
                     entry != null && !string.IsNullOrWhiteSpace(entry.id) &&
-                    !string.IsNullOrWhiteSpace(entry.name) && entry.id == petId);
+                    !string.IsNullOrWhiteSpace(entry.name) && entry.id == animalId);
             }
             catch (ArgumentException exception) { Debug.LogWarning("Invalid animal JSON: " + exception.Message, this); }
             draft = null;
             breed = null;
-            breeds = PetProfileRules.GetBreeds(pet);
-            if (pet != null)
+            breeds = PetProfileRules.GetBreeds(animal);
+            if (animal != null)
             {
-                if (!drafts.TryGetValue(pet.id, out draft))
+                if (!drafts.TryGetValue(animal.id, out draft))
                 {
                     draft = new Draft();
-                    drafts.Add(pet.id, draft);
+                    drafts.Add(animal.id, draft);
                     RestoreSavedProfile();
                 }
                 breed = breeds.Find(entry => entry.id == draft.breedId) ?? breeds[0];
                 draft.breedId = breed.id;
             }
-            if (root != null) BindPet();
+            if (root != null) BindAnimal();
         }
 
         private void RestoreSavedProfile()
@@ -89,7 +89,7 @@ namespace GamblingSeriousGame.UI
             {
                 var json = PlayerPrefs.GetString(SavedProfileKey, "");
                 var saved = string.IsNullOrEmpty(json) ? null : JsonUtility.FromJson<PetProfile>(json);
-                if (saved?.animalId != pet.id || !PetProfileRules.IsValidName(saved.petName) ||
+                if (saved?.animalId != animal.id || !PetProfileRules.IsValidName(saved.petName) ||
                     !breeds.Exists(entry => entry.id == saved.breedId)) return;
                 draft.name = saved.petName;
                 draft.breedId = saved.breedId;
@@ -124,7 +124,7 @@ namespace GamblingSeriousGame.UI
             suggestButton.clicked += SuggestName;
             animationButton.clicked += ToggleAnimation;
             safeAreaUpdate = root.schedule.Execute(ApplySafeArea).Every(250);
-            BindPet();
+            BindAnimal();
         }
 
         private void OnDisable()
@@ -141,13 +141,13 @@ namespace GamblingSeriousGame.UI
             root = null;
         }
 
-        private void BindPet()
+        private void BindAnimal()
         {
-            root.Q<Label>("pet-species").text = pet?.name ?? "Your new companion";
-            root.Q<Label>("pet-description").text = pet?.description ?? "Choose an animal to get started.";
+            root.Q<Label>("pet-species").text = animal?.name ?? "Your new companion";
+            root.Q<Label>("pet-description").text = animal?.description ?? "Choose an animal to get started.";
             nameInput.SetValueWithoutNotify(PetName);
-            nameInput.SetEnabled(pet != null);
-            suggestButton.SetEnabled(pet != null);
+            nameInput.SetEnabled(animal != null);
+            suggestButton.SetEnabled(animal != null);
             breedList.Clear();
             breedButtons.Clear();
             foreach (var option in breeds)
@@ -164,7 +164,7 @@ namespace GamblingSeriousGame.UI
             ApplySafeArea();
         }
 
-        private void SelectBreed(PetBreedDefinition next)
+        private void SelectBreed(BreedDefinition next)
         {
             if (breed == next) return;
             breed = next;
@@ -183,7 +183,7 @@ namespace GamblingSeriousGame.UI
             }
             breedDescription.text = breed?.description ?? "No animal selected.";
             preview.Bind(breed?.previewImageFolder, breed?.imageResourcePath, breed?.previewFramesPerSecond ?? 10);
-            placeholder.text = pet == null ? "Choose a companion first" : "Preview coming soon";
+            placeholder.text = animal == null ? "Choose a companion first" : "Preview coming soon";
             placeholder.style.display = preview.HasImage ? DisplayStyle.None : DisplayStyle.Flex;
             animationButton.SetEnabled(preview.CanAnimate);
             preview.SetPlaying(playing);
@@ -202,7 +202,7 @@ namespace GamblingSeriousGame.UI
         {
             if (draft == null) return;
             var choices = new List<string>();
-            foreach (string name in pet.suggestedNames ?? Array.Empty<string>())
+            foreach (string name in animal.suggestedNames ?? Array.Empty<string>())
                 if (PetProfileRules.IsValidName(name)) choices.Add(name.Trim());
             if (choices.Count == 0) choices.AddRange(new[] { "Sunny", "Clover", "Pip", "Pebble", "Mochi" });
             string suggestion = choices[suggestionIndex++ % choices.Count];
@@ -232,7 +232,7 @@ namespace GamblingSeriousGame.UI
 
         private void Finish()
         {
-            if (pet == null || breed == null || draft.saved || !PetProfileRules.IsValidName(PetName)) return;
+            if (animal == null || breed == null || draft.saved || !PetProfileRules.IsValidName(PetName)) return;
             draft.name = PetName.Trim();
             nameInput.SetValueWithoutNotify(PetName);
             var profile = CurrentProfile;
@@ -260,12 +260,12 @@ namespace GamblingSeriousGame.UI
         {
             bool validName = PetProfileRules.IsValidName(PetName);
             bool saved = draft?.saved == true;
-            doneButton.SetEnabled(pet != null && breed != null && validName && !saved);
+            doneButton.SetEnabled(animal != null && breed != null && validName && !saved);
             doneButton.text = saved ? "Companion saved" : "Save companion";
             nameCount.text = PetName.Length + " / " + PetProfileRules.MaxNameLength;
-            summary.text = pet == null ? "Your companion details will appear here." :
-                (string.IsNullOrWhiteSpace(PetName) ? "Your companion" : PetName.Trim()) + " · " + pet.name + " · " + breed.name;
-            status.text = pet == null ? "Go back and choose a companion." : saved ?
+            summary.text = animal == null ? "Your companion details will appear here." :
+                (string.IsNullOrWhiteSpace(PetName) ? "Your companion" : PetName.Trim()) + " · " + animal.name + " · " + breed.name;
+            status.text = animal == null ? "Go back and choose a companion." : saved ?
                 PetName + " is saved on this device. You can still change their details." :
                 !validName ? "Enter a name of 1–24 characters, without line breaks." : "Ready to meet your companion.";
         }

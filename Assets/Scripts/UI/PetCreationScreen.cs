@@ -7,26 +7,6 @@ using UnityEngine.UIElements;
 
 namespace GamblingSeriousGame.UI
 {
-    [Serializable]
-    public sealed class PetDefinition
-    {
-        public string id;
-        public string name;
-        public string description;
-        public string imageResourcePath;
-        public string previewImageFolder;
-        public float previewFramesPerSecond = 10;
-        public const string SavedAccessibilityKey = "Accessibility.Profile.v1";
-        public string[] suggestedNames;
-        public PetBreedDefinition[] breeds;
-    }
-
-    [Serializable]
-    public sealed class PetCatalog
-    {
-        public PetDefinition[] animals;
-    }
-
     /// <summary>
     /// Populates selectable pet cards from JSON and respects mobile safe areas.
     /// Card layout and styling remain editable in UXML/USS.
@@ -56,7 +36,7 @@ namespace GamblingSeriousGame.UI
         private readonly List<PetSpritePreview> previews = new List<PetSpritePreview>();
         private IVisualElementScheduledItem safeAreaUpdate;
 
-        public PetDefinition SelectedPet { get; private set; }
+        public AnimalDefinition SelectedAnimal { get; private set; }
 
         private void OnEnable()
         {
@@ -106,10 +86,10 @@ namespace GamblingSeriousGame.UI
                 return;
             }
 
-            PetCatalog catalog;
+            AnimalCatalog catalog;
             try
             {
-                catalog = JsonUtility.FromJson<PetCatalog>(animalJson.text);
+                catalog = JsonUtility.FromJson<AnimalCatalog>(animalJson.text);
             }
             catch (ArgumentException exception)
             {
@@ -119,10 +99,10 @@ namespace GamblingSeriousGame.UI
             }
 
             var ids = new HashSet<string>(StringComparer.Ordinal);
-            foreach (var pet in catalog?.animals ?? Array.Empty<PetDefinition>())
+            foreach (var animal in catalog?.animals ?? Array.Empty<AnimalDefinition>())
             {
-                if (pet == null || string.IsNullOrWhiteSpace(pet.id) ||
-                    string.IsNullOrWhiteSpace(pet.name) || !ids.Add(pet.id))
+                if (animal == null || string.IsNullOrWhiteSpace(animal.id) ||
+                    string.IsNullOrWhiteSpace(animal.name) || !ids.Add(animal.id))
                 {
                     Debug.LogWarning("Skipping animal with missing id/name or duplicate id.", this);
                     continue;
@@ -141,13 +121,13 @@ namespace GamblingSeriousGame.UI
                 }
 
                 instance.style.flexShrink = 0;
-                card.Q<Label>("pet-name").text = pet.name;
-                card.Q<Label>("pet-description").text = pet.description ?? string.Empty;
+                card.Q<Label>("pet-name").text = animal.name;
+                card.Q<Label>("pet-description").text = animal.description ?? string.Empty;
                 card.Q<Label>("pet-name").enableRichText = false;
                 card.Q<Label>("pet-description").enableRichText = false;
-                card.tooltip = "Select " + pet.name;
-                SetPetImage(card, pet);
-                card.clicked += () => SelectPet(pet, card);
+                card.tooltip = "Select " + animal.name;
+                SetAnimalImage(card, animal);
+                card.clicked += () => SelectAnimal(animal, card);
                 cards.Add(card);
                 petContainer.Add(instance);
             }
@@ -157,7 +137,7 @@ namespace GamblingSeriousGame.UI
 
         private void ClearPets()
         {
-            SelectedPet = null;
+            SelectedAnimal = null;
             selectedCard = null;
             cards.Clear();
             foreach (var preview in previews) preview.Dispose();
@@ -173,23 +153,23 @@ namespace GamblingSeriousGame.UI
             petContainer.Add(label);
         }
 
-        private void SetPetImage(Button card, PetDefinition pet)
+        private void SetAnimalImage(Button card, AnimalDefinition animal)
         {
             var preview = new PetSpritePreview(card.Q<Image>("pet-image"));
             previews.Add(preview);
-            preview.Bind(pet.previewImageFolder, pet.imageResourcePath, pet.previewFramesPerSecond);
+            preview.Bind(animal.previewImageFolder, animal.imageResourcePath, animal.previewFramesPerSecond);
             card.Q<Label>("pet-image-placeholder").style.display =
                 preview.HasImage ? DisplayStyle.None : DisplayStyle.Flex;
         }
 
-        private void SelectPet(PetDefinition pet, Button card)
+        private void SelectAnimal(AnimalDefinition animal, Button card)
         {
             if (selectedCard != null)
             {
                 selectedCard.RemoveFromClassList("pet-card--selected");
                 selectedCard.Q<Label>("pet-selection-state").text = "Select";
             }
-            SelectedPet = pet;
+            SelectedAnimal = animal;
             selectedCard = card;
             card.AddToClassList("pet-card--selected");
             card.Q<Label>("pet-selection-state").text = "Selected";
@@ -198,8 +178,8 @@ namespace GamblingSeriousGame.UI
 
         private void ConfirmSelection()
         {
-            if (SelectedPet == null) return;
-            onPetConfirmed.Invoke(SelectedPet.id);
+            if (SelectedAnimal == null) return;
+            onPetConfirmed.Invoke(SelectedAnimal.id);
             onPrimaryAction.Invoke();
         }
 

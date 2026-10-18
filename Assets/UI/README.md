@@ -60,7 +60,7 @@ The component works with either screen UXML as long as it contains
   Only one card is selected at a time. Confirm is disabled until a selection is made.
 - Connect **On Pet Confirmed (String)** in the Inspector to a method accepting a
   string; choose the dynamic string callback to receive the selected animal's `id`.
-  Other scripts can read `PetCreationScreen.SelectedPet` for the full animal data.
+  Other scripts can read `PetCreationScreen.SelectedAnimal` for the full animal data.
   Selection stays in this screen; saving it or changing scenes belongs in that callback.
 
 JSON uses an object containing an `animals` array (field names are case-sensitive):

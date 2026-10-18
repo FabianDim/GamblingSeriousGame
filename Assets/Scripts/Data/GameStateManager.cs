@@ -24,17 +24,17 @@ public class GameStateManager : MonoBehaviour
 
     [SerializeField] private TextAsset animalJson;
 
-    private PetDefinition pet;
-    private PetBreedDefinition breed;
-    public PetDefinition Pet => pet;
-    public PetBreedDefinition Breed => breed;
+    private AnimalDefinition selectedAnimal;
+    private BreedDefinition selectedBreed;
+    public AnimalDefinition SelectedAnimal => selectedAnimal;
+    public BreedDefinition SelectedBreed => selectedBreed;
     public string PetName { get; private set; } = string.Empty;
     public string PetUID { get; private set; } = string.Empty;
-    public PetSaveData PetInfo { get; private set; }
-    public int BackgroundId => PetInfo?.backgroundId ?? 1;
+    public PetSaveData SavedPet { get; private set; }
+    public int BackgroundId => SavedPet?.backgroundId ?? 1;
     public BackgroundDefinition Background { get; private set; }
     public Texture2D BackgroundImage { get; private set; }
-    public bool HasPet => pet != null && breed != null;
+    public bool HasPet => selectedAnimal != null && selectedBreed != null;
     [SerializeField] AppNavigationManager navigationManager;
 
 
@@ -43,11 +43,11 @@ public class GameStateManager : MonoBehaviour
     // Only confirmed companions are persisted; customization drafts stay in memory.
     public void LoadSavedPet()
     {
-        pet = null;
-        breed = null;
+        selectedAnimal = null;
+        selectedBreed = null;
         PetName = string.Empty;
         PetUID = string.Empty;
-        PetInfo = null;
+        SavedPet = null;
 
         try
         {
@@ -66,28 +66,28 @@ public class GameStateManager : MonoBehaviour
             if (profile == null || string.IsNullOrWhiteSpace(profile.animalId) ||
                 !PetProfileRules.IsValidName(profile.petName)) return;
 
-            var catalog = JsonUtility.FromJson<PetCatalog>(animalJson.text);
-            var savedPet = Array.Find(catalog?.animals ?? Array.Empty<PetDefinition>(), entry =>
+            var catalog = JsonUtility.FromJson<AnimalCatalog>(animalJson.text);
+            var animalDefinition = Array.Find(catalog?.animals ?? Array.Empty<AnimalDefinition>(), entry =>
                 entry != null && entry.id == profile.animalId && !string.IsNullOrWhiteSpace(entry.name));
-            var savedBreed = PetProfileRules.GetBreeds(savedPet).Find(entry => entry.id == profile.breedId);
-            if (savedPet == null || savedBreed == null) return;
+            var breedDefinition = PetProfileRules.GetBreeds(animalDefinition).Find(entry => entry.id == profile.breedId);
+            if (animalDefinition == null || breedDefinition == null) return;
 
             // Migrate the previous single-profile save on first load.
             if (!Guid.TryParse(profile.uniquePlayerPetID, out var uuid) || uuid == Guid.Empty)
                 profile.uniquePlayerPetID = Guid.NewGuid().ToString();
             else profile.uniquePlayerPetID = uuid.ToString();
             var pets = PetSaveStore.LoadAll();
-            if (!pets.TryGetValue(profile.uniquePlayerPetID, out var info) || info == null)
-                info = PetSaveStore.SaveProfile(profile);
-            profile.backgroundId = info.backgroundId;
+            if (!pets.TryGetValue(profile.uniquePlayerPetID, out var savedPet) || savedPet == null)
+                savedPet = PetSaveStore.SaveProfile(profile);
+            profile.backgroundId = savedPet.backgroundId;
             PlayerPrefs.SetString(SavedProfileKey, JsonUtility.ToJson(profile));
             PlayerPrefs.Save();
 
-            pet = savedPet;
-            breed = savedBreed;
-            PetName = info.petName;
+            selectedAnimal = animalDefinition;
+            selectedBreed = breedDefinition;
+            PetName = savedPet.petName;
             PetUID = profile.uniquePlayerPetID;
-            PetInfo = info;
+            SavedPet = savedPet;
         }
         catch (Exception exception)
         {

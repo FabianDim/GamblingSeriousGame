@@ -573,7 +573,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c466ca8155dcfac43af624543c44d999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  animalJson: {fileID: 0}
+  animalJson: {fileID: 4900000, guid: 70d92eec9b7345d78a6f45f81a23bdb2, type: 3}
+  navigationManager: {fileID: 972300044}
 --- !u!4 &881442669
 Transform:
   m_ObjectHideFlags: 0

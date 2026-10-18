@@ -4,17 +4,7 @@ using UnityEngine;
 
 namespace GamblingSeriousGame.UI
 {
-    [Serializable]
-    public sealed class PetBreedDefinition
-    {
-        public string id;
-        public string name;
-        public string description;
-        public string previewImageFolder;
-        public string imageResourcePath;
-        public float previewFramesPerSecond = 10;
-    }
-
+    /// <summary>One player's pet identity and choices, referencing the animal catalog by ID.</summary>
     [Serializable]
     public sealed class PetProfile
     {
@@ -39,22 +29,22 @@ namespace GamblingSeriousGame.UI
         }
 
         // Old catalogs without breeds retain a usable default appearance.
-        public static List<PetBreedDefinition> GetBreeds(PetDefinition pet)
+        public static List<BreedDefinition> GetBreeds(AnimalDefinition animal)
         {
-            var result = new List<PetBreedDefinition>();
+            var result = new List<BreedDefinition>();
             var ids = new HashSet<string>(StringComparer.Ordinal);
-            foreach (var breed in pet?.breeds ?? Array.Empty<PetBreedDefinition>())
+            foreach (var breed in animal?.breeds ?? Array.Empty<BreedDefinition>())
                 if (breed != null && !string.IsNullOrWhiteSpace(breed.id) &&
                     !string.IsNullOrWhiteSpace(breed.name) && ids.Add(breed.id)) result.Add(breed);
-            if (result.Count == 0 && pet != null)
-                result.Add(new PetBreedDefinition
+            if (result.Count == 0 && animal != null)
+                result.Add(new BreedDefinition
                 {
                     id = "default",
-                    name = pet.name,
-                    description = pet.description,
-                    previewImageFolder = pet.previewImageFolder,
-                    imageResourcePath = pet.imageResourcePath,
-                    previewFramesPerSecond = pet.previewFramesPerSecond
+                    name = animal.name,
+                    description = animal.description,
+                    previewImageFolder = animal.previewImageFolder,
+                    imageResourcePath = animal.imageResourcePath,
+                    previewFramesPerSecond = animal.previewFramesPerSecond
                 });
             return result;
         }
