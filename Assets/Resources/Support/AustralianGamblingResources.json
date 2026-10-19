@@ -1,0 +1,102 @@
+{
+  "reviewed": "19 October 2026",
+  "services": [
+    {
+      "id": "gambling-help", "category": "Talk",
+      "title": "National Gambling Helpline",
+      "description": "Free, confidential counselling for anyone affected by gambling, including family and friends.",
+      "detail": "Australia-wide · 24/7", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/tools-resources/chat-counselling", "action": "Open online chat"
+    },
+    {
+      "id": "betstop", "category": "Tools", "title": "BetStop",
+      "description": "Exclude yourself from all Australian-licensed online and phone wagering services. Choose a period from 3 months to a lifetime. This does not cover gambling at physical venues.",
+      "detail": "NATIONAL SELF-EXCLUSION REGISTER", "phone": "1800 238 786",
+      "url": "https://www.betstop.gov.au/", "action": "Explore self-exclusion"
+    },
+    {
+      "id": "national-debt", "category": "Money", "title": "National Debt Helpline",
+      "description": "Free, independent financial counselling to help you work through debts, bills and money worries.",
+      "detail": "FINANCIAL COUNSELLING", "phone": "1800 007 007",
+      "url": "https://ndh.org.au/", "action": "Find money support"
+    },
+    {
+      "id": "gamblers-anonymous", "category": "Community", "title": "Gamblers Anonymous",
+      "description": "Find Australian in-person and online meetings with people who share their experience of recovering from gambling problems.",
+      "detail": "PEER SUPPORT · AUSTRALIA", "phone": "",
+      "url": "https://gaaustralia.org.au/meetings/", "action": "Find a meeting"
+    },
+    {
+      "id": "smart-recovery", "category": "Community", "title": "SMART Recovery Australia",
+      "description": "Free group meetings focused on practical skills for changing behaviours, including gambling. Online and in-person options are available.",
+      "detail": "SKILLS & GROUP SUPPORT", "phone": "",
+      "url": "https://smartrecoveryaustralia.com.au/en/smart-recovery-meetings", "action": "Explore SMART meetings"
+    },
+    {
+      "id": "online-community", "category": "Community", "title": "Gambling Help Online community",
+      "description": "Read other people's experiences and connect with peers in the gambling support forum.",
+      "detail": "ONLINE PEER SUPPORT", "phone": "",
+      "url": "https://community.gamblinghelponline.org.au/", "action": "Visit the community"
+    },
+    {
+      "id": "family-friends", "category": "Community", "title": "Support for family & friends",
+      "description": "Gambling Help Online offers information and counselling for people affected by someone else's gambling. You can get support for yourself too.",
+      "detail": "SUPPORTING SOMEONE ELSE", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/support-yourself-or-others/helping-others", "action": "Explore family support"
+    },
+    {
+      "id": "gam-anon", "category": "Community", "title": "Gam-Anon",
+      "description": "Peer support for family members and friends affected by someone else's gambling. See the Australia and New Zealand meeting information.",
+      "detail": "FAMILY & FRIENDS · PEER SUPPORT", "phone": "",
+      "url": "https://gam-anon.org/meeting-directory/meeting-details/international/australia-new-zealand", "action": "Find family support meetings"
+    },
+    {
+      "id": "nsw", "category": "Local", "title": "GambleAware NSW",
+      "description": "Find local counselling, financial counselling, self-exclusion support and culturally appropriate services in NSW.",
+      "detail": "NEW SOUTH WALES", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/nsw/local-support-services", "action": "Find NSW services"
+    },
+    {
+      "id": "vic", "category": "Local", "title": "Gambler's Help",
+      "description": "Explore Victorian gambling support, local counselling and help for family and friends.",
+      "detail": "VICTORIA", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/vic/local-support-services", "action": "Find Victorian services"
+    },
+    {
+      "id": "qld", "category": "Local", "title": "Gambling Help Queensland",
+      "description": "Find regional gambling help services, counselling and support with venue self-exclusion.",
+      "detail": "QUEENSLAND", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/qld/local-support-services", "action": "Find Queensland services"
+    },
+    {
+      "id": "sa", "category": "Local", "title": "Gambling Help South Australia",
+      "description": "Find local gambling support services and counselling options across South Australia.",
+      "detail": "SOUTH AUSTRALIA", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/sa/local-support-services", "action": "Find SA services"
+    },
+    {
+      "id": "wa", "category": "Local", "title": "Gambling Help WA",
+      "description": "Explore counselling and support options for Western Australians affected by gambling.",
+      "detail": "WESTERN AUSTRALIA", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/wa/local-support-services", "action": "Find WA services"
+    },
+    {
+      "id": "tas", "category": "Local", "title": "Gamblers Help Tasmania",
+      "description": "Anglicare Tasmania offers gambling counselling, financial counselling and help with self-exclusion.",
+      "detail": "TASMANIA · ANGLICARE", "phone": "1800 243 232",
+      "url": "https://www.gamblinghelponline.org.au/tas/local-support-services", "action": "Find Tasmanian services"
+    },
+    {
+      "id": "act", "category": "Local", "title": "ACT Gambling Support Service",
+      "description": "Free, confidential counselling and outreach for people affected by their own or someone else's gambling.",
+      "detail": "AUSTRALIAN CAPITAL TERRITORY", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/act/local-support-services", "action": "Find ACT services"
+    },
+    {
+      "id": "nt", "category": "Local", "title": "Northern Territory gambling support",
+      "description": "Find local counselling, financial support and information about venue self-exclusion in the NT.",
+      "detail": "NORTHERN TERRITORY", "phone": "1800 858 858",
+      "url": "https://www.gamblinghelponline.org.au/nt/local-support-services", "action": "Find NT services"
+    }
+  ]
+}

@@ -690,6 +690,7 @@ MonoBehaviour:
   GamePlayScreen: {fileID: 1926042077}
   interventionsScreen: {fileID: 762184961}
   homeScreen: {fileID: 1338959359}
+  resourcesScreen: {fileID: 1888121001}
 --- !u!4 &972300045
 Transform:
   m_ObjectHideFlags: 0
@@ -978,6 +979,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6fcbeb94f45fd14daeb134586d5e7b2, type: 3}
+--- !u!1001 &1888121000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9158401970538655303, guid: f7053b235a2b4037b2984e46f42c1ded, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7053b235a2b4037b2984e46f42c1ded, type: 3}
+--- !u!1 &1888121001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9158401970538655303, guid: f7053b235a2b4037b2984e46f42c1ded, type: 3}
+  m_PrefabInstance: {fileID: 1888121000}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -991,3 +1014,4 @@ SceneRoots:
   - {fileID: 881442669}
   - {fileID: 762184960}
   - {fileID: 569999447}
+  - {fileID: 1888121000}

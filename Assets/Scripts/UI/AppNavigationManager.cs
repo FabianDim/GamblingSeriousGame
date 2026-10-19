@@ -9,9 +9,11 @@ public class AppNavigationManager : MonoBehaviour
     [SerializeField] private GameObject GamePlayScreen;
     [SerializeField] private GameObject interventionsScreen;
     [SerializeField] private GameObject homeScreen;
+    [SerializeField] private GameObject resourcesScreen;
     private BasePageScreen gameplayDock;
     private BasePageScreen interventionsDock;
     private BasePageScreen homeDock;
+    private BasePageScreen resourcesDock;
 
     List<GameObject> mostRecentPages = new List<GameObject>();
 
@@ -22,9 +24,11 @@ public class AppNavigationManager : MonoBehaviour
         gameplayDock = GamePlayScreen != null ? GamePlayScreen.GetComponent<BasePageScreen>() : null;
         interventionsDock = interventionsScreen != null ? interventionsScreen.GetComponent<BasePageScreen>() : null;
         homeDock = homeScreen != null ? homeScreen.GetComponent<BasePageScreen>() : null;
+        resourcesDock = resourcesScreen != null ? resourcesScreen.GetComponent<BasePageScreen>() : null;
         gameplayDock?.OnNavigate.AddListener(NavigateDock);
         interventionsDock?.OnNavigate.AddListener(NavigateDock);
         homeDock?.OnNavigate.AddListener(NavigateDock);
+        resourcesDock?.OnNavigate.AddListener(NavigateDock);
     }
 
     private void OnDisable()
@@ -32,6 +36,7 @@ public class AppNavigationManager : MonoBehaviour
         gameplayDock?.OnNavigate.RemoveListener(NavigateDock);
         interventionsDock?.OnNavigate.RemoveListener(NavigateDock);
         homeDock?.OnNavigate.RemoveListener(NavigateDock);
+        resourcesDock?.OnNavigate.RemoveListener(NavigateDock);
     }
 
     public void StartOnGameScreen()
@@ -56,8 +61,9 @@ public class AppNavigationManager : MonoBehaviour
 
     public void NavigateDock(string destination)
     {
-        if (destination != "home" && destination != "interventions" && destination != "my-pet") return;
-        var target = destination == "home" ? homeScreen : destination == "interventions" ? interventionsScreen : GamePlayScreen;
+        if (destination != "home" && destination != "interventions" && destination != "my-pet" && destination != "resources") return;
+        var target = destination == "home" ? homeScreen : destination == "interventions" ? interventionsScreen
+            : destination == "resources" ? resourcesScreen : GamePlayScreen;
         if (target == null)
         {
             Debug.LogWarning("Assign the " + destination + " screen on AppNavigationManager.", this);
@@ -66,6 +72,7 @@ public class AppNavigationManager : MonoBehaviour
         if (GamePlayScreen != null && GamePlayScreen != target) GamePlayScreen.SetActive(false);
         if (interventionsScreen != null && interventionsScreen != target) interventionsScreen.SetActive(false);
         if (homeScreen != null && homeScreen != target) homeScreen.SetActive(false);
+        if (resourcesScreen != null && resourcesScreen != target) resourcesScreen.SetActive(false);
         target.SetActive(true);
         target.GetComponent<BasePageScreen>()?.SelectDestination(destination);
     }

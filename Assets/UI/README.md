@@ -6,6 +6,11 @@ are retained as references; they are not used by the migrated scene.
 
 ## Editing your UI
 
+The **Resources** dock tab opens Australian gambling support services, with
+Android dialler buttons, online support links and state/territory directories.
+See [`Docs/UI/ResourcesScreen.md`](../../Docs/UI/ResourcesScreen.md) for editing
+the service catalog, source verification and platform behaviour.
+
 The Home screen and future sports-betting screen-time integration are documented in
 [`Docs/UI/HomeScreen.md`](../../Docs/UI/HomeScreen.md). Edit `Elements/HomeContent.uxml`
 and `Themes/HomeScreen.uss`; `HomeScreen.prefab` is connected to the Home dock tab.
