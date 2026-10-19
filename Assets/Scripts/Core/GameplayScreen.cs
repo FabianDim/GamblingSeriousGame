@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using GamblingSeriousGame.UI;
+using GamblingSeriousGame.Pets;
 
 [RequireComponent(typeof(UIDocument))]
 [DefaultExecutionOrder(100)]
@@ -74,16 +75,17 @@ public class GameplayScreen : MonoBehaviour
         dock.parent.Insert(dock.parent.IndexOf(dock), sceneArea);
 
         petPreview = new PetSpritePreview(petImage);
-        var breed = gameStateManager.SelectedBreed;
-        var animal = gameStateManager.SelectedAnimal;
-        if (animal != null)
+        var pet = gameStateManager.SelectedPet;
+        if (pet != null)
         {
+            var breed = pet.Breed;
+            var animal = pet.Animal;
             petPreview.Bind(breed?.previewImageFolder, breed?.imageResourcePath,
                 breed?.previewFramesPerSecond ?? 10);
             if (!petPreview.HasImage)
-                petPreview.Bind(animal.previewImageFolder, animal.imageResourcePath, animal.previewFramesPerSecond);
+                petPreview.Bind(animal.PreviewImageFolder, animal.ImageResourcePath, animal.PreviewFramesPerSecond);
             if (!petPreview.HasImage)
-                Debug.LogWarning("No sprite found for pet " + animal.id + " and breed " + breed?.id + ".", this);
+                Debug.LogWarning("No sprite found for pet " + animal.Id + " and breed " + breed?.id + ".", this);
         }
         else Debug.LogWarning("No saved pet was loaded for the gameplay screen.", this);
 
@@ -93,9 +95,16 @@ public class GameplayScreen : MonoBehaviour
 
     private void OnSceneGeometryChanged(GeometryChangedEvent evt) => FitBackground();
 
+    public bool PlayPetAnimation(PetAnimationDefinition definition)
+    {
+        if (petPreview == null || definition == null || !definition.IsPlayable) return false;
+        petPreview.Bind(definition);
+        return true;
+    }
+
     private void RefreshHealth()
     {
-        var info = gameStateManager.SavedPet;
+        var info = gameStateManager.SelectedPet?.SaveData;
         int maximum = Mathf.Max(1, info?.maxHealth ?? 100);
         int current = Mathf.Clamp(info?.health ?? maximum, 0, maximum);
         healthBar.highValue = maximum;

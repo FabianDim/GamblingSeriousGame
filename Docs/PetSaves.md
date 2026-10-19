@@ -4,10 +4,22 @@
 animal definition lists its available `BreedDefinition` options. These shared
 catalog entries describe animal types and appearances.
 
-`PetProfile` identifies one player's pet and their choices. `PetSaveData` stores
-that pet's saved details and progression. `GameStateManager.SelectedAnimal` and
-`SelectedBreed` resolve its catalog choices; `SavedPet` exposes its save data.
-For example, its animation path is `manager.SelectedBreed.animationFolder`.
+`GameStateManager.SelectedPet` is one resolved player pet, or `null` if no valid
+pet was loaded. It exposes:
+
+- `Id`: the pet's UUID.
+- `Profile`: a `PetProfile` snapshot containing its identity, name and choices.
+- `Animal`: a `PetAnimalType` containing its type and preview, with no breeds array.
+- `Breed`: its one selected breed.
+- `Animations`: that breed's cached `Activities`, `Sleep`, `Death` and `Reactions`.
+- `SaveData`: its mutable `PetSaveData`, including health, XP and owned items.
+
+The catalog stays in the creation flow and is used to resolve the selected pet
+when loading. `SelectedPet` does not retain an `AnimalDefinition`. Its profile
+snapshot reads the current name and background from `SaveData`; editing that
+snapshot does not change live state. To change animal or breed, edit a profile,
+call `PetSaveStore.SaveProfile(profile)`, then `manager.LoadSavedPet()`.
+The animation folder is `manager.SelectedPet.Breed.animationFolder`.
 
 Confirmed companions are stored in `pets.json` under `Application.persistentDataPath`.
 `PetSaveStore.SavePath` exposes the full runtime path. The game state manager creates an empty
@@ -25,7 +37,7 @@ saves without the field). The catalog at
 1–20 to the corresponding PNGs using extension-free Unity Resources paths.
 `GameStateManager.BackgroundId` exposes the loaded selection. To change it in a profile,
 set `backgroundId` before saving; to change it during gameplay, set
-`manager.SavedPet.backgroundId` before calling `SavePet`.
+`manager.SelectedPet.SaveData.backgroundId` before calling `SavePet`.
 
 `GameStateManager` also loads the background catalog and selected texture automatically,
 exposing `Background` (the resolved definition) and `BackgroundImage` (a `Texture2D`).
@@ -34,11 +46,14 @@ It uses background 1 when there is no saved pet or the selected background canno
 remains the saved selection. Call `LoadBackground()` after changing the selection during gameplay.
 
 PlayerPrefs still records the latest selected companion under `Companion.Profile.v1`.
-`GameStateManager.LoadSavedPet()` loads that companion's stats into `SavedPet` and exposes
-its UUID as `PetUID`. Previous PlayerPrefs-only saves are added to the file on load.
+`GameStateManager.LoadSavedPet()` resolves that companion as `SelectedPet`.
+The UUID chooses the save record; the record supplies the current name, animal,
+breed, background and progression, even if PlayerPrefs has older details.
+Previous PlayerPrefs-only saves are added to the file on load.
 
-To persist gameplay changes, update `SavedPet` and call
-`PetSaveStore.SavePet(manager.PetUID, manager.SavedPet)`. `LoadAll()` returns all saved pets.
+To persist gameplay changes, update `manager.SelectedPet.SaveData` and call
+`PetSaveStore.SavePet(manager.SelectedPet.Id, manager.SelectedPet.SaveData)`.
+`LoadAll()` returns all saved pets.
 File writes use a temporary file before replacement. Unreadable JSON raises an error and
 is preserved instead of being replaced with an empty save.
 

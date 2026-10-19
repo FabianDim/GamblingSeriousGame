@@ -140,7 +140,7 @@ namespace GamblingSeriousGame.UI
 
         private void Claim(ShopItem item)
         {
-            PetSaveStore.TryClaimItem(state.PetUID, state.SavedPet, item.Id, out string message);
+            PetSaveStore.TryClaimItem(state.SelectedPet?.Id, state.SelectedPet?.SaveData, item.Id, out string message);
             status.text = message;
             Refresh(true);
         }
@@ -148,7 +148,7 @@ namespace GamblingSeriousGame.UI
         public void Refresh(bool force = false)
         {
             if (panel.style.display == DisplayStyle.None) return;
-            var pet = state.SavedPet;
+            var pet = state.SelectedPet?.SaveData;
             int xp = Mathf.Max(0, pet?.experience ?? 0);
             int owned = pet?.ownedItems?.Count ?? 0;
             if (!force && lastXp == xp && lastOwned == owned) return;
@@ -160,7 +160,7 @@ namespace GamblingSeriousGame.UI
                 bool collected = pet?.ownedItems?.Contains(item.Id) == true;
                 bool unlocked = xp >= item.RequiredXp;
                 button.text = collected ? "Owned" : !unlocked ? $"{item.RequiredXp - xp} XP to unlock" : "Collect free";
-                button.SetEnabled(pet != null && !string.IsNullOrEmpty(state.PetUID) && !collected && unlocked);
+                button.SetEnabled(pet != null && !string.IsNullOrEmpty(state.SelectedPet?.Id) && !collected && unlocked);
                 button.EnableInClassList("shop-claim--owned", collected);
             }
         }

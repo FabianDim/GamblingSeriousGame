@@ -6,6 +6,10 @@ are retained as references; they are not used by the migrated scene.
 
 ## Editing your UI
 
+The Home screen and future sports-betting screen-time integration are documented in
+[`Docs/UI/HomeScreen.md`](../../Docs/UI/HomeScreen.md). Edit `Elements/HomeContent.uxml`
+and `Themes/HomeScreen.uss`; `HomeScreen.prefab` is connected to the Home dock tab.
+
 For breed/type choices, animated sprite previews, naming and local profile saving, see
 [`Docs/UI/PetCustomization.md`](../../Docs/UI/PetCustomization.md).
 Its UXML is `Screens/PetCreation.uxml` and its prefab is `PetCreationUI.prefab`.

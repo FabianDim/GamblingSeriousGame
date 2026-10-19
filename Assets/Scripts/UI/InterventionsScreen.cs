@@ -37,7 +37,7 @@ namespace GamblingSeriousGame.UI
             state = FindAnyObjectByType<GameStateManager>();
             grounding = new GroundingView(safeArea, CloseGrounding);
             detail = new InterventionDetailView(safeArea, CloseActivity, RestartActivity,
-                () => state != null ? state.PetUID : null, () => state != null ? state.SavedPet : null);
+                () => state != null ? state.SelectedPet?.Id : null, () => state != null ? state.SelectedPet?.SaveData : null);
             view = new InterventionsView(content, OpenGrounding, OpenActivity);
             GetComponent<BasePageScreen>().SelectDestination("interventions");
         }
@@ -52,7 +52,7 @@ namespace GamblingSeriousGame.UI
         private void OnApplicationFocus(bool value) => skipTimerFrame = true;
         private void OnApplicationPause(bool value) { paused = value; skipTimerFrame = true; }
 
-        private string SessionKey(InterventionActivity activity) => (state != null ? state.PetUID : "") + ":" + activity.id;
+        private string SessionKey(InterventionActivity activity) => (state != null ? state.SelectedPet?.Id : "") + ":" + activity.id;
 
         private void OpenActivity(InterventionActivity activity)
         {
@@ -61,7 +61,7 @@ namespace GamblingSeriousGame.UI
             string key = SessionKey(activity);
             if (!sessions.TryGetValue(key, out var session))
             {
-                session = new InterventionSession(activity, state != null ? state.PetUID : null);
+                session = new InterventionSession(activity, state != null ? state.SelectedPet?.Id : null);
                 sessions.Add(key, session);
             }
             pageShell.style.display = DisplayStyle.None;

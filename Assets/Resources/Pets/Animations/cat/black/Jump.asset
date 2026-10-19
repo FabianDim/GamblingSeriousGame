@@ -76,4 +76,4 @@ MonoBehaviour:
     width: 64
     height: 64
   framesPerSecond: 10
-  loop: 0
+  loop: 1

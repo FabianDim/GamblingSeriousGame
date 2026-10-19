@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:app="GamblingSeriousGame.UI" editor-extension-mode="False">
+  <Style src="../Themes/App.uss" />
+  <Style src="../Themes/HomeScreen.uss" />
+  <ui:VisualElement name="home-content" class="home-content">
+    <ui:Label text="YOUR DAY, AT YOUR PACE" class="home-eyebrow" />
+    <ui:Label text="Make a little room for you." class="home-heading" />
+    <ui:Label text="Notice your screen time. Choose what comes next." class="home-intro" />
+    <ui:VisualElement name="usage-card" class="home-card usage-card">
+      <ui:VisualElement class="home-row usage-heading-row">
+        <ui:Label text="Screen time" class="home-section-title" />
+        <ui:Label name="usage-badge" text="Not connected" class="usage-badge" />
+      </ui:VisualElement>
+      <ui:Label text="SPORTS BETTING APPS" class="usage-eyebrow" />
+      <ui:VisualElement class="usage-periods">
+        <ui:Button name="usage-today" text="Today" class="usage-period usage-period--selected" />
+        <ui:Button name="usage-week" text="Last 7 days" class="usage-period" />
+      </ui:VisualElement>
+      <ui:Label name="usage-total" text="—" class="usage-total" />
+      <ui:Label name="usage-summary" text="Your usage will appear here" class="usage-summary" />
+      <ui:Label name="usage-status" text="Screen-time tracking isn't connected yet. No app activity is being read." class="usage-status" />
+      <ui:VisualElement name="usage-chart-section" class="usage-chart-section">
+        <ui:Label text="DAILY BREAKDOWN" class="usage-eyebrow" />
+        <ui:VisualElement name="usage-chart" class="usage-chart" />
+      </ui:VisualElement>
+      <ui:VisualElement name="usage-app-section" class="usage-app-section">
+        <ui:Label text="BY APP" class="usage-eyebrow" />
+        <ui:VisualElement name="usage-apps" />
+      </ui:VisualElement>
+      <ui:Label name="usage-updated" class="usage-updated" />
+      <ui:Button name="usage-refresh" text="Refresh usage" class="text-button home-inline-button" />
+      <ui:Button name="usage-example" text="Preview example" class="text-button home-inline-button" />
+    </ui:VisualElement>
+    <ui:VisualElement class="home-card home-companion">
+      <ui:VisualElement class="home-row">
+        <ui:VisualElement class="home-pet-art">
+          <app:DockIcon name="home-pet-placeholder" kind="MyPet" class="home-pet-icon" />
+          <ui:Image name="home-pet-image" />
+        </ui:VisualElement>
+        <ui:VisualElement class="home-companion-copy">
+          <ui:Label text="YOUR COMPANION" class="home-eyebrow" />
+          <ui:Label name="home-pet-name" text="A little company" class="home-section-title" />
+          <ui:Label name="home-pet-description" text="Check in with your pet." class="home-small" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:Button name="home-open-pet" text="Visit My Pet" class="app-button button--secondary home-action" />
+    </ui:VisualElement>
+    <ui:VisualElement class="home-card home-pause">
+      <ui:Label text="A moment away from the screen" class="home-section-title" />
+      <ui:Label text="Try a short activity, at your own pace." class="home-small" />
+      <ui:Button name="home-open-interventions" text="Take a pause" class="app-button button--primary home-action" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

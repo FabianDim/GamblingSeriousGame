@@ -15,6 +15,9 @@ namespace GamblingSeriousGame.Editor
         [MenuItem("Game/UI/Edit Base Page")]
         public static void EditBasePage() => OpenAsset("Assets/UI/Screens/BasePage.uxml");
 
+        [MenuItem("Game/UI/Edit Home Content")]
+        public static void EditHome() => OpenAsset("Assets/UI/Elements/HomeContent.uxml");
+
         [MenuItem("Game/UI/Open UI Toolkit Scene")]
         public static void OpenScene()
         {

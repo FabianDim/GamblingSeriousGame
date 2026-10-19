@@ -8,8 +8,10 @@ public class AppNavigationManager : MonoBehaviour
     [SerializeField] private GameObject petCreationScreen;
     [SerializeField] private GameObject GamePlayScreen;
     [SerializeField] private GameObject interventionsScreen;
+    [SerializeField] private GameObject homeScreen;
     private BasePageScreen gameplayDock;
     private BasePageScreen interventionsDock;
+    private BasePageScreen homeDock;
 
     List<GameObject> mostRecentPages = new List<GameObject>();
 
@@ -19,14 +21,17 @@ public class AppNavigationManager : MonoBehaviour
     {
         gameplayDock = GamePlayScreen != null ? GamePlayScreen.GetComponent<BasePageScreen>() : null;
         interventionsDock = interventionsScreen != null ? interventionsScreen.GetComponent<BasePageScreen>() : null;
+        homeDock = homeScreen != null ? homeScreen.GetComponent<BasePageScreen>() : null;
         gameplayDock?.OnNavigate.AddListener(NavigateDock);
         interventionsDock?.OnNavigate.AddListener(NavigateDock);
+        homeDock?.OnNavigate.AddListener(NavigateDock);
     }
 
     private void OnDisable()
     {
         gameplayDock?.OnNavigate.RemoveListener(NavigateDock);
         interventionsDock?.OnNavigate.RemoveListener(NavigateDock);
+        homeDock?.OnNavigate.RemoveListener(NavigateDock);
     }
 
     public void StartOnGameScreen()
@@ -41,17 +46,26 @@ public class AppNavigationManager : MonoBehaviour
         petCreationScreen.SetActive(false);
     }
 
+    public void StartOnHomeScreen()
+    {
+        // Older scenes without the home shell retain their existing destination.
+        NavigateDock(homeScreen != null ? "home" : "my-pet");
+        if (petCreationScreen != null) petCreationScreen.SetActive(false);
+        if (petSelectionScreen != null) petSelectionScreen.SetActive(false);
+    }
+
     public void NavigateDock(string destination)
     {
-        if (destination != "interventions" && destination != "my-pet") return;
-        var target = destination == "interventions" ? interventionsScreen : GamePlayScreen;
+        if (destination != "home" && destination != "interventions" && destination != "my-pet") return;
+        var target = destination == "home" ? homeScreen : destination == "interventions" ? interventionsScreen : GamePlayScreen;
         if (target == null)
         {
             Debug.LogWarning("Assign the " + destination + " screen on AppNavigationManager.", this);
             return;
         }
-        if (GamePlayScreen != target) GamePlayScreen?.SetActive(false);
-        if (interventionsScreen != target) interventionsScreen?.SetActive(false);
+        if (GamePlayScreen != null && GamePlayScreen != target) GamePlayScreen.SetActive(false);
+        if (interventionsScreen != null && interventionsScreen != target) interventionsScreen.SetActive(false);
+        if (homeScreen != null && homeScreen != target) homeScreen.SetActive(false);
         target.SetActive(true);
         target.GetComponent<BasePageScreen>()?.SelectDestination(destination);
     }
@@ -81,8 +95,8 @@ public class AppNavigationManager : MonoBehaviour
             return;
         }
 
-        NavigateDock("my-pet");
-        petCreationScreen.SetActive(false);
+        FindAnyObjectByType<GameStateManager>()?.LoadSavedPet();
+        StartOnHomeScreen();
     }
 
     public void BackButton()

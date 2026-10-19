@@ -132,7 +132,7 @@ public static class PetShopValidation
                     var claim = buttons.First(b => b.enabledSelf);
                     Submit(claim);
                     Require(claim.text == "Owned" && !claim.enabledSelf, "Collect changes to Owned");
-                    Require(UnityEngine.Object.FindAnyObjectByType<GameStateManager>().SavedPet.experience == 125, "UI claim preserves XP");
+                    Require(UnityEngine.Object.FindAnyObjectByType<GameStateManager>().SelectedPet.SaveData.experience == 125, "UI claim preserves XP");
                     Submit(root.Q<Button>("shop-back"));
                     Require(shop.style.display == DisplayStyle.None, "Back closes shop");
                     var screen = document.GetComponent<GameplayScreen>();

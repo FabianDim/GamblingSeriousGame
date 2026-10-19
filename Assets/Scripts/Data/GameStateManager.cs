@@ -1,5 +1,6 @@
 using System;
 using GamblingSeriousGame.Data;
+using GamblingSeriousGame.Pets;
 using GamblingSeriousGame.UI;
 using UnityEngine;
 
@@ -24,30 +25,24 @@ public class GameStateManager : MonoBehaviour
 
     [SerializeField] private TextAsset animalJson;
 
-    private AnimalDefinition selectedAnimal;
-    private BreedDefinition selectedBreed;
-    public AnimalDefinition SelectedAnimal => selectedAnimal;
-    public BreedDefinition SelectedBreed => selectedBreed;
-    public string PetName { get; private set; } = string.Empty;
-    public string PetUID { get; private set; } = string.Empty;
-    public PetSaveData SavedPet { get; private set; }
-    public int BackgroundId => SavedPet?.backgroundId ?? 1;
+    public SelectedPet SelectedPet { get; private set; }
+    public int BackgroundId => SelectedPet?.SaveData.backgroundId ?? 1;
     public BackgroundDefinition Background { get; private set; }
     public Texture2D BackgroundImage { get; private set; }
-    public bool HasPet => selectedAnimal != null && selectedBreed != null;
+    public bool HasPet => SelectedPet != null;
     [SerializeField] AppNavigationManager navigationManager;
 
 
-    private void Awake() => LoadSavedPet();
+    private void Awake()
+    {
+        LoadSavedPet();
+        if (HasPet && navigationManager != null) navigationManager.StartOnHomeScreen();
+    }
 
     // Only confirmed companions are persisted; customization drafts stay in memory.
     public void LoadSavedPet()
     {
-        selectedAnimal = null;
-        selectedBreed = null;
-        PetName = string.Empty;
-        PetUID = string.Empty;
-        SavedPet = null;
+        SelectedPet = null;
 
         try
         {
@@ -63,7 +58,22 @@ public class GameStateManager : MonoBehaviour
             }
 
             var profile = JsonUtility.FromJson<PetProfile>(json);
-            if (profile == null || string.IsNullOrWhiteSpace(profile.animalId) ||
+            if (profile == null) return;
+
+            // PlayerPrefs selects the UUID; an existing save is authoritative for its details.
+            if (!Guid.TryParse(profile.uniquePlayerPetID, out var uuid) || uuid == Guid.Empty)
+                profile.uniquePlayerPetID = Guid.NewGuid().ToString();
+            else profile.uniquePlayerPetID = uuid.ToString();
+            var pets = PetSaveStore.LoadAll();
+            pets.TryGetValue(profile.uniquePlayerPetID, out var savedPet);
+            if (savedPet != null)
+            {
+                profile.animalId = savedPet.animalId;
+                profile.breedId = savedPet.breedId;
+                profile.petName = savedPet.petName;
+                profile.backgroundId = savedPet.backgroundId;
+            }
+            if (string.IsNullOrWhiteSpace(profile.animalId) ||
                 !PetProfileRules.IsValidName(profile.petName)) return;
 
             var catalog = JsonUtility.FromJson<AnimalCatalog>(animalJson.text);
@@ -73,21 +83,12 @@ public class GameStateManager : MonoBehaviour
             if (animalDefinition == null || breedDefinition == null) return;
 
             // Migrate the previous single-profile save on first load.
-            if (!Guid.TryParse(profile.uniquePlayerPetID, out var uuid) || uuid == Guid.Empty)
-                profile.uniquePlayerPetID = Guid.NewGuid().ToString();
-            else profile.uniquePlayerPetID = uuid.ToString();
-            var pets = PetSaveStore.LoadAll();
-            if (!pets.TryGetValue(profile.uniquePlayerPetID, out var savedPet) || savedPet == null)
+            if (savedPet == null)
                 savedPet = PetSaveStore.SaveProfile(profile);
-            profile.backgroundId = savedPet.backgroundId;
-            PlayerPrefs.SetString(SavedProfileKey, JsonUtility.ToJson(profile));
+            var selection = new SelectedPet(profile.uniquePlayerPetID, savedPet, animalDefinition, breedDefinition);
+            PlayerPrefs.SetString(SavedProfileKey, JsonUtility.ToJson(selection.Profile));
             PlayerPrefs.Save();
-
-            selectedAnimal = animalDefinition;
-            selectedBreed = breedDefinition;
-            PetName = savedPet.petName;
-            PetUID = profile.uniquePlayerPetID;
-            SavedPet = savedPet;
+            SelectedPet = selection;
         }
         catch (Exception exception)
         {
@@ -96,7 +97,6 @@ public class GameStateManager : MonoBehaviour
         finally
         {
             LoadBackground();
-            navigationManager.StartOnGameScreen();
         }
     }
 

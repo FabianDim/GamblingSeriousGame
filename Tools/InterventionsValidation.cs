@@ -234,12 +234,12 @@ public static class InterventionsValidation
         detail.Advance(session.RemainingSeconds, true);
         Require(collect.enabledSelf, "Timed button unlocks");
         var state = UnityEngine.Object.FindAnyObjectByType<GameStateManager>();
-        int before = state.SavedPet.experience;
+        int before = state.SelectedPet.SaveData.experience;
         Submit(collect);
-        Require(session.Claimed && state.SavedPet.experience == before + activity.rewardXp && !collect.enabledSelf, "Collect grants exactly one reward");
-        Require(PetSaveStore.LoadAll()[state.PetUID].experience == state.SavedPet.experience, "Reward saved to disk");
+        Require(session.Claimed && state.SelectedPet.SaveData.experience == before + activity.rewardXp && !collect.enabledSelf, "Collect grants exactly one reward");
+        Require(PetSaveStore.LoadAll()[state.SelectedPet.Id].experience == state.SelectedPet.SaveData.experience, "Reward saved to disk");
         Submit(collect);
-        Require(state.SavedPet.experience == before + activity.rewardXp, "Rapid repeat collection gives no extra XP");
+        Require(state.SelectedPet.SaveData.experience == before + activity.rewardXp, "Rapid repeat collection gives no extra XP");
         Submit(root.Q<Button>("activity-restart"));
         Require(detail.Session != session && detail.Session.ElapsedSeconds == 0 && !collect.enabledSelf, "Practise again requires a fresh timer");
         Submit(back);
