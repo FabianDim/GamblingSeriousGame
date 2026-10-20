@@ -73,6 +73,8 @@ public class PetMovement : MonoBehaviour
     {
         while (true)
         {
+            // A tap reaction owns playback until it finishes, including at sequence boundaries.
+            while (gameplayScreen != null && gameplayScreen.IsPetReacting) yield return null;
             currentAnimation = SelectActivityAnimation();
 
             if (gameplayScreen == null ||
@@ -85,14 +87,14 @@ public class PetMovement : MonoBehaviour
 
             if (currentAnimation.loop)
             {
-                yield return new WaitForSeconds(Random.Range(10f, 40f));
+                yield return WaitForActivity(Random.Range(10f, 40f), false);
             }
             else
             {
                 // Match the preview's FPS limit and use real time like its UI scheduler.
                 float fps = Mathf.Clamp(currentAnimation.framesPerSecond, 1f, 30f);
                 float duration = currentAnimation.frameRects.Length / fps;
-                yield return new WaitForSecondsRealtime(duration);
+                yield return WaitForActivity(duration, true);
             }
 
             if (sequenceIndex >= 0)
@@ -101,6 +103,26 @@ public class PetMovement : MonoBehaviour
                 if (sequenceIndex == animationSequence.Length)
                     sequenceIndex = -1;
             }
+        }
+    }
+
+    private IEnumerator WaitForActivity(float duration, bool unscaled)
+    {
+        float elapsed = 0;
+        bool interrupted = false;
+        while (elapsed < duration || (gameplayScreen != null && gameplayScreen.IsPetReacting))
+        {
+            yield return null;
+            if (gameplayScreen == null) yield break;
+            if (gameplayScreen.IsPetReacting)
+            {
+                interrupted = true;
+                continue;
+            }
+            // Non-looping activities restart after a reaction, so give them a full playback.
+            if (interrupted && unscaled) elapsed = 0;
+            interrupted = false;
+            elapsed += unscaled ? Time.unscaledDeltaTime : Time.deltaTime;
         }
     }
     private void OnDisable()

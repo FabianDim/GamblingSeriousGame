@@ -16,6 +16,7 @@ namespace GamblingSeriousGame.UI
         private Sprite[] frames = Array.Empty<Sprite>();
         private bool ownsFrames;
         private int frame;
+        private Action completed;
         public bool animationPlaying = true;
 
 
@@ -29,7 +30,7 @@ namespace GamblingSeriousGame.UI
         }
 
         /// <summary>Displays one action using the same scheduler as selection previews.</summary>
-        public void Bind(PetAnimationDefinition definition)
+        public void Bind(PetAnimationDefinition definition, bool? loopOverride = null, Action onCompleted = null)
         {
             Dispose();
             image.image = null;
@@ -39,7 +40,8 @@ namespace GamblingSeriousGame.UI
 
             frames = definition.CreateFrames();
             ownsFrames = true;
-            ShowPreview(null, definition.framesPerSecond, definition.loop);
+            completed = onCompleted;
+            ShowPreview(null, definition.framesPerSecond, loopOverride ?? definition.loop);
         }
 
         public void Bind(FileInfo[] sheetPath, string stillPath, float framesPerSecond)
@@ -113,7 +115,7 @@ namespace GamblingSeriousGame.UI
                 if (image.sprite == null) image.image = Resources.Load<Texture2D>(stillPath);
             }
 
-            if (!CanAnimate) return;
+            if (frames.Length == 0 || (!CanAnimate && (loop || completed == null))) return;
             float fps = float.IsNaN(framesPerSecond) || float.IsInfinity(framesPerSecond) || framesPerSecond <= 0
                 ? 10 : Mathf.Clamp(framesPerSecond, 1, 30);
             animation = image.schedule.Execute(() =>
@@ -121,11 +123,15 @@ namespace GamblingSeriousGame.UI
                 if (!loop && frame == frames.Length - 1)
                 {
                     animation?.Pause();
+                    animation = null;
+                    var callback = completed;
+                    completed = null;
+                    callback?.Invoke();
                     return;
                 }
                 frame = (frame + 1) % frames.Length;
                 image.sprite = frames[frame];
-            }).Every((long)(1000 / fps));
+            }).Every((long)(1000 / fps)).StartingIn((long)(1000 / fps));
             if (!animationPlaying) animation.Pause();
         }
 
@@ -147,6 +153,7 @@ namespace GamblingSeriousGame.UI
         {
             animation?.Pause();
             animation = null;
+            completed = null;
             if (ownsFrames)
             {
                 image.sprite = null;
