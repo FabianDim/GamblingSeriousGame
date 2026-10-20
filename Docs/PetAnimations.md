@@ -57,6 +57,58 @@ clips advance after one playback, using their frame count and preview FPS.
 Breeds missing either clip retain random activity playback. The sequence rebuilds
 when the selected pet changes. Enabling the screen starts a fresh random choice.
 
+## Tapping the companion
+
+The gameplay pet responds to mouse clicks and touch through `PetImage`, an
+`Image` with alpha-based picking. Its target is the visible part of the current
+sprite frame, not a separate fixed box. Transparent pixels and the empty margins
+from ScaleToFit do not count. UI Toolkit supplies local pointer coordinates, so
+the target follows layout changes, translation and scaling. The sprite mesh and
+UVs are used to locate the pixel in the source texture, including sliced/packed
+sprites. Alpha masks are cached per texture and released when the screen closes;
+unreadable textures use a one-time GPU readback without changing import settings.
+
+`PetReactions.GetMood` uses current health divided by maximum health:
+
+| Health | Mood | Preferred clip |
+| --- | --- | --- |
+| Below 35% | Sad | Crying, then Sad or Hurt |
+| 35% to below 70% | Surprised | Surprised, then Happy or Barking |
+| 70% and above | Happy | Happy, then Excited, Surprised or Barking |
+
+Only the selected breed's assets are used. Cats have Happy, Surprised and Crying;
+the retriever uses Barking/Hurt when those clips are unavailable. A small mood
+bubble follows the pet element. With no matching reaction asset, the bubble
+displays for 1.2 seconds while the existing preview is paused.
+
+`GameplayScreen.ReactToPet()` plays the reaction once, overriding looping for
+that playback without changing the asset. Further taps and ambient playback
+requests are ignored until completion. `PetMovement` pauses its activity timer
+during the reaction, and the previous activity restarts when the reaction ends.
+An in-progress run/jump/run sequence keeps its place. Tapping does not alter
+health, XP or saved data. Closing the screen cancels pending reaction callbacks.
+Non-looping activities receive a fresh full playback interval when restarted.
+
+`PetSpritePreview.Bind(definition, false, onCompleted)` provides one-shot
+playback with a completion callback, including single-frame clips. The first
+frame now receives a full frame interval. Rebinding/disposal cancels callbacks.
+
+`Tools/PetInteractionValidation.cs` checks transparent/opaque pixels, sprite-sheet
+frame changes, unreadable textures, translated/scaled picking, health boundaries,
+reaction priority, restoration, missing-art feedback and disable/re-enable cleanup
+in an isolated Unity project. Existing preview playback checks remain in
+`Tools/PetAnimationPlaybackValidation.cs`.
+
+Both checks passed in Unity 6000.6.2f1. The mouse path was exercised in Unity;
+physical Android touch testing is still outstanding. Saved previews:
+[happy](UI/Pet-Happy.png) and [sad](UI/Pet-Sad.png).
+
+The picking implementation uses Unity's [VisualElement picking API](https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/uielements/visualelement)
+and matches the ScaleToFit sprite geometry used by the
+[UI Toolkit renderer](https://github.com/Unity-Technologies/UnityCsReference/blob/master/Modules/UIElements/Core/Renderer/UIRMeshGenerator.cs).
+
+## Animation categories and assets
+
 The default loader returns only playable `Activity` definitions. Death and sleep
 definitions belong in the lowercase `death` and `sleep` subfolders and must have
 the corresponding category. Attacks, hurt and emotional reactions use `Reaction`

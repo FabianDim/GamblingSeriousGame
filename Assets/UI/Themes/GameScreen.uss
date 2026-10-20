@@ -38,6 +38,20 @@
     bottom: 12%;
 }
 
+.pet-reaction {
+    position: absolute;
+    bottom: 100%;
+    align-self: center;
+    display: none;
+    border-radius: 12px;
+    padding: 6px 10px;
+    background-color: #13241F;
+    color: #D5F8E5;
+    font-size: 13px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+}
+
 .gameplay-overlay {
     position: absolute;
     left: 0;

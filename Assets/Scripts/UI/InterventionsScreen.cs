@@ -12,6 +12,7 @@ namespace GamblingSeriousGame.UI
         private InterventionsView view;
         private GroundingView grounding;
         private VisualElement pageShell;
+        private AppNavigationManager navigationManager;
         private StyleEnum<DisplayStyle> previousShellDisplay;
         private InterventionDetailView detail;
         private InterventionActivity activeActivity;
@@ -35,7 +36,8 @@ namespace GamblingSeriousGame.UI
             if (pageShell == null || safeArea == null) return;
             previousShellDisplay = pageShell.style.display;
             state = FindAnyObjectByType<GameStateManager>();
-            grounding = new GroundingView(safeArea, CloseGrounding);
+            navigationManager = FindAnyObjectByType<AppNavigationManager>();
+            grounding = new GroundingView(safeArea, CloseGrounding, ToResourcesScreen);
             detail = new InterventionDetailView(safeArea, CloseActivity, RestartActivity,
                 () => state != null ? state.SelectedPet?.Id : null, () => state != null ? state.SelectedPet?.SaveData : null);
             view = new InterventionsView(content, OpenGrounding, OpenActivity);
@@ -93,6 +95,17 @@ namespace GamblingSeriousGame.UI
             grounding.Root.style.display = DisplayStyle.None;
             pageShell.style.display = previousShellDisplay;
             view.Root.Q<Button>("open-grounding")?.Focus();
+        }
+
+        private void ToResourcesScreen()
+        {
+            if (navigationManager == null)
+            {
+                Debug.LogWarning("An AppNavigationManager is required to open resources.", this);
+                return;
+            }
+
+            navigationManager.GeneralNavigation(this, AppNavigationManager.NonSetupPageName.Resources);
         }
 
         private void OnDisable()

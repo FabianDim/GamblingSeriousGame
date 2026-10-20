@@ -31,19 +31,27 @@ namespace GamblingSeriousGame.UI
         private readonly ScrollView scroll;
         private readonly Label progress, title, duration;
         private readonly VisualElement steps;
-        private readonly Button back, previous, next;
+        private readonly Button back, previous, next, resources;
 
-        public GroundingView(VisualElement parent, Action onBack)
+        public GroundingView(VisualElement parent, Action onBack, Action toResources)
         {
             Root = new VisualElement { name = "grounding-screen" };
+            var nav_card = new VisualElement { name = "nav-buttons" };
             Root.AddToClassList("content-panel");
             Root.AddToClassList("grounding-screen");
             Root.style.display = DisplayStyle.None;
             parent.Add(Root);
 
             back = MakeButton("grounding-back", "Back to interventions", onBack, "button--secondary");
+            resources = MakeButton("resources-btn", "Gambling Resources", toResources, "button--secondary");
             back.AddToClassList("grounding-back");
-            Root.Add(back);
+            resources.AddToClassList("resources-btn");
+            nav_card.Add(resources);
+            nav_card.style.flexDirection = FlexDirection.Row;
+            nav_card.style.alignItems = Align.Center;
+            nav_card.style.justifyContent = Justify.SpaceBetween;
+            nav_card.Add(back);
+            Root.Add(nav_card);
 
             scroll = new ScrollView(ScrollViewMode.Vertical)
             {
@@ -109,7 +117,9 @@ namespace GamblingSeriousGame.UI
             if (exercises.Count == 0)
                 exercises.Add(new GroundingExercise
                 {
-                    id = "notice-an-object", title = "Notice one object", duration = "About 1 minute",
+                    id = "notice-an-object",
+                    title = "Notice one object",
+                    duration = "About 1 minute",
                     steps = new[] { "Choose an everyday object near you.",
                         "Look closely at its colour, shape and small details.",
                         "Name three details, slowly. Return to them if your attention wanders." }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class AppNavigationManager : MonoBehaviour
 {
+    public enum NonSetupPageName { Game, Home, Resources, Intervention };
     [SerializeField] private GameObject petSelectionScreen;
     [SerializeField] private GameObject petCreationScreen;
     [SerializeField] private GameObject GamePlayScreen;
@@ -113,5 +114,50 @@ public class AppNavigationManager : MonoBehaviour
         mostRecentPages.RemoveAt(mostRecentPages.Count - 1);
         petCreationScreen?.SetActive(false);
         previousPage.SetActive(true);
+    }
+
+    public void GeneralNavigation(Component from, NonSetupPageName to)
+    {
+        if (from == null)
+        {
+            Debug.LogWarning("A source screen component is required for navigation.", this);
+            return;
+        }
+
+        var source = from.gameObject;
+        if (source == GamePlayScreen)
+            GeneralNavigation(NonSetupPageName.Game, to);
+        else if (source == homeScreen)
+            GeneralNavigation(NonSetupPageName.Home, to);
+        else if (source == resourcesScreen)
+            GeneralNavigation(NonSetupPageName.Resources, to);
+        else if (source == interventionsScreen)
+            GeneralNavigation(NonSetupPageName.Intervention, to);
+        else
+            Debug.LogWarning("The source component must belong to a screen assigned on AppNavigationManager.", from);
+    }
+
+    public void GeneralNavigation(NonSetupPageName from, NonSetupPageName to)
+    {
+        if (from == to) return;
+
+        switch (to)
+        {
+            case NonSetupPageName.Game:
+                NavigateDock("my-pet");
+                break;
+            case NonSetupPageName.Home:
+                NavigateDock("home");
+                break;
+            case NonSetupPageName.Resources:
+                NavigateDock("resources");
+                break;
+            case NonSetupPageName.Intervention:
+                NavigateDock("interventions");
+                break;
+            default:
+                Debug.LogWarning("Unknown navigation destination: " + to, this);
+                break;
+        }
     }
 }

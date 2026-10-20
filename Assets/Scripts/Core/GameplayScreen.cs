@@ -12,6 +12,14 @@ public class GameplayScreen : MonoBehaviour
     private Image background;
     private VisualElement overlay;
     private PetSpritePreview petPreview;
+    private PetImage petImage;
+    private Label reactionBubble;
+    private PetAnimationDefinition activityAnimation;
+    private SelectedPet activityPet;
+    private SelectedPet reactionPet;
+    private IVisualElementScheduledItem fallbackReaction;
+    public bool IsPetReacting { get; private set; }
+    public PetAnimationDefinition CurrentPetAnimation { get; private set; }
     private ProgressBar healthBar;
     private Label xpCounter;
     private PetShopView shop;
@@ -48,8 +56,12 @@ public class GameplayScreen : MonoBehaviour
             pickingMode = PickingMode.Ignore
         };
         background.AddToClassList("gameplay-background");
-        var petImage = new Image { name = "gameplay-pet", pickingMode = PickingMode.Ignore };
+        petImage = new PetImage { name = "gameplay-pet", tooltip = "Tap your companion" };
         petImage.AddToClassList("gameplay-pet");
+        petImage.RegisterCallback<PointerDownEvent>(OnPetPointerDown);
+        reactionBubble = new Label { name = "pet-reaction", pickingMode = PickingMode.Ignore };
+        reactionBubble.AddToClassList("pet-reaction");
+        petImage.Add(reactionBubble);
         background.Add(petImage);
         healthBar = new ProgressBar
         {
@@ -75,6 +87,14 @@ public class GameplayScreen : MonoBehaviour
         dock.parent.Insert(dock.parent.IndexOf(dock), sceneArea);
 
         petPreview = new PetSpritePreview(petImage);
+        BindPetPreview();
+
+        sceneArea.RegisterCallback<GeometryChangedEvent>(OnSceneGeometryChanged);
+        FitBackground();
+    }
+
+    private void BindPetPreview()
+    {
         var pet = gameStateManager.SelectedPet;
         if (pet != null)
         {
@@ -89,17 +109,64 @@ public class GameplayScreen : MonoBehaviour
         }
         else Debug.LogWarning("No saved pet was loaded for the gameplay screen.", this);
 
-        sceneArea.RegisterCallback<GeometryChangedEvent>(OnSceneGeometryChanged);
-        FitBackground();
     }
 
     private void OnSceneGeometryChanged(GeometryChangedEvent evt) => FitBackground();
 
     public bool PlayPetAnimation(PetAnimationDefinition definition)
     {
-        if (petPreview == null || definition == null || !definition.IsPlayable) return false;
+        if (IsPetReacting || petPreview == null || definition == null || !definition.IsPlayable) return false;
+        activityAnimation = definition;
+        activityPet = gameStateManager.SelectedPet;
+        CurrentPetAnimation = definition;
         petPreview.Bind(definition);
         return true;
+    }
+
+    private void OnPetPointerDown(PointerDownEvent evt)
+    {
+        // Recheck the displayed frame: its transparent area can change between pointer events.
+        if (!evt.isPrimary || evt.button != 0 || !petImage.ContainsPoint(evt.localPosition)) return;
+        if (ReactToPet()) evt.StopPropagation();
+    }
+
+    public bool ReactToPet()
+    {
+        var pet = gameStateManager != null ? gameStateManager.SelectedPet : null;
+        if (IsPetReacting || petPreview == null || !petPreview.HasImage || pet == null) return false;
+        var mood = PetReactions.GetMood(pet.SaveData.health, pet.SaveData.maxHealth);
+        var reaction = PetReactions.Select(pet.Animations, mood);
+        IsPetReacting = true;
+        reactionPet = pet;
+        reactionBubble.text = mood == PetMood.Happy ? "Happy!" : mood == PetMood.Surprised ? "Oh!" : "Feeling low";
+        reactionBubble.style.display = DisplayStyle.Flex;
+        if (reaction != null)
+        {
+            CurrentPetAnimation = reaction;
+            // Override looping for this playback only; never change the shared animation asset.
+            petPreview.Bind(reaction, false, FinishPetReaction);
+        }
+        else
+        {
+            petPreview.SetPlaying(false);
+            fallbackReaction = petImage.schedule.Execute(FinishPetReaction).StartingIn(1200);
+        }
+        return true;
+    }
+
+    private void FinishPetReaction()
+    {
+        fallbackReaction?.Pause();
+        fallbackReaction = null;
+        IsPetReacting = false;
+        reactionBubble.style.display = DisplayStyle.None;
+        petPreview.SetPlaying(true);
+        if (reactionPet != gameStateManager.SelectedPet || activityPet != gameStateManager.SelectedPet)
+            activityAnimation = null;
+        reactionPet = null;
+        CurrentPetAnimation = activityAnimation;
+        if (activityAnimation != null && activityAnimation.IsPlayable) petPreview.Bind(activityAnimation);
+        else BindPetPreview();
     }
 
     private void RefreshHealth()
@@ -137,6 +204,16 @@ public class GameplayScreen : MonoBehaviour
 
     private void OnDisable()
     {
+        fallbackReaction?.Pause();
+        fallbackReaction = null;
+        IsPetReacting = false;
+        activityAnimation = CurrentPetAnimation = null;
+        reactionPet = null;
+        activityPet = null;
+        petImage?.UnregisterCallback<PointerDownEvent>(OnPetPointerDown);
+        petImage?.Dispose();
+        petImage = null;
+        reactionBubble = null;
         healthUpdate?.Pause();
         healthUpdate = null;
         healthBar = null;
