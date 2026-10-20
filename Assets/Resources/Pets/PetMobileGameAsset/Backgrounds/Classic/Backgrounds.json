@@ -1,0 +1,104 @@
+﻿{
+    "backgrounds":  [
+                        {
+                            "id":  1,
+                            "name":  "Classic 1",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/1"
+                        },
+                        {
+                            "id":  2,
+                            "name":  "Classic 2",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/2"
+                        },
+                        {
+                            "id":  3,
+                            "name":  "Classic 3",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/3"
+                        },
+                        {
+                            "id":  4,
+                            "name":  "Classic 4",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/4"
+                        },
+                        {
+                            "id":  5,
+                            "name":  "Classic 5",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/5"
+                        },
+                        {
+                            "id":  6,
+                            "name":  "Classic 6",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/6"
+                        },
+                        {
+                            "id":  7,
+                            "name":  "Classic 7",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/7"
+                        },
+                        {
+                            "id":  8,
+                            "name":  "Classic 8",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/8"
+                        },
+                        {
+                            "id":  9,
+                            "name":  "Classic 9",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/9"
+                        },
+                        {
+                            "id":  10,
+                            "name":  "Classic 10",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/10"
+                        },
+                        {
+                            "id":  11,
+                            "name":  "Classic 11",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/11"
+                        },
+                        {
+                            "id":  12,
+                            "name":  "Classic 12",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/12"
+                        },
+                        {
+                            "id":  13,
+                            "name":  "Classic 13",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/13"
+                        },
+                        {
+                            "id":  14,
+                            "name":  "Classic 14",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/14"
+                        },
+                        {
+                            "id":  15,
+                            "name":  "Classic 15",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/15"
+                        },
+                        {
+                            "id":  16,
+                            "name":  "Classic 16",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/16"
+                        },
+                        {
+                            "id":  17,
+                            "name":  "Classic 17",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/17"
+                        },
+                        {
+                            "id":  18,
+                            "name":  "Classic 18",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/18"
+                        },
+                        {
+                            "id":  19,
+                            "name":  "Classic 19",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/19"
+                        },
+                        {
+                            "id":  20,
+                            "name":  "Classic 20",
+                            "imageResourcePath":  "Pets/PetMobileGameAsset/Backgrounds/Classic/20"
+                        }
+                    ]
+}

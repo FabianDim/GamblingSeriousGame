@@ -1,0 +1,2797 @@
+fileFormatVersion: 2
+guid: 6ea0906a79bfd0b429c4fd33a70d450d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2046447502578963690
+    second: MoreReddish_0
+  - first:
+      213: -3013706423677490129
+    second: MoreReddish_1
+  - first:
+      213: 6393866422167702578
+    second: MoreReddish_2
+  - first:
+      213: 3154684611458309822
+    second: MoreReddish_3
+  - first:
+      213: -6464868670911589679
+    second: MoreReddish_4
+  - first:
+      213: 4988837089686810904
+    second: MoreReddish_5
+  - first:
+      213: 6352914578469876822
+    second: MoreReddish_6
+  - first:
+      213: -1424188762467230908
+    second: MoreReddish_7
+  - first:
+      213: 3376022645892587474
+    second: MoreReddish_8
+  - first:
+      213: 8768399424887922775
+    second: MoreReddish_9
+  - first:
+      213: 7125955162440843449
+    second: MoreReddish_10
+  - first:
+      213: 1746359234804393347
+    second: MoreReddish_11
+  - first:
+      213: -7688311123539498037
+    second: MoreReddish_12
+  - first:
+      213: 9114601660495365088
+    second: MoreReddish_13
+  - first:
+      213: 5758157011875748071
+    second: MoreReddish_14
+  - first:
+      213: 2450448749409049207
+    second: MoreReddish_15
+  - first:
+      213: -6143026165606086682
+    second: MoreReddish_16
+  - first:
+      213: 4562782699321407757
+    second: MoreReddish_17
+  - first:
+      213: 6995683965416967837
+    second: MoreReddish_18
+  - first:
+      213: -2794050178765146512
+    second: MoreReddish_19
+  - first:
+      213: 3325590093060264329
+    second: MoreReddish_20
+  - first:
+      213: 1776664529116482779
+    second: MoreReddish_21
+  - first:
+      213: -1954078875773263015
+    second: MoreReddish_22
+  - first:
+      213: 4290129192416179201
+    second: MoreReddish_23
+  - first:
+      213: -4524962013245573473
+    second: MoreReddish_24
+  - first:
+      213: -3377143512852334848
+    second: MoreReddish_25
+  - first:
+      213: -319823606296463458
+    second: MoreReddish_26
+  - first:
+      213: -7361218064294476766
+    second: MoreReddish_27
+  - first:
+      213: -4711633225864323774
+    second: MoreReddish_28
+  - first:
+      213: -3473900165158181271
+    second: MoreReddish_29
+  - first:
+      213: 1972071001442947427
+    second: MoreReddish_30
+  - first:
+      213: 4766141326121614981
+    second: MoreReddish_31
+  - first:
+      213: 8864295482787814071
+    second: MoreReddish_32
+  - first:
+      213: -5367851917575501017
+    second: MoreReddish_33
+  - first:
+      213: 3761862215649610628
+    second: MoreReddish_34
+  - first:
+      213: 5146957525903128498
+    second: MoreReddish_35
+  - first:
+      213: -7865910909561566851
+    second: MoreReddish_36
+  - first:
+      213: 2688263778067150411
+    second: MoreReddish_37
+  - first:
+      213: -6393953064907025485
+    second: MoreReddish_38
+  - first:
+      213: 867814788281834390
+    second: MoreReddish_39
+  - first:
+      213: 3021005383320656079
+    second: MoreReddish_40
+  - first:
+      213: 8978123307498200434
+    second: MoreReddish_41
+  - first:
+      213: -3806150053157790721
+    second: MoreReddish_42
+  - first:
+      213: 8562469624777536706
+    second: MoreReddish_43
+  - first:
+      213: -2154394241921869870
+    second: MoreReddish_44
+  - first:
+      213: -115901785175184374
+    second: MoreReddish_45
+  - first:
+      213: -5440262241931461472
+    second: MoreReddish_46
+  - first:
+      213: 1563588610748998526
+    second: MoreReddish_47
+  - first:
+      213: -8268505569483198775
+    second: MoreReddish_48
+  - first:
+      213: -237963789223736291
+    second: MoreReddish_49
+  - first:
+      213: 8202759549060866940
+    second: MoreReddish_50
+  - first:
+      213: -8778881401427452044
+    second: MoreReddish_51
+  - first:
+      213: -7859308981868398710
+    second: MoreReddish_52
+  - first:
+      213: 8748264448311409084
+    second: MoreReddish_53
+  - first:
+      213: 7019395675993716181
+    second: MoreReddish_54
+  - first:
+      213: -74677064073084207
+    second: MoreReddish_55
+  - first:
+      213: 5277357222065280021
+    second: MoreReddish_56
+  - first:
+      213: 6017242924784179272
+    second: MoreReddish_57
+  - first:
+      213: 4989641244199219729
+    second: MoreReddish_58
+  - first:
+      213: -556868860333389123
+    second: MoreReddish_59
+  - first:
+      213: 7302681283913031750
+    second: MoreReddish_60
+  - first:
+      213: -4760987967083803342
+    second: MoreReddish_61
+  - first:
+      213: 282978257192781094
+    second: MoreReddish_62
+  - first:
+      213: -2131551086742240952
+    second: MoreReddish_63
+  - first:
+      213: -626925835319393766
+    second: MoreReddish_64
+  - first:
+      213: 178798262077267222
+    second: MoreReddish_65
+  - first:
+      213: 1402479568423693742
+    second: MoreReddish_66
+  - first:
+      213: 2462805027626793807
+    second: MoreReddish_67
+  - first:
+      213: -4635283585330101125
+    second: MoreReddish_68
+  - first:
+      213: 5454746981928855894
+    second: MoreReddish_69
+  - first:
+      213: -1085909289560785112
+    second: MoreReddish_70
+  - first:
+      213: 3612469886100486125
+    second: MoreReddish_71
+  - first:
+      213: -7824233200217055873
+    second: MoreReddish_72
+  - first:
+      213: 508695493985681731
+    second: MoreReddish_73
+  - first:
+      213: -410349715462424415
+    second: MoreReddish_74
+  - first:
+      213: -1693542297815144411
+    second: MoreReddish_75
+  - first:
+      213: 5827800556111730587
+    second: MoreReddish_76
+  - first:
+      213: 8968500018598286512
+    second: MoreReddish_77
+  - first:
+      213: 5573992103753899250
+    second: MoreReddish_78
+  - first:
+      213: -2471063013558366256
+    second: MoreReddish_79
+  - first:
+      213: 5973552921790678172
+    second: MoreReddish_80
+  - first:
+      213: 62817680364092441
+    second: MoreReddish_81
+  - first:
+      213: -4995228495986636095
+    second: MoreReddish_82
+  - first:
+      213: -116177892136795305
+    second: MoreReddish_83
+  - first:
+      213: 8361038126179451088
+    second: MoreReddish_84
+  - first:
+      213: -2741984435976382823
+    second: MoreReddish_85
+  - first:
+      213: -2724991026174001143
+    second: MoreReddish_86
+  - first:
+      213: -6513411427661126322
+    second: MoreReddish_87
+  - first:
+      213: -4168791388340634630
+    second: MoreReddish_88
+  - first:
+      213: -366193387246231386
+    second: MoreReddish_89
+  - first:
+      213: -215894159410610487
+    second: MoreReddish_90
+  - first:
+      213: -3921608568986853355
+    second: MoreReddish_91
+  - first:
+      213: -1418424457943306784
+    second: MoreReddish_92
+  - first:
+      213: 8875186160181982471
+    second: MoreReddish_93
+  - first:
+      213: -8784783583594136989
+    second: MoreReddish_94
+  - first:
+      213: 748486300480680289
+    second: MoreReddish_95
+  - first:
+      213: 8845292472502779761
+    second: MoreReddish_96
+  - first:
+      213: -5345940791132608157
+    second: MoreReddish_97
+  - first:
+      213: 355229195876764280
+    second: MoreReddish_98
+  - first:
+      213: 7313587368644436440
+    second: MoreReddish_99
+  - first:
+      213: -1095910793050501201
+    second: MoreReddish_100
+  - first:
+      213: -430140506387134365
+    second: MoreReddish_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MoreReddish_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 575
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bab45c6de8993e0800000000000000
+      internalID: -2046447502578963690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 575
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ce36799f92d26d0800000000000000
+      internalID: -3013706423677490129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 575
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c8a9282a39bb850800000000000000
+      internalID: 6393866422167702578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 575
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe1d5c90f0b7cb20800000000000000
+      internalID: 3154684611458309822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 575
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d253c6323c2846a0800000000000000
+      internalID: -6464868670911589679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 575
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811731da6e8eb3540800000000000000
+      internalID: 4988837089686810904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 511
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654f81266261a2850800000000000000
+      internalID: 6352914578469876822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 511
+        width: 49
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b9900cdd34c3ce0800000000000000
+      internalID: -1424188762467230908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 511
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df1a12a5ba0ade20800000000000000
+      internalID: 3376022645892587474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 511
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7502f29e1dc9fa970800000000000000
+      internalID: 8768399424887922775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 511
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0c5ae177a74e260800000000000000
+      internalID: 7125955162440843449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_11
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 511
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3852db0b8705c3810800000000000000
+      internalID: 1746359234804393347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 511
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb6ebe74c1ad4590800000000000000
+      internalID: -7688311123539498037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_13
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 511
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e303034be19d7e70800000000000000
+      internalID: 9114601660495365088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_14
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 511
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e857c55b4519ef40800000000000000
+      internalID: 5758157011875748071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_15
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 511
+        width: 46
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a93d0972eb10220800000000000000
+      internalID: 2450448749409049207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_16
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 511
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e78e11ef369fbaa0800000000000000
+      internalID: -6143026165606086682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_17
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 511
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09b95cb0b2425f30800000000000000
+      internalID: 4562782699321407757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 447
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e03977089a51160800000000000000
+      internalID: 6995683965416967837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 447
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076361a7a2a8939d0800000000000000
+      internalID: -2794050178765146512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 447
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9815a65e19ed62e20800000000000000
+      internalID: 3325590093060264329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_21
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 447
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc460fd9faf7a810800000000000000
+      internalID: 1776664529116482779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 447
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953a07a9d97b1e4e0800000000000000
+      internalID: -1954078875773263015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_23
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 447
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104ff7a35c9998b30800000000000000
+      internalID: 4290129192416179201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_24
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 447
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f967c52f50b1431c0800000000000000
+      internalID: -4524962013245573473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_25
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 447
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007fbe03ed9f121d0800000000000000
+      internalID: -3377143512852334848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e973ae3ef12cf8bf0800000000000000
+      internalID: -319823606296463458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_27
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2240a830c23b7d990800000000000000
+      internalID: -7361218064294476766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ddd6c5b8aec9eb0800000000000000
+      internalID: -4711633225864323774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966639e843a3acfc0800000000000000
+      internalID: -3473900165158181271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_30
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3611bd890243e5b10800000000000000
+      internalID: 1972071001442947427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_31
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58eb9c4b84cb42240800000000000000
+      internalID: 4766141326121614981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_32
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7badaabc6cd440b70800000000000000
+      internalID: 8864295482787814071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_33
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 402
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b430efe1f8185b0800000000000000
+      internalID: -5367851917575501017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_34
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 383
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b42c101c1d43430800000000000000
+      internalID: 3761862215649610628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_35
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 402
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7ba7d999aad6740800000000000000
+      internalID: 5146957525903128498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_36
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7986b004bba6d290800000000000000
+      internalID: -7865910909561566851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_37
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46fd32c9a1ae4520800000000000000
+      internalID: 2688263778067150411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_38
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 383
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b352b7609d1447a0800000000000000
+      internalID: -6393953064907025485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_39
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 397
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b9e5ab3f81b0c00800000000000000
+      internalID: 867814788281834390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 319
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8de51e364cce920800000000000000
+      internalID: 3021005383320656079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_41
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 319
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dd51d7493b89c70800000000000000
+      internalID: 8978123307498200434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_42
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 319
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb12b741b6dd2bc0800000000000000
+      internalID: -3806150053157790721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_43
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 319
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4ffe002c004d670800000000000000
+      internalID: 8562469624777536706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_44
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 319
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d79918f9dd0a12e0800000000000000
+      internalID: -2154394241921869870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_45
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 319
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0cacc1c0fb346ef0800000000000000
+      internalID: -115901785175184374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_46
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac74b0905e4084b0800000000000000
+      internalID: -5440262241931461472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_47
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e736a86ae8bf2b510800000000000000
+      internalID: 1563588610748998526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_48
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 319
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce6d933efd504d80800000000000000
+      internalID: -8268505569483198775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_49
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 256
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cc9e9c13592bcf0800000000000000
+      internalID: -237963789223736291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 256
+        width: 52
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7367bb895e06d170800000000000000
+      internalID: 8202759549060866940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_51
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 255
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f12aeb0e52b2680800000000000000
+      internalID: -8778881401427452044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_52
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 255
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8772b31f102ee290800000000000000
+      internalID: -7859308981868398710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_53
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 255
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9b7ca5a24186970800000000000000
+      internalID: 8748264448311409084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_54
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 255
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5b48d4d27e96160800000000000000
+      internalID: 7019395675993716181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_55
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 191
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d20e0b1b91b6fef0800000000000000
+      internalID: -74677064073084207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_56
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 191
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5141b0ece60fc3940800000000000000
+      internalID: 5277357222065280021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_57
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 191
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8485ef23f8a818350800000000000000
+      internalID: 6017242924784179272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_58
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 191
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112f12d7644ce3540800000000000000
+      internalID: 4989641244199219729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_59
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 191
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba0a51d8ba9548f0800000000000000
+      internalID: -556868860333389123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_60
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 191
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640a78bbfe5585560800000000000000
+      internalID: 7302681283913031750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_61
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 191
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d8f023ba29dedb0800000000000000
+      internalID: -4760987967083803342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_62
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 191
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6258223c9375de300800000000000000
+      internalID: 282978257192781094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_63
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 191
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841812e74953b62e0800000000000000
+      internalID: -2131551086742240952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_64
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 191
+        width: 53
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12c54d3646bc47f0800000000000000
+      internalID: -626925835319393766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_65
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 191
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d929172183b7200800000000000000
+      internalID: 178798262077267222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_66
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead23a0acbb967310800000000000000
+      internalID: 1402479568423693742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_67
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 127
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bbdb6cf14ad2220800000000000000
+      internalID: 2462805027626793807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_68
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74433f432a2cafb0800000000000000
+      internalID: -4635283585330101125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_69
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659e085ca7723bb40800000000000000
+      internalID: 5454746981928855894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_70
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 127
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fbe6921431ee0f0800000000000000
+      internalID: -1085909289560785112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_71
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7b0d2c832122230800000000000000
+      internalID: 3612469886100486125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_72
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d9e35eb5dba6390800000000000000
+      internalID: -7824233200217055873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_73
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341cbd94bdf3f0700800000000000000
+      internalID: 508695493985681731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_74
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8fd20ab152e4af0800000000000000
+      internalID: -410349715462424415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_75
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 127
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52821aeb0445f78e0800000000000000
+      internalID: -1693542297815144411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_76
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b971dd09ab180e050800000000000000
+      internalID: 5827800556111730587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_77
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b492a0ff33867c70800000000000000
+      internalID: 8968500018598286512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_78
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc551d394cca5d40800000000000000
+      internalID: 5573992103753899250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_79
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 127
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df4f3b084505bdd0800000000000000
+      internalID: -2471063013558366256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_80
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 127
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94845eabb256e250800000000000000
+      internalID: 5973552921790678172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_81
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 127
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c37b3f85c2fd000800000000000000
+      internalID: 62817680364092441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_82
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 63
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cacec416226daab0800000000000000
+      internalID: -4995228495986636095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_83
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753ce6892d0436ef0800000000000000
+      internalID: -116177892136795305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_84
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 63
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d08c6880ef580470800000000000000
+      internalID: 8361038126179451088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_85
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 63
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9965af1eea382f9d0800000000000000
+      internalID: -2741984435976382823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_86
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 64
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90085cc6913ee2ad0800000000000000
+      internalID: -2724991026174001143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_87
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 66
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45e94ae0d6bb95a0800000000000000
+      internalID: -6513411427661126322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_88
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 66
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbbf3bc15a7526c0800000000000000
+      internalID: -4168791388340634630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_89
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 65
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a06712fd050beaf0800000000000000
+      internalID: -366193387246231386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_90
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 64
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cebf37e76df00df0800000000000000
+      internalID: -215894159410610487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_91
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5102969b8c5a399c0800000000000000
+      internalID: -3921608568986853355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_92
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 63
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed209b787eb05ce0800000000000000
+      internalID: -1418424457943306784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_93
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7053c193acefa2b70800000000000000
+      internalID: 8875186160181982471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_94
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a303fdfdd261680800000000000000
+      internalID: -8784783583594136989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_95
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161b56b1358236a00800000000000000
+      internalID: 748486300480680289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_96
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ff6fda3aac0ca70800000000000000
+      internalID: 8845292472502779761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_97
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369254aac276fc5b0800000000000000
+      internalID: -5345940791132608157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_98
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a051252170ee400800000000000000
+      internalID: 355229195876764280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_99
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1e5d576f41f7560800000000000000
+      internalID: 7313587368644436440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_100
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf45baa0fa8ac0f0800000000000000
+      internalID: -1095910793050501201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoreReddish_101
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368c9490d75d70af0800000000000000
+      internalID: -430140506387134365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MoreReddish_0: -2046447502578963690
+      MoreReddish_1: -3013706423677490129
+      MoreReddish_10: 7125955162440843449
+      MoreReddish_100: -1095910793050501201
+      MoreReddish_101: -430140506387134365
+      MoreReddish_11: 1746359234804393347
+      MoreReddish_12: -7688311123539498037
+      MoreReddish_13: 9114601660495365088
+      MoreReddish_14: 5758157011875748071
+      MoreReddish_15: 2450448749409049207
+      MoreReddish_16: -6143026165606086682
+      MoreReddish_17: 4562782699321407757
+      MoreReddish_18: 6995683965416967837
+      MoreReddish_19: -2794050178765146512
+      MoreReddish_2: 6393866422167702578
+      MoreReddish_20: 3325590093060264329
+      MoreReddish_21: 1776664529116482779
+      MoreReddish_22: -1954078875773263015
+      MoreReddish_23: 4290129192416179201
+      MoreReddish_24: -4524962013245573473
+      MoreReddish_25: -3377143512852334848
+      MoreReddish_26: -319823606296463458
+      MoreReddish_27: -7361218064294476766
+      MoreReddish_28: -4711633225864323774
+      MoreReddish_29: -3473900165158181271
+      MoreReddish_3: 3154684611458309822
+      MoreReddish_30: 1972071001442947427
+      MoreReddish_31: 4766141326121614981
+      MoreReddish_32: 8864295482787814071
+      MoreReddish_33: -5367851917575501017
+      MoreReddish_34: 3761862215649610628
+      MoreReddish_35: 5146957525903128498
+      MoreReddish_36: -7865910909561566851
+      MoreReddish_37: 2688263778067150411
+      MoreReddish_38: -6393953064907025485
+      MoreReddish_39: 867814788281834390
+      MoreReddish_4: -6464868670911589679
+      MoreReddish_40: 3021005383320656079
+      MoreReddish_41: 8978123307498200434
+      MoreReddish_42: -3806150053157790721
+      MoreReddish_43: 8562469624777536706
+      MoreReddish_44: -2154394241921869870
+      MoreReddish_45: -115901785175184374
+      MoreReddish_46: -5440262241931461472
+      MoreReddish_47: 1563588610748998526
+      MoreReddish_48: -8268505569483198775
+      MoreReddish_49: -237963789223736291
+      MoreReddish_5: 4988837089686810904
+      MoreReddish_50: 8202759549060866940
+      MoreReddish_51: -8778881401427452044
+      MoreReddish_52: -7859308981868398710
+      MoreReddish_53: 8748264448311409084
+      MoreReddish_54: 7019395675993716181
+      MoreReddish_55: -74677064073084207
+      MoreReddish_56: 5277357222065280021
+      MoreReddish_57: 6017242924784179272
+      MoreReddish_58: 4989641244199219729
+      MoreReddish_59: -556868860333389123
+      MoreReddish_6: 6352914578469876822
+      MoreReddish_60: 7302681283913031750
+      MoreReddish_61: -4760987967083803342
+      MoreReddish_62: 282978257192781094
+      MoreReddish_63: -2131551086742240952
+      MoreReddish_64: -626925835319393766
+      MoreReddish_65: 178798262077267222
+      MoreReddish_66: 1402479568423693742
+      MoreReddish_67: 2462805027626793807
+      MoreReddish_68: -4635283585330101125
+      MoreReddish_69: 5454746981928855894
+      MoreReddish_7: -1424188762467230908
+      MoreReddish_70: -1085909289560785112
+      MoreReddish_71: 3612469886100486125
+      MoreReddish_72: -7824233200217055873
+      MoreReddish_73: 508695493985681731
+      MoreReddish_74: -410349715462424415
+      MoreReddish_75: -1693542297815144411
+      MoreReddish_76: 5827800556111730587
+      MoreReddish_77: 8968500018598286512
+      MoreReddish_78: 5573992103753899250
+      MoreReddish_79: -2471063013558366256
+      MoreReddish_8: 3376022645892587474
+      MoreReddish_80: 5973552921790678172
+      MoreReddish_81: 62817680364092441
+      MoreReddish_82: -4995228495986636095
+      MoreReddish_83: -116177892136795305
+      MoreReddish_84: 8361038126179451088
+      MoreReddish_85: -2741984435976382823
+      MoreReddish_86: -2724991026174001143
+      MoreReddish_87: -6513411427661126322
+      MoreReddish_88: -4168791388340634630
+      MoreReddish_89: -366193387246231386
+      MoreReddish_9: 8768399424887922775
+      MoreReddish_90: -215894159410610487
+      MoreReddish_91: -3921608568986853355
+      MoreReddish_92: -1418424457943306784
+      MoreReddish_93: 8875186160181982471
+      MoreReddish_94: -8784783583594136989
+      MoreReddish_95: 748486300480680289
+      MoreReddish_96: 8845292472502779761
+      MoreReddish_97: -5345940791132608157
+      MoreReddish_98: 355229195876764280
+      MoreReddish_99: 7313587368644436440
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

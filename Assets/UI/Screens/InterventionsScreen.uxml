@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+  <ui:Template name="BasePage" src="BasePage.uxml" />
+  <Style src="../Themes/Interventions.uss" />
+  <ui:Instance template="BasePage" name="interventions-page" class="interventions-page">
+    <ui:AttributeOverrides element-name="base-page-title" text="Interventions" />
+  </ui:Instance>
+</ui:UXML>

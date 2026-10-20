@@ -1,0 +1,204 @@
+.interventions-page {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+}
+
+.interventions-screen {
+    padding-bottom: 12px;
+}
+
+.interventions-screen Label {
+    white-space: normal;
+    flex-shrink: 0;
+}
+
+.interventions-heading {
+    font-size: 20px;
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+}
+
+.interventions-intro {
+    font-size: 15px;
+    color: rgb(205, 215, 224);
+    margin-bottom: 8px;
+}
+
+.interventions-note {
+    font-size: 12px;
+    color: var(--app-text-muted);
+    margin-bottom: 20px;
+}
+
+.intervention-card {
+    flex-shrink: 0;
+    margin-bottom: 14px;
+    padding: 16px;
+    background-color: rgb(20, 29, 40);
+    border-width: 1px;
+    border-color: var(--app-outline);
+    border-radius: 14px;
+}
+
+.intervention-meta {
+    font-size: 12px;
+    color: var(--app-primary);
+    margin-bottom: 8px;
+}
+
+.intervention-title {
+    font-size: 18px;
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+}
+
+.intervention-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(221, 228, 235);
+}
+
+.intervention-reward {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: var(--app-primary);
+}
+.app-button.intervention-start {
+    min-height: 48px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+.intervention-detail .intervention-description { margin-bottom: 18px; }
+.app--compact .intervention-detail .intervention-description { display: none; }
+
+.interventions-empty {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: rgb(20, 29, 40);
+    border-radius: 12px;
+}
+
+.app-button.grounding-entry {
+    width: 100%;
+    min-height: 88px;
+    border-radius: 20px;
+    background-color: #527DAD;
+    color: white;
+    font-size: 23px;
+    -unity-font-style: bold;
+}
+.app-button.grounding-entry:hover { background-color: #264a73; }
+.app-button.grounding-entry:active { background-color: #527DAD; }
+
+.grounding-entry-hint {
+    margin: 10px 4px 24px 4px;
+    font-size: 14px;
+    color: var(--app-text-muted);
+    -unity-text-align: middle-center;
+}
+
+.grounding-screen Label {
+    white-space: normal;
+    flex-shrink: 0;
+}
+.grounding-screen .app-button {
+    min-height: 52px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 14px;
+    letter-spacing: 0;
+}
+.grounding-screen .grounding-back {
+    align-self: flex-start;
+    -unity-text-align: middle-left;
+}
+.grounding-heading {
+    margin: 0 0 8px 0;
+    font-size: 26px;
+    -unity-font-style: bold;
+}
+.grounding-intro {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    color: rgb(205, 215, 224);
+}
+.grounding-card {
+    flex-shrink: 0;
+    padding: 18px 14px;
+    border-width: 1px;
+    border-color: #30514C;
+    border-radius: 20px;
+    background-color: #121F27;
+}
+.grounding-duration {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: var(--app-primary);
+}
+.grounding-title {
+    margin: 0 0 16px 0;
+    font-size: 22px;
+    -unity-font-style: bold;
+}
+.grounding-step {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin-bottom: 14px;
+}
+.grounding-step-number {
+    width: 28px;
+    height: 28px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    border-radius: 14px;
+    background-color: #244238;
+    color: #B2FFD5;
+    font-size: 14px;
+    -unity-text-align: middle-center;
+}
+.grounding-screen .grounding-step-text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    margin: 2px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+.grounding-permission {
+    margin: 16px 2px 12px 2px;
+    font-size: 14px;
+    color: var(--app-text-muted);
+}
+.grounding-footer {
+    flex-shrink: 0;
+    padding-top: 12px;
+    border-top-width: 1px;
+    border-top-color: var(--app-outline);
+}
+.grounding-progress {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: var(--app-text-muted);
+    -unity-text-align: middle-center;
+}
+.grounding-actions { flex-direction: row; }
+.grounding-actions .app-button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+}
+#grounding-previous { margin-right: 10px; }
+.app--compact .grounding-screen .page-scroll { margin-top: 12px; }
+.app--compact .grounding-screen { max-width: 640px; }
+.app--compact .grounding-heading,
+.app--compact .grounding-intro { display: none; }
+.app--compact .grounding-card { padding: 12px; }
+.app--compact .grounding-title { font-size: 18px; margin-bottom: 10px; }
+.app--compact .grounding-duration { margin-bottom: 4px; }
+.app--compact .grounding-footer { padding-top: 6px; }
+.app--compact .grounding-progress { margin-bottom: 6px; }

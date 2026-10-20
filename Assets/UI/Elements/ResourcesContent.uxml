@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+  <Style src="../Themes/ResourcesScreen.uss" />
+  <ui:VisualElement name="resources-content" class="resources-content">
+    <ui:Label text="SUPPORT, AT YOUR PACE" class="resources-eyebrow" />
+    <ui:Label text="You don't have to do this alone." class="resources-heading" />
+    <ui:Label text="Australian support for you, or someone you care about. Start wherever feels right." class="resources-intro" />
+    <ui:VisualElement class="resource-hero">
+      <ui:Label text="FREE &amp; CONFIDENTIAL · 24/7" class="resource-eyebrow" />
+      <ui:Label text="Talk to someone who understands" class="resource-hero-title" />
+      <ui:Label text="National Gambling Helpline" class="resource-hero-name" />
+      <ui:Label text="A counsellor can listen and help you work out a next step. Family and friends can call too." class="resource-description" />
+      <ui:Button name="resources-call-help" text="Call 1800 858 858" class="resource-button resource-primary" />
+      <ui:Button name="resources-chat" text="Prefer to type? Open online chat" class="resource-button resource-chat" />
+      <ui:Label name="resources-link-note" text="Calls open your phone app. Website links open your browser." class="resource-note" />
+    </ui:VisualElement>
+    <ui:Label name="resources-status" class="resources-status" />
+    <ui:Label name="resources-count" text="Explore support" class="resources-section-title" />
+    <ui:VisualElement class="resource-filters">
+      <ui:Button name="resources-filter-all" text="All" class="resource-filter resource-filter--selected" />
+      <ui:Button name="resources-filter-money" text="Money" class="resource-filter" />
+      <ui:Button name="resources-filter-tools" text="Tools" class="resource-filter" />
+      <ui:Button name="resources-filter-community" text="Community" class="resource-filter" />
+      <ui:Button name="resources-filter-local" text="Local" class="resource-filter" />
+    </ui:VisualElement>
+    <ui:VisualElement name="resources-list" />
+    <ui:Label text="Need support in another language? Ask the gambling helpline for an interpreter. Hearing or speech support is available through the National Relay Service." class="resource-note resources-accessibility" />
+    <ui:Label name="resources-reviewed" class="resource-note" />
+  </ui:VisualElement>
+</ui:UXML>

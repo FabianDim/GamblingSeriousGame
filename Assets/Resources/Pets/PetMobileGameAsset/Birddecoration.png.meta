@@ -1,0 +1,925 @@
+fileFormatVersion: 2
+guid: 6f1e19475b9074d45a99d7f72a38a2dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4964669483686308983
+    second: Birddecoration_0
+  - first:
+      213: -1993660217619583345
+    second: Birddecoration_1
+  - first:
+      213: -5578660264665369224
+    second: Birddecoration_2
+  - first:
+      213: -7713107374907316287
+    second: Birddecoration_3
+  - first:
+      213: -7693899540593786538
+    second: Birddecoration_4
+  - first:
+      213: -8460619938244503983
+    second: Birddecoration_5
+  - first:
+      213: -8036352245954206911
+    second: Birddecoration_6
+  - first:
+      213: 661006983742510887
+    second: Birddecoration_7
+  - first:
+      213: 7456768922700135377
+    second: Birddecoration_8
+  - first:
+      213: 1396247935769959729
+    second: Birddecoration_9
+  - first:
+      213: -7913563892892895719
+    second: Birddecoration_10
+  - first:
+      213: 8035804006786236596
+    second: Birddecoration_11
+  - first:
+      213: -6136347312938811844
+    second: Birddecoration_12
+  - first:
+      213: 7154282295692031469
+    second: Birddecoration_13
+  - first:
+      213: -9090203610465091759
+    second: Birddecoration_14
+  - first:
+      213: 2888787567575971924
+    second: Birddecoration_15
+  - first:
+      213: -3426019131980849485
+    second: Birddecoration_16
+  - first:
+      213: 8132789804684041333
+    second: Birddecoration_17
+  - first:
+      213: 4875612916230176376
+    second: Birddecoration_18
+  - first:
+      213: -1668249507566789305
+    second: Birddecoration_19
+  - first:
+      213: 2724841295506019277
+    second: Birddecoration_20
+  - first:
+      213: -2002053910538715284
+    second: Birddecoration_21
+  - first:
+      213: 3435817500104696498
+    second: Birddecoration_22
+  - first:
+      213: 7765441047201776717
+    second: Birddecoration_23
+  - first:
+      213: 4938069078575313243
+    second: Birddecoration_24
+  - first:
+      213: 1536262972753111884
+    second: Birddecoration_25
+  - first:
+      213: 23505942385892028
+    second: Birddecoration_26
+  - first:
+      213: -2707623326105419636
+    second: Birddecoration_27
+  - first:
+      213: -363040154390434787
+    second: Birddecoration_28
+  - first:
+      213: -8304456497810370688
+    second: Birddecoration_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Birddecoration_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 328
+        width: 94
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c285a679c06e440800000000000000
+      internalID: 4964669483686308983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 326
+        width: 94
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ee4fd48981554e0800000000000000
+      internalID: -1993660217619583345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 325
+        width: 94
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875b80adb0e9492b0800000000000000
+      internalID: -5578660264665369224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 325
+        width: 94
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7243455b985f490800000000000000
+      internalID: -7713107374907316287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 325
+        width: 94
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651cd51c127c93590800000000000000
+      internalID: -7693899540593786538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 15
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15659511ef6d59a80800000000000000
+      internalID: -8460619938244503983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 268
+        width: 15
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143acf1f534297090800000000000000
+      internalID: -8036352245954206911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 268
+        width: 15
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727560c795e5c2900800000000000000
+      internalID: 661006983742510887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 268
+        width: 15
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbb6b9d3d3cb7760800000000000000
+      internalID: 7456768922700135377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 208
+        width: 21
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13dd0f59918706310800000000000000
+      internalID: 1396247935769959729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 208
+        width: 21
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916f2c8319f5d2290800000000000000
+      internalID: -7913563892892895719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_11
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 208
+        width: 21
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0872d2b29e48f60800000000000000
+      internalID: 8035804006786236596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_12
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 209
+        width: 21
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3efbd171a057daa0800000000000000
+      internalID: -6136347312938811844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 209
+        width: 21
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5f699c7dd194360800000000000000
+      internalID: 7154282295692031469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_14
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 246
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f314e6afb19d180800000000000000
+      internalID: -9090203610465091759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 246
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4583eecbcf8071820800000000000000
+      internalID: 2888787567575971924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_16
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 246
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bed69450c55470d0800000000000000
+      internalID: -3426019131980849485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_17
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 246
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c5c1dec397dd070800000000000000
+      internalID: 8132789804684041333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_18
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 246
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87eb43e7d18a9a340800000000000000
+      internalID: 4875612916230176376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_19
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 268
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74dd2c069ef29d8e0800000000000000
+      internalID: -1668249507566789305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_20
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 268
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc393ffa8b490d520800000000000000
+      internalID: 2724841295506019277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_21
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 204
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f782163964734e0800000000000000
+      internalID: -2002053910538715284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_22
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 204
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2afc600d97eaf20800000000000000
+      internalID: 3435817500104696498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 23
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4403b64d7364cb60800000000000000
+      internalID: 7765441047201776717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 23
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5172d8f9ab878440800000000000000
+      internalID: 4938069078575313243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 95
+        width: 23
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4be884c807e15510800000000000000
+      internalID: 1536262972753111884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_26
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 95
+        width: 23
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba9502b782835000800000000000000
+      internalID: 23505942385892028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_27
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 95
+        width: 23
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80cce53ee69c6ad0800000000000000
+      internalID: -2707623326105419636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 99
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cea5e27e836faf0800000000000000
+      internalID: -363040154390434787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birddecoration_29
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 98
+        width: 37
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f045b60d4a0cc80800000000000000
+      internalID: -8304456497810370688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Birddecoration_0: 4964669483686308983
+      Birddecoration_1: -1993660217619583345
+      Birddecoration_10: -7913563892892895719
+      Birddecoration_11: 8035804006786236596
+      Birddecoration_12: -6136347312938811844
+      Birddecoration_13: 7154282295692031469
+      Birddecoration_14: -9090203610465091759
+      Birddecoration_15: 2888787567575971924
+      Birddecoration_16: -3426019131980849485
+      Birddecoration_17: 8132789804684041333
+      Birddecoration_18: 4875612916230176376
+      Birddecoration_19: -1668249507566789305
+      Birddecoration_2: -5578660264665369224
+      Birddecoration_20: 2724841295506019277
+      Birddecoration_21: -2002053910538715284
+      Birddecoration_22: 3435817500104696498
+      Birddecoration_23: 7765441047201776717
+      Birddecoration_24: 4938069078575313243
+      Birddecoration_25: 1536262972753111884
+      Birddecoration_26: 23505942385892028
+      Birddecoration_27: -2707623326105419636
+      Birddecoration_28: -363040154390434787
+      Birddecoration_29: -8304456497810370688
+      Birddecoration_3: -7713107374907316287
+      Birddecoration_4: -7693899540593786538
+      Birddecoration_5: -8460619938244503983
+      Birddecoration_6: -8036352245954206911
+      Birddecoration_7: 661006983742510887
+      Birddecoration_8: 7456768922700135377
+      Birddecoration_9: 1396247935769959729
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

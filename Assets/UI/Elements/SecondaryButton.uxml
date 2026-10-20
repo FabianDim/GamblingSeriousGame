@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="../Themes/App.uss" />
+    <ui:Button name="secondary-button" text="Log In" class="app-button button--secondary" />
+</ui:UXML>

@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Template name="PrimaryButton" src="../Elements/PrimaryButton.uxml" />
+    <ui:Template name="SecondaryButton" src="../Elements/SecondaryButton.uxml" />
+    <ui:Template name="TextButton" src="../Elements/TextButton.uxml" />
+    <Style src="../Themes/App.uss" />
+    <ui:VisualElement class="app style-guide">
+        <ui:VisualElement class="content-panel">
+            <ui:Label text="Your UI style" class="page-header" />
+            <ui:ScrollView mode="Vertical" horizontal-scroller-visibility="Hidden" class="page-scroll">
+                <ui:Label text="COLOURS" class="section-label" />
+                <ui:VisualElement class="swatches">
+                    <ui:Label text="#0B0E17" class="swatch swatch--background" />
+                    <ui:Label text="#00E676" class="swatch swatch--primary" />
+                    <ui:Label text="#202C3D" class="swatch swatch--outline" />
+                </ui:VisualElement>
+                <ui:Label text="OUTFIT / TYPOGRAPHY" class="section-label" />
+                <ui:Label text="Choose Companion" class="page-header" />
+                <ui:Label text="Outfit Regular for headings and primary buttons. Outfit Bold for secondary actions." class="body-copy" />
+                <ui:Label text="PRIMARY" class="section-label" />
+                <ui:Instance template="PrimaryButton" text="Primary action" class="button-template" />
+                <ui:Label text="OUTLINED" class="section-label" />
+                <ui:Instance template="SecondaryButton" class="button-template" />
+                <ui:Label text="TEXT ONLY" class="section-label" />
+                <ui:Instance template="TextButton" class="button-template" />
+                <ui:Label text="DISABLED" class="section-label" />
+                <ui:Button text="Unavailable" enabled="false" class="app-button button--primary" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
