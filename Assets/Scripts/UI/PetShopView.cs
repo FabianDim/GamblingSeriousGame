@@ -18,8 +18,10 @@ namespace GamblingSeriousGame.UI
         private readonly DropdownField category;
         private readonly List<(ShopItem item, Button button)> rows = new List<(ShopItem, Button)>();
         private int lastXp = -1, lastOwned = -1;
+        public bool IsOpen => panel.style.display == DisplayStyle.Flex;
+        public System.Action BeforeOpen { private get; set; }
 
-        public PetShopView(VisualElement background, GameStateManager state)
+        public PetShopView(VisualElement background, GameStateManager state, System.Action openInventory = null)
         {
             this.state = state;
             var navigation = new VisualElement { name = "gameplay-navigation" };
@@ -33,6 +35,10 @@ namespace GamblingSeriousGame.UI
             var openShop = new Button(Open) { text = "Shop" };
             openShop.AddToClassList("gameplay-menu-option");
             menu.Add(openShop);
+            var inventory = new Button(() => { HideMenu(); openInventory?.Invoke(); })
+                { text = "Inventory", name = "open-inventory" };
+            inventory.AddToClassList("gameplay-menu-option");
+            menu.Add(inventory);
             navigation.Add(menu);
 
             panel = new VisualElement { name = "pet-shop" };
@@ -69,7 +75,7 @@ namespace GamblingSeriousGame.UI
             background.Add(navigation);
             background.RegisterCallback<KeyDownEvent>(evt =>
             {
-                if (evt.keyCode != KeyCode.Escape) return;
+                if (evt.keyCode != KeyCode.Escape || (!IsOpen && menu.style.display == DisplayStyle.None)) return;
                 Close();
                 evt.StopPropagation();
             });
@@ -90,6 +96,7 @@ namespace GamblingSeriousGame.UI
 
         private void Open()
         {
+            BeforeOpen?.Invoke();
             HideMenu();
             panel.style.display = DisplayStyle.Flex;
             status.text = "";
@@ -98,7 +105,7 @@ namespace GamblingSeriousGame.UI
             panel.Q<Button>("shop-back").Focus();
         }
 
-        private void Close()
+        public void Close()
         {
             panel.style.display = DisplayStyle.None;
             HideMenu();

@@ -81,7 +81,8 @@ fallbacks. The live summary shows the chosen name, animal and breed. All user/ca
 text is displayed literally with rich text disabled.
 
 **Save companion** stores the latest confirmed profile on this device using
-PlayerPrefs key `Companion.Profile.v1`, then invokes both events:
+PlayerPrefs key from `PetSaveStore.SavedProfileKey` (isolated per player build;
+`Companion.Profile.v1` in the Editor), then invokes both events:
 
 - **On Pet Created (String, String)**: existing animal ID/name callback, retained for
   compatibility with scene listeners.

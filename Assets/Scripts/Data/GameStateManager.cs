@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
-    public const string SavedProfileKey = PetCustomizationScreen.SavedProfileKey;
+    public static string SavedProfileKey => PetSaveStore.SavedProfileKey;
     private const string BackgroundCatalogPath = "Pets/PetMobileGameAsset/Backgrounds/Classic/Backgrounds";
 
     [Serializable]

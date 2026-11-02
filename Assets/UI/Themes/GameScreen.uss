@@ -38,6 +38,44 @@
     bottom: 12%;
 }
 
+.room-layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.room-placement-bounds {
+    background-color: rgba(0, 230, 118, 0.07);
+    border-width: 2px;
+    border-color: rgb(0, 230, 118);
+    border-radius: 4px;
+}
+
+.room-item-preview {
+    opacity: 0.75;
+    background-color: rgba(0, 230, 118, 0.2);
+    border-width: 1px;
+    border-color: rgb(0, 230, 118);
+}
+
+.room-item-preview--invalid {
+    background-color: rgba(255, 80, 80, 0.3);
+    border-color: rgb(255, 80, 80);
+}
+
+.placement-toolbar {
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 13%;
+    margin-top: 42px;
+    padding: 8px;
+    background-color: rgba(11, 14, 23, 0.97);
+    border-radius: 8px;
+}
+
 .pet-reaction {
     position: absolute;
     bottom: 100%;
@@ -119,6 +157,8 @@
 }
 
 .gameplay-menu-option {
+    margin-top: 4px;
+    margin-bottom: 4px;
     color: rgb(0, 230, 118);
 }
 
@@ -207,6 +247,10 @@
     flex-grow: 1;
     flex-shrink: 1;
     min-width: 0;
+}
+
+.shop-item-details .shop-back {
+    margin-top: 8px;
 }
 
 .shop-item-name {

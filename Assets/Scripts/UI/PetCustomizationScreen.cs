@@ -11,7 +11,7 @@ namespace GamblingSeriousGame.UI
     [DefaultExecutionOrder(100)]
     public sealed class PetCustomizationScreen : MonoBehaviour
     {
-        public const string SavedProfileKey = "Companion.Profile.v1";
+        public static string SavedProfileKey => PetSaveStore.SavedProfileKey;
         [SerializeField] private TextAsset animalJson;
         // Retained for existing scene listeners; the detailed event also supplies the breed.
         [SerializeField] private UnityEvent<string, string> onPetCreated = new UnityEvent<string, string>();
@@ -62,7 +62,7 @@ namespace GamblingSeriousGame.UI
             {
                 var catalog = animalJson == null ? null : JsonUtility.FromJson<AnimalCatalog>(animalJson.text);
                 animal = Array.Find(catalog?.animals ?? Array.Empty<AnimalDefinition>(), entry =>
-                    entry != null && !string.IsNullOrWhiteSpace(entry.id) &&
+                    entry != null && !entry.selectionDisabled && !string.IsNullOrWhiteSpace(entry.id) &&
                     !string.IsNullOrWhiteSpace(entry.name) && entry.id == animalId);
             }
             catch (ArgumentException exception) { Debug.LogWarning("Invalid animal JSON: " + exception.Message, this); }

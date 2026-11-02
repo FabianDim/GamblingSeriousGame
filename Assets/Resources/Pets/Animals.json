@@ -72,6 +72,7 @@
     {
       "id": "rabbit",
       "name": "Rabbit",
+      "selectionDisabled": true,
       "description": "A gentle companion who enjoys exploring and finding a comfortable spot to relax.",
       "previewImageFolder": "Pets/PreviewImages/Rabbits",
       "suggestedNames": ["Clover", "Pip", "Willow", "Pebble", "Hazel"],

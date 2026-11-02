@@ -48,14 +48,20 @@ Non-looping actions hold their final frame. An explicitly paused preview remains
 paused after binding; use `SetPlaying(true)` to resume it. Imported preview sprites
 are never destroyed. `GameplayScreen.PlayPetAnimation(action)` forwards to the
 gameplay preview and returns false if the screen or action is unavailable.
-When attached to the gameplay screen, `PetMovement` builds an animation array
-from the selected breed: `{ Running, Jump, Running }`. The sequence is one random
-choice alongside individual activities, including on startup. When chosen, it
-plays all three entries in order, then returns to random selection.
-Looping clips run for 10–40 seconds; non-looping
-clips advance after one playback, using their frame count and preview FPS.
-Breeds missing either clip retain random activity playback. The sequence rebuilds
-when the selected pet changes. Enabling the screen starts a fresh random choice.
+`PetRoomView` coordinates roaming and stationary activities through `GameplayScreen`.
+After reaching a destination, the pet usually takes a 6–12 second activity break;
+otherwise it idles for 2–4 seconds. Its first arrival gets an activity, and two
+idle-only stops cannot occur in a row when suitable animations exist. Activities
+are chosen from the selected breed's activity and sleep clips, excluding Idle,
+Running and Jump. Consecutive activities differ when alternatives are available.
+Cats can chill or dance, while retrievers can sniff, sit or lie down; sleep is also
+available. Death and reaction-only clips are never selected for these breaks.
+Non-looping clips finish and hold their final pose, and every break lasts at least
+one full playback. Breeds without suitable clips retain their idle/preview fallback.
+
+The legacy `PetMovement` sequencer yields while a room controller is present, so
+the two controllers cannot overwrite each other's animations. Its run/jump/run
+sequence remains a fallback outside the room controller.
 
 ## Tapping the companion
 
@@ -83,11 +89,11 @@ displays for 1.2 seconds while the existing preview is paused.
 
 `GameplayScreen.ReactToPet()` plays the reaction once, overriding looping for
 that playback without changing the asset. Further taps and ambient playback
-requests are ignored until completion. `PetMovement` pauses its activity timer
-during the reaction, and the previous activity restarts when the reaction ends.
-An in-progress run/jump/run sequence keeps its place. Tapping does not alter
+requests are ignored until completion. The room pauses its break timer during
+the reaction and while menus are open; the previous activity restarts when the
+reaction ends. Tapping does not alter
 health, XP or saved data. Closing the screen cancels pending reaction callbacks.
-Non-looping activities receive a fresh full playback interval when restarted.
+Furniture placement can interrupt a break when the pet needs to move aside.
 
 `PetSpritePreview.Bind(definition, false, onCompleted)` provides one-shot
 playback with a completion callback, including single-frame clips. The first
@@ -117,8 +123,8 @@ definitions in separate lists; use `manager.SelectedPet.Animations.Sleep` for
 sleep actions, and `.Death` or `.Reactions` for those categories.
 Never choose from an unfiltered `Resources.LoadAll` result: Unity searches nested
 folders too. Cache definitions and generated frames instead of creating sprites
-every update. `PetMovement` controls animation playback through `GameplayScreen`;
-position movement and inactivity detection are not implemented yet.
+every update. `PetRoomView` coordinates position movement and activity breaks
+through `GameplayScreen`; player inactivity detection is not implemented.
 
 New assets can be created with **Assets > Create > Pets > Animation**. Keep one
 action per asset and list its frames in playback order. Death clips should not

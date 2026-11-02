@@ -8,6 +8,14 @@ using UnityEngine;
 namespace GamblingSeriousGame.Data
 {
     [DataContract]
+    public sealed class PetItemPlacement
+    {
+        [DataMember] public string itemId;
+        [DataMember] public float x;
+        [DataMember] public float y;
+    }
+
+    [DataContract]
     public sealed class PetSaveData
     {
         [DataMember] public string animalId;
@@ -19,6 +27,7 @@ namespace GamblingSeriousGame.Data
         [DataMember] public int maxHealth = 100;
         [DataMember] public int experience;
         [DataMember] public List<string> ownedItems = new List<string>();
+        [DataMember] public List<PetItemPlacement> placedItems = new List<PetItemPlacement>();
         [DataMember] public List<string> claimedInterventionSessions = new List<string>();
 
         [OnDeserializing]
@@ -27,13 +36,24 @@ namespace GamblingSeriousGame.Data
             // Data contract deserialization does not run field initializers.
             backgroundId = 1;
             ownedItems = new List<string>();
+            placedItems = new List<PetItemPlacement>();
             claimedInterventionSessions = new List<string>();
         }
     }
 
     public static class PetSaveStore
     {
-        public static string SavePath => Path.Combine(Application.persistentDataPath, "pets.json");
+        // A new player build starts fresh; relaunching that build keeps its progress.
+        // Preserve the editor's existing save location for play-mode development.
+        public static string SaveDirectory => Application.isEditor
+            ? Application.persistentDataPath
+            : Path.Combine(Application.persistentDataPath, "Builds", Application.buildGUID);
+
+        public static string SavedProfileKey => Application.isEditor
+            ? "Companion.Profile.v1"
+            : "Companion.Profile.v1." + Application.buildGUID;
+
+        public static string SavePath => Path.Combine(SaveDirectory, "pets.json");
 
         public static void EnsureExists()
         {
@@ -111,6 +131,7 @@ namespace GamblingSeriousGame.Data
                 animalId = pet.animalId, breedId = pet.breedId, petName = pet.petName,
                 backgroundId = pet.backgroundId, level = pet.level, health = pet.health,
                 maxHealth = pet.maxHealth, experience = pet.experience, ownedItems = owned,
+                placedItems = new List<PetItemPlacement>(pet.placedItems ?? new List<PetItemPlacement>()),
                 claimedInterventionSessions = new List<string>(pet.claimedInterventionSessions ?? new List<string>())
             };
             try { SavePet(uuid, updated); }
@@ -123,6 +144,59 @@ namespace GamblingSeriousGame.Data
             }
             pet.ownedItems = owned;
             message = item.Name + " added to your collection!";
+            return true;
+        }
+
+        // A null position returns an item to inventory. Persist before changing the live room.
+        public static bool TryPlaceItem(string uuid, PetSaveData pet, string itemId,
+            Vector2? position, out string message)
+        {
+            var item = ShopCatalog.Find(itemId);
+            if (pet == null || !Guid.TryParse(uuid, out var id) || id == Guid.Empty ||
+                item?.Sprite == null || pet.ownedItems?.Contains(itemId) != true)
+            {
+                message = "Collect this item in the shop first.";
+                return false;
+            }
+            var placements = new List<PetItemPlacement>(pet.placedItems ?? new List<PetItemPlacement>());
+            placements.RemoveAll(entry => entry == null || entry.itemId == itemId);
+            if (position.HasValue)
+            {
+                var bounds = Gameplay.RoomLayout.ItemBounds(item, position.Value);
+                if (!Gameplay.RoomLayout.Contains(Gameplay.RoomLayout.ItemArea, bounds))
+                {
+                    message = "Keep the whole item inside the highlighted area.";
+                    return false;
+                }
+                foreach (var entry in placements)
+                {
+                    var other = ShopCatalog.Find(entry.itemId);
+                    if (other?.Sprite != null && bounds.Overlaps(Gameplay.RoomLayout.ItemBounds(other, new Vector2(entry.x, entry.y))))
+                    {
+                        message = "Leave space between items.";
+                        return false;
+                    }
+                }
+                placements.Add(new PetItemPlacement { itemId = itemId, x = position.Value.x, y = position.Value.y });
+            }
+            var updated = new PetSaveData
+            {
+                animalId = pet.animalId, breedId = pet.breedId, petName = pet.petName,
+                backgroundId = pet.backgroundId, level = pet.level, health = pet.health,
+                maxHealth = pet.maxHealth, experience = pet.experience,
+                ownedItems = pet.ownedItems, placedItems = placements,
+                claimedInterventionSessions = pet.claimedInterventionSessions
+            };
+            try { SavePet(uuid, updated); }
+            catch (Exception exception) when (exception is IOException || exception is UnauthorizedAccessException ||
+                exception is SerializationException || exception is System.Xml.XmlException)
+            {
+                Debug.LogWarning("Could not save room: " + exception.Message);
+                message = "Couldn't save your room. Please try again.";
+                return false;
+            }
+            pet.placedItems = placements;
+            message = position.HasValue ? item.Name + " placed!" : item.Name + " returned to inventory.";
             return true;
         }
 
@@ -180,7 +254,7 @@ namespace GamblingSeriousGame.Data
 
         private static void Write(Dictionary<string, PetSaveData> pets)
         {
-            Directory.CreateDirectory(Application.persistentDataPath);
+            Directory.CreateDirectory(SaveDirectory);
             string temporaryPath = SavePath + ".tmp";
             try
             {

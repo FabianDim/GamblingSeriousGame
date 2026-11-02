@@ -94,6 +94,11 @@ are supported. An empty or missing image displays a placeholder box.
 The bundled cat has a sliced idle animation; other types show placeholders until their art is added. See the companion setup guide for breed and sprite-sheet fields.
 Call `ReloadPets()` after replacing the source data to rebuild the list and reset selection.
 
+Set `selectionDisabled: true` on an animal to temporarily disable its card and show
+"Coming soon". Selection, confirmation and direct customization reject disabled
+animals. Rabbit currently uses this flag while its sprites are unavailable; remove
+the flag or set it to false when its art is ready. Existing saved pets are retained.
+
 For a new button, add a Button in UI Builder and assign `app-button` plus
 `button--primary` or `button--secondary`. For a background-free green text button,
 use `class="text-button"` on its own. Or drag the corresponding

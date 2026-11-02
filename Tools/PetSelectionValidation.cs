@@ -114,10 +114,15 @@ public static class PetSelectionValidation
         Require(cards[0].Q<Label>("pet-name").text == "Cat", "Name bound from JSON");
         Require(cards[0].Q<Label>("pet-description").text.Length > 20, "Description bound from JSON");
         Require(!confirm.enabledSelf && screen.SelectedAnimal == null, "Confirm starts disabled");
+        Require(!cards[2].enabledSelf && cards[2].Q<Label>("pet-selection-state").text == "Coming soon", "Rabbit is visibly unavailable");
+        Submit(cards[2]);
+        Require(screen.SelectedAnimal == null && !confirm.enabledSelf, "Unavailable rabbit cannot be selected or confirmed");
         Submit(cards[0]);
         Require(screen.SelectedAnimal.id == "cat" && confirm.enabledSelf, "Selecting enables confirmation");
         Submit(cards[1]);
         Require(screen.SelectedAnimal.id == "dog", "Can change selection");
+        Submit(cards[2]);
+        Require(screen.SelectedAnimal.id == "dog", "Unavailable rabbit cannot replace an available selection");
         Require(!cards[0].ClassListContains("pet-card--selected") && cards[1].ClassListContains("pet-card--selected"), "Only one selected card");
         string confirmed = null;
         int count = 0;
@@ -132,6 +137,17 @@ public static class PetSelectionValidation
         Require(count == 2, "Re-enable does not duplicate confirmation callbacks");
 
         var originalJson = Field("animalJson").GetValue(screen);
+        var customizationObject = new GameObject("Unavailable pet validation");
+        customizationObject.SetActive(false);
+        var customization = customizationObject.AddComponent<PetCustomizationScreen>();
+        typeof(PetCustomizationScreen).GetField("animalJson", BindingFlags.Instance | BindingFlags.NonPublic)
+            .SetValue(customization, originalJson);
+        customization.SetAnimal("cat");
+        Require(customization.CurrentProfile != null, "Available animals can be customized");
+        customization.SetAnimal("rabbit");
+        Require(customization.CurrentProfile == null && customization.SelectedAnimalId == null,
+            "Direct customization cannot create a rabbit or retain the previous draft");
+        UnityEngine.Object.Destroy(customizationObject);
         CheckJson(screen, "{\"animals\":[]}", 0);
         Require(!confirm.enabledSelf, "Empty list disables confirmation");
         CheckJson(screen, "not json", 0);

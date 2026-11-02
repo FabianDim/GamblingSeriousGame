@@ -9,6 +9,8 @@ namespace GamblingSeriousGame.UI
         public string id;
         public string name;
         public string description;
+        // Temporary creation availability; omitted values keep existing catalogs selectable.
+        public bool selectionDisabled;
         public string imageResourcePath;
         public string previewImageFolder;
         public float previewFramesPerSecond = 10;

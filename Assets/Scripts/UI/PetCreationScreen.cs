@@ -125,7 +125,9 @@ namespace GamblingSeriousGame.UI
                 card.Q<Label>("pet-description").text = animal.description ?? string.Empty;
                 card.Q<Label>("pet-name").enableRichText = false;
                 card.Q<Label>("pet-description").enableRichText = false;
-                card.tooltip = "Select " + animal.name;
+                card.tooltip = animal.selectionDisabled ? animal.name + " is temporarily unavailable." : "Select " + animal.name;
+                card.SetEnabled(!animal.selectionDisabled);
+                card.Q<Label>("pet-selection-state").text = animal.selectionDisabled ? "Coming soon" : "Select";
                 SetAnimalImage(card, animal);
                 card.clicked += () => SelectAnimal(animal, card);
                 cards.Add(card);
@@ -164,6 +166,7 @@ namespace GamblingSeriousGame.UI
 
         private void SelectAnimal(AnimalDefinition animal, Button card)
         {
+            if (animal == null || animal.selectionDisabled) return;
             if (selectedCard != null)
             {
                 selectedCard.RemoveFromClassList("pet-card--selected");
@@ -178,7 +181,7 @@ namespace GamblingSeriousGame.UI
 
         private void ConfirmSelection()
         {
-            if (SelectedAnimal == null) return;
+            if (SelectedAnimal == null || SelectedAnimal.selectionDisabled) return;
             onPetConfirmed.Invoke(SelectedAnimal.id);
             onPrimaryAction.Invoke();
         }

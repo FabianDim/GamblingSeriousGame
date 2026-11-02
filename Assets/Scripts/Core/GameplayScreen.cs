@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using GamblingSeriousGame.UI;
@@ -23,6 +24,10 @@ public class GameplayScreen : MonoBehaviour
     private ProgressBar healthBar;
     private Label xpCounter;
     private PetShopView shop;
+    private PetRoomView room;
+    public bool IsPetMoving => room?.IsMoving == true;
+    public bool HasRoomBehaviour => room != null;
+    private PetAnimationDefinition lastRestAnimation;
     private IVisualElementScheduledItem healthUpdate;
 
     private void OnEnable()
@@ -80,7 +85,11 @@ public class GameplayScreen : MonoBehaviour
         overlay.AddToClassList("gameplay-overlay");
         overlay.Add(stats);
         background.Add(overlay);
-        shop = new PetShopView(overlay, gameStateManager);
+        room = new PetRoomView(background, overlay, petImage, gameStateManager, this);
+        shop = new PetShopView(overlay, gameStateManager, room.OpenInventory);
+        shop.BeforeOpen = room.PrepareForShop;
+        room.CloseShop = shop.Close;
+        room.IsShopOpen = () => shop.IsOpen;
         RefreshHealth();
         healthUpdate = healthBar.schedule.Execute(RefreshHealth).Every(250);
         sceneArea.Add(background);
@@ -115,12 +124,52 @@ public class GameplayScreen : MonoBehaviour
 
     public bool PlayPetAnimation(PetAnimationDefinition definition)
     {
-        if (IsPetReacting || petPreview == null || definition == null || !definition.IsPlayable) return false;
+        if (IsPetReacting || IsPetMoving || petPreview == null || definition == null || !definition.IsPlayable) return false;
         activityAnimation = definition;
         activityPet = gameStateManager.SelectedPet;
         CurrentPetAnimation = definition;
         petPreview.Bind(definition);
         return true;
+    }
+
+    public void SetPetWalking(bool walking, bool facingLeft)
+    {
+        if (petPreview == null) return;
+        petImage.style.scale = new Scale(new Vector3(walking && facingLeft ? -1 : 1, 1, 1));
+        // Keep the reaction text readable when the sprite faces left.
+        reactionBubble.style.scale = petImage.style.scale;
+        if (IsPetReacting) return;
+        var activities = gameStateManager.SelectedPet?.Animations.Activities;
+        PetAnimationDefinition definition = null;
+        if (activities != null)
+            foreach (var entry in activities)
+                if (entry.name == (walking ? "Running" : "Idle")) { definition = entry; break; }
+        activityAnimation = definition;
+        activityPet = gameStateManager.SelectedPet;
+        CurrentPetAnimation = definition;
+        if (definition != null) petPreview.Bind(definition);
+        else BindPetPreview();
+    }
+
+    // Return how long the room should hold its position while this activity plays.
+    public float PlayPetRestActivity()
+    {
+        var animations = gameStateManager.SelectedPet?.Animations;
+        if (animations == null || IsPetMoving || IsPetReacting) return 0;
+        var choices = new List<PetAnimationDefinition>();
+        foreach (var entry in animations.Activities)
+            if (entry.IsPlayable && entry.name != "Running" && entry.name != "Jump" && entry.name != "Idle")
+                choices.Add(entry);
+        foreach (var entry in animations.Sleep)
+            if (entry.IsPlayable) choices.Add(entry);
+        if (choices.Count > 1) choices.Remove(lastRestAnimation);
+        if (choices.Count == 0) return 0;
+        var activity = choices[Random.Range(0, choices.Count)];
+        if (!PlayPetAnimation(activity)) return 0;
+        lastRestAnimation = activity;
+        float playback = activity.frameRects.Length / Mathf.Clamp(activity.framesPerSecond, 1f, 30f);
+        // Give one-shots time to finish and hold their pose; looping clips get a leisurely break.
+        return Mathf.Max(Random.Range(6f, 12f), playback + .5f);
     }
 
     private void OnPetPointerDown(PointerDownEvent evt)
@@ -204,10 +253,13 @@ public class GameplayScreen : MonoBehaviour
 
     private void OnDisable()
     {
+        room?.Dispose();
+        room = null;
         fallbackReaction?.Pause();
         fallbackReaction = null;
         IsPetReacting = false;
         activityAnimation = CurrentPetAnimation = null;
+        lastRestAnimation = null;
         reactionPet = null;
         activityPet = null;
         petImage?.UnregisterCallback<PointerDownEvent>(OnPetPointerDown);

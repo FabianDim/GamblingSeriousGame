@@ -12,7 +12,7 @@ pet was loaded. It exposes:
 - `Animal`: a `PetAnimalType` containing its type and preview, with no breeds array.
 - `Breed`: its one selected breed.
 - `Animations`: that breed's cached `Activities`, `Sleep`, `Death` and `Reactions`.
-- `SaveData`: its mutable `PetSaveData`, including health, XP and owned items.
+- `SaveData`: its mutable `PetSaveData`, including health, XP, owned items and room placements.
 
 The catalog stays in the creation flow and is used to resolve the selected pet
 when loading. `SelectedPet` does not retain an `AnimalDefinition`. Its profile
@@ -21,7 +21,16 @@ snapshot does not change live state. To change animal or breed, edit a profile,
 call `PetSaveStore.SaveProfile(profile)`, then `manager.LoadSavedPet()`.
 The animation folder is `manager.SelectedPet.Breed.animationFolder`.
 
-Confirmed companions are stored in `pets.json` under `Application.persistentDataPath`.
+Confirmed companions are stored in `pets.json` under `PetSaveStore.SaveDirectory`.
+In a player build this is `Application.persistentDataPath/Builds/<build GUID>/`.
+Each new Unity build gets its own save directory and selected-companion key, so it
+starts at the beginning even on a device with progress from an earlier build.
+Relaunching the same build restores its progress. Runtime saves are created outside
+the build output and are not packaged with the game.
+The Editor continues using `Application.persistentDataPath/pets.json`; existing
+Editor and older-build saves are retained but are not imported into new builds.
+The build identity comes from Unity's
+[`Application.buildGUID`](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Application-buildGUID.html).
 `PetSaveStore.SavePath` exposes the full runtime path. The game state manager creates an empty
 JSON object (`{}`) at startup if the file is missing, even before a pet has been saved.
 The store also creates it on first access, so no Inspector assignment is needed. Existing files are retained;
@@ -45,11 +54,13 @@ It uses background 1 when there is no saved pet or the selected background canno
 `Background.id` identifies the image actually loaded when a fallback is used; `BackgroundId`
 remains the saved selection. Call `LoadBackground()` after changing the selection during gameplay.
 
-PlayerPrefs still records the latest selected companion under `Companion.Profile.v1`.
+PlayerPrefs records the latest selected companion under `Companion.Profile.v1.<build GUID>`
+in player builds, and `Companion.Profile.v1` in the Editor.
+`PetSaveStore.SavedProfileKey` supplies the key used by both creation and loading.
 `GameStateManager.LoadSavedPet()` resolves that companion as `SelectedPet`.
 The UUID chooses the save record; the record supplies the current name, animal,
 breed, background and progression, even if PlayerPrefs has older details.
-Previous PlayerPrefs-only saves are added to the file on load.
+PlayerPrefs-only saves for the current key are added to the file on load.
 
 To persist gameplay changes, update `manager.SelectedPet.SaveData` and call
 `PetSaveStore.SavePet(manager.SelectedPet.Id, manager.SelectedPet.SaveData)`.
@@ -64,3 +75,12 @@ the same claim cannot add XP twice. The award reads the latest saved XP rather
 than overwriting it with a stale displayed total. Profile edits and shop claims
 preserve the receipts. Timers and unfinished practice sessions remain in memory;
 only claimed rewards persist across game restarts.
+
+Collected shop items are stored in `ownedItems`. Room decorations are stored in
+`placedItems`, with one `{ itemId, x, y }` entry per placed item. Coordinates are
+normalized centers within the fitted background, so layouts survive resolution
+changes. Old saves initialize an empty placement list. `TryPlaceItem` checks
+ownership, full-item bounds and other items, then saves before updating live state;
+passing a null position stores the item without removing ownership. The room UI
+also checks the pet and waits for it to move clear before calling the save method.
+Profile edits, shop claims and intervention rewards preserve placements.

@@ -73,8 +73,10 @@ public class PetMovement : MonoBehaviour
     {
         while (true)
         {
-            // A tap reaction owns playback until it finishes, including at sequence boundaries.
-            while (gameplayScreen != null && gameplayScreen.IsPetReacting) yield return null;
+            // The room coordinates walking and stationary activities. Keep this legacy
+            // sequencer only as a fallback, so it cannot overwrite a room activity.
+            while (gameplayScreen != null && (gameplayScreen.HasRoomBehaviour || gameplayScreen.IsPetReacting))
+                yield return null;
             currentAnimation = SelectActivityAnimation();
 
             if (gameplayScreen == null ||
